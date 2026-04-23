@@ -544,6 +544,11 @@ ROOT_SUBDOMAIN_ALIASES = ["www"]
 # Whether the root domain is a landing page or can host a realm.
 ROOT_DOMAIN_LANDING_PAGE = False
 
+# When ROOT_DOMAIN_LANDING_PAGE is True, redirect the root domain here
+# instead of serving Zulip's corporate landing page.
+# Set in /etc/zulip/settings.py on the server.
+MARKETING_SITE_URL: str | None = None
+
 # Subdomain for serving endpoints to users from self-hosted deployments.
 SELF_HOSTING_MANAGEMENT_SUBDOMAIN: str | None = None
 

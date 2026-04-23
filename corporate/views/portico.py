@@ -320,6 +320,8 @@ def landing_view(request: HttpRequest, template_name: str) -> HttpResponse:
 
 @add_google_analytics
 def hello_view(request: HttpRequest) -> HttpResponse:
+    if settings.MARKETING_SITE_URL:
+        return HttpResponseRedirect(settings.MARKETING_SITE_URL)
     context = latest_info_context()
     context["REL_CANONICAL_LINK"] = "https://zulip.com/"
     return TemplateResponse(request, "corporate/hello.html", context)

@@ -38,7 +38,8 @@ jobs:
           mkdir -p "$OUTPUT_DIR"
           ./tools/provision --build-release-tarball-only
           ./tools/build-release-tarball safechat
-          # Output: /tmp/safechat-build/zulip-server-safechat.tar.gz
+          # Move into workspace so scp-action (which runs in Docker) can see it
+          cp /tmp/safechat-build/zulip-server-safechat.tar.gz ./zulip-server-safechat.tar.gz
 
       - name: Copy tarball to server
         uses: appleboy/scp-action@v0.1.7
@@ -46,9 +47,8 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          source: /tmp/safechat-build/zulip-server-safechat.tar.gz
-          target: /tmp/
-          strip_components: 3   # drops /tmp/safechat-build/ prefix → /tmp/zulip-server-safechat.tar.gz
+          source: "zulip-server-safechat.tar.gz"
+          target: "/tmp/"
 
       - name: Upgrade server
         uses: appleboy/ssh-action@v1
