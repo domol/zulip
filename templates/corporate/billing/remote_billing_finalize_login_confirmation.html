@@ -4,9 +4,9 @@
 {% block title %}
 <title>
     {% if next_page and next_page == "deactivate" %}
-    Log in to deactivate registration for {{ host }} | Zulip
+    Log in to deactivate registration for {{ host }} | SafeChat
     {% else %}
-    Log in to Zulip plan management for {{ host }} | Zulip
+    Log in to SafeChat plan management for {{ host }} | SafeChat
     {% endif %}
 </title>
 {% endblock %}
@@ -18,7 +18,7 @@
             {% if next_page and next_page == "deactivate" %}
             <h1>Log in to deactivate registration for<br/>{{ host }}</h1>
             {% else %}
-            <h1>Log in to Zulip plan management for<br/>{{ host }}</h1>
+            <h1>Log in to SafeChat plan management for<br/>{{ host }}</h1>
             {% endif %}
         </div>
         <div class="white-box">
@@ -49,12 +49,12 @@
                     <label for="enable-major-release-emails" class="checkbox">
                         <input id="enable-major-release-emails" name="enable_major_release_emails" type="checkbox" value="true" checked="checked" />
                         <span class="rendered-checkbox"></span>
-                        Sign me up for emails about <strong>major Zulip releases</strong> and other big announcements (a few times a year)
+                        Sign me up for emails about <strong>major SafeChat releases</strong> and other big announcements (a few times a year)
                     </label>
                     <label for="enable-maintenance-release-emails" class="checkbox">
                         <input id="enable-maintenance-release-emails" name="enable_maintenance_release_emails" type="checkbox" value="true" checked="checked" />
                         <span class="rendered-checkbox"></span>
-                        Sign me up for emails about <strong>all Zulip releases</strong>, including security and maintenance releases (recommended for server administrators)
+                        Sign me up for emails about <strong>all SafeChat releases</strong>, including security and maintenance releases (recommended for server administrators)
                     </label>
                 </div>
                 {% endif %}

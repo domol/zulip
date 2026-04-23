@@ -4,4 +4,4 @@
 
 
 {{ _("Best,") }}
-{{ _("Team Zulip") }}
+{{ _("Team SafeChat") }}

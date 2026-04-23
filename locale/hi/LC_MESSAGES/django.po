@@ -13,7 +13,7 @@
 # Vishwesh Jainkuniya <vishwesh03071998@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:22+0000\n"
@@ -1702,7 +1702,7 @@ msgstr "साइन अप करें"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Zulip के लिए साइन अप करें"
+msgstr "SafeChat के लिए साइन अप करें"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -7711,7 +7711,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "आपका Zulip पासवर्ड LDAP में प्रबंधित है"
+msgstr "आपका SafeChat पासवर्ड LDAP में प्रबंधित है"
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"

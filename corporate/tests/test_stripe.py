@@ -2723,7 +2723,7 @@ class StripeTest(StripeTestCase):
             "full_name": "King Hamlet",
             "email": "test@zulip.com",
             "role": "Manager",
-            "organization_name": "Zulip",
+            "organization_name": "SafeChat",
             "organization_type": "Business",
             "organization_website": "https://example.com",
             "expected_user_count": "10 (2 unpaid members)",

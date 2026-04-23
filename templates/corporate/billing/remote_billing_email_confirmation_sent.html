@@ -3,9 +3,9 @@
 
 {% block title %}
 {% if remote_server_hostname %}
-<title>Log in link sent | Zulip</title>
+<title>Log in link sent | SafeChat</title>
 {% else %}
-<title>Confirm your email address | Zulip</title>
+<title>Confirm your email address | SafeChat</title>
 {% endif %}
 {% endblock %}
 
@@ -24,9 +24,9 @@
 
             <div class="white-box">
                 {% if remote_server_hostname %}
-                <p>We have sent <span class="user_email semi-bold">{{ email }}</span> a log in link for Zulip plan management. This link will expire in 24 hours.</p>
+                <p>We have sent <span class="user_email semi-bold">{{ email }}</span> a log in link for SafeChat plan management. This link will expire in 24 hours.</p>
                 {% else %}
-                <p>To finish logging in, check your email account (<span class="user_email semi-bold">{{ email }}</span>) for a confirmation email from Zulip.</p>
+                <p>To finish logging in, check your email account (<span class="user_email semi-bold">{{ email }}</span>) for a confirmation email from SafeChat.</p>
                 {% endif %}
 
                 {% include 'zerver/dev_env_email_access_details.html' %}

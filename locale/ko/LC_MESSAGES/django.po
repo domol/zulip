@@ -20,7 +20,7 @@
 # Youngduck Kim <kfiekeofo@hanmail.net>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:15+0000\n"
@@ -119,7 +119,7 @@ msgid ""
 "[number of licenses for the current and next billing period]"
 "({billing_page_link}) is greater than the current number of users."
 msgstr ""
-"조직에 충분한 Zulip 라이선스가 없기 때문에 새 사용자 ({email}) 가 가입할 수 "
+"조직에 충분한 SafeChat 라이선스가 없기 때문에 새 사용자 ({email}) 가 가입할 수 "
 "없습니다.새 사용자의 가입을 허용하려면 [현재 및 다음 청구 기간의 라이센스 "
 "수] ({billing_page_link}) 가 현재 사용자 수보다 커야 합니다."
 
@@ -372,7 +372,7 @@ msgid ""
 "working to fix it. Zulip will load automatically once it is working again."
 msgstr ""
 "뭔가 웡이 죄송합니다. 그럼에 대해 미안해! 앙드러가 해결되어 협회가되었습니"
-"다. Zulip이 다시 작업하는 경우 자동으로로드됩니다."
+"다. SafeChat이 다시 작업하는 경우 자동으로로드됩니다."
 
 #: templates/500.html:27
 #, python-format
@@ -406,7 +406,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Zulip analytics for %(target_name)s"
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "%(target_name)s를 위한 Zulip 분석"
+msgstr "%(target_name)s를 위한 SafeChat 분석"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -415,7 +415,7 @@ msgstr "Analytics 는 조직 생성후 24시간 뒤에 완전히 사용가능합
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "%(target_name)s를 위한 Zulip 분석"
+msgstr "%(target_name)s를 위한 SafeChat 분석"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -554,7 +554,7 @@ msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 msgstr ""
-"이것은 너의 Zulip 계정에 있는 이메일 주소가 변경되었는지 확인한다. from 전 이"
+"이것은 너의 SafeChat 계정에 있는 이메일 주소가 변경되었는지 확인한다. from 전 이"
 "메일%(old_email_html_tag)s to 현재 새로운 이메일%(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
@@ -1580,7 +1580,7 @@ msgstr ""
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Zulip 계정이 없습니다."
+msgstr "SafeChat 계정이 없습니다."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, python-format
@@ -1600,7 +1600,7 @@ msgstr "등록을 계속하세요"
 #, fuzzy
 #| msgid "Create a new Zulip organization"
 msgid "Try Zulip in a demo organization"
-msgstr "새로운 Zulip 조직 생성"
+msgstr "새로운 SafeChat 조직 생성"
 
 #: templates/zerver/create_realm/create_demo_realm.html:13
 #, python-format
@@ -1613,7 +1613,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Why Zulip"
 msgid "Try Zulip"
-msgstr "왜 Zulip인가?"
+msgstr "왜 SafeChat인가?"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1621,7 +1621,7 @@ msgstr "새 조직 만들기"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "새로운 Zulip 조직 생성"
+msgstr "새로운 SafeChat 조직 생성"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1735,7 +1735,7 @@ msgstr "가입하기"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Zulip에 가입하기"
+msgstr "SafeChat에 가입하기"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -2059,7 +2059,7 @@ msgstr "업데이트"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2075,7 +2075,7 @@ msgstr ""
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Zulip에 오신 것을 환영합니다!"
+msgstr "SafeChat에 오신 것을 환영합니다!"
 
 #: templates/zerver/emails/account_registered.html:16
 #, python-format
@@ -2275,7 +2275,7 @@ msgstr ""
 #: templates/zerver/emails/confirm_registration.html:18
 #: templates/zerver/emails/confirm_registration.txt:7
 msgid "You recently signed up for Zulip. Awesome!"
-msgstr "귀하는 최근에 Zulip에 가입하셨습니다. 훌륭합니다!"
+msgstr "귀하는 최근에 SafeChat에 가입하셨습니다. 훌륭합니다!"
 
 #: templates/zerver/emails/confirm_registration.html:23
 #: templates/zerver/emails/confirm_registration.txt:12
@@ -2771,7 +2771,7 @@ msgstr ""
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "Zulip 팀"
+msgstr "SafeChat 팀"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
@@ -2932,7 +2932,7 @@ msgid ""
 "If you've already decided to use Zulip for your organization, welcome! You "
 "can use our guide for moving to Zulip to get started."
 msgstr ""
-"조리개를 위해 Zulip을 사용하기로 결정한 경우, 웰빙! 짐벌로 이동하기 위해 슈"
+"조리개를 위해 SafeChat을 사용하기로 결정한 경우, 웰빙! 짐벌로 이동하기 위해 슈"
 "트 가이드를 사용하여 시작할 수 있습니다."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.txt:3
@@ -2961,7 +2961,7 @@ msgid ""
 "Zulip is designed to enable efficient communication, and we hope these tips "
 "help your team experience it in action."
 msgstr ""
-"Zulip은 휘두모 커뮤니케이션을 가능하게하기 위해 설계되었으며 짹짹 팁이 귀하"
+"SafeChat은 휘두모 커뮤니케이션을 가능하게하기 위해 설계되었으며 짹짹 팁이 귀하"
 "의 팀이 행동을 경험할 수 있도록 희망합니다."
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:9
@@ -2971,7 +2971,7 @@ msgid ""
 "can work best for your needs. Check out this guide to key Zulip features for "
 "organizations like yours!"
 msgstr ""
-"Zulip으로 테스트 한 경우, 우리는 그것을 발견 할 수 있도록 피곤한 것을 피할 "
+"SafeChat으로 테스트 한 경우, 우리는 그것을 발견 할 수 있도록 피곤한 것을 피할 "
 "수 있습니다 .이 가이드를 확인 하십시오. 이 가 이드를 확인하십시오. 이 가이드"
 "를 Zipip 기능에 대한 조치를 취하십시오!"
 
@@ -3057,7 +3057,7 @@ msgid ""
 "Using topics, you can read Zulip one conversation at a time. You'll see each "
 "message in context, no matter how many different discussions are going on."
 msgstr ""
-"주제를 사용하면 한 번에 Zulip 한 전환을 읽을 수 있습니다. 여러 가지 토론이 얼"
+"주제를 사용하면 한 번에 SafeChat 한 전환을 읽을 수 있습니다. 여러 가지 토론이 얼"
 "마나 뛰어나지 않는 한 상황에 대한 메시지가 표시됩니다."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:16
@@ -3094,7 +3094,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Zulip으로 가기"
+msgstr "SafeChat으로 가기"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3420,7 +3420,7 @@ msgid ""
 "Your request for Zulip sponsorship has been approved! Your organization has "
 "been upgraded to the Zulip Community plan."
 msgstr ""
-"Zulip Sponsorip Hand 의 요청이 승인되었습니다. 조직은 Zulip Community Plan으"
+"SafeChat Sponsorip Hand 의 요청이 승인되었습니다. 조직은 SafeChat Community Plan으"
 "로 업그레이드되었습니다."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.txt:4
@@ -3435,7 +3435,7 @@ msgstr ""
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "귀하의 Zulip 계정을 찾으세요."
+msgstr "귀하의 SafeChat 계정을 찾으세요."
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3485,7 +3485,7 @@ msgstr ""
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "왜 Zulip인가?"
+msgstr "왜 SafeChat인가?"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3499,7 +3499,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Zulip Cloud"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -3643,7 +3643,7 @@ msgstr ""
 
 #: templates/zerver/footer.html:100
 msgid "Support Zulip"
-msgstr "Zulip에 도움"
+msgstr "SafeChat에 도움"
 
 #: templates/zerver/footer.html:103
 msgid "X (Twitter)"
@@ -3794,7 +3794,7 @@ msgstr ""
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Zulip에 로그인"
+msgstr "SafeChat에 로그인"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."
@@ -4377,7 +4377,7 @@ msgid ""
 "To protect users, Zulip limits the number of invitations you can send in one "
 "day. Because you have reached the limit, no invitations were sent."
 msgstr ""
-"사용자를 보호하기 위해 Zulip은 하루에 보내는 초대장의 수를 제한합니다. 한계"
+"사용자를 보호하기 위해 SafeChat은 하루에 보내는 초대장의 수를 제한합니다. 한계"
 "를 다시 초래 했으므로 초대장의 웨스트가 보냈습니다."
 
 #: zerver/actions/invites.py:226
@@ -4915,7 +4915,7 @@ msgid ""
 "use. Please contact the person who invited you and ask them to increase the "
 "number of licenses, then try again."
 msgstr ""
-"새로운 회원은이 조직에 참여할 수 없을 때 모든 Zulip 사용권이 사용중인 경우에 "
+"새로운 회원은이 조직에 참여할 수 없을 때 모든 SafeChat 사용권이 사용중인 경우에 "
 "문의하십시오. 귀하를 초대 한 사람에게 문의하여 테마를 요청할 수 있습니다."
 
 #: zerver/forms.py:389
@@ -6920,7 +6920,7 @@ msgstr "사용자 정의 이모티콘"
 
 #: zerver/models/messages.py:382
 msgid "Zulip extra emoji"
-msgstr "Zulip 추가 이모티콘"
+msgstr "SafeChat 추가 이모티콘"
 
 #: zerver/models/realm_emoji.py:40
 msgid "Invalid characters in emoji name"
@@ -7239,7 +7239,7 @@ msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 msgstr ""
-"그 중 일부 주소는 이미 Zulip을 사용하고 있으므로 초대장을 보내지 않았습니다. "
+"그 중 일부 주소는 이미 SafeChat을 사용하고 있으므로 초대장을 보내지 않았습니다. "
 "우리는 다른 모든 사람들에게 초대장을 보냈습니다!"
 
 #: zerver/views/message_edit.py:126
@@ -7857,7 +7857,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "귀하의 Zulip 비밀번호는 LDAP에서 관리됩니다."
+msgstr "귀하의 SafeChat 비밀번호는 LDAP에서 관리됩니다."
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"
@@ -8089,7 +8089,7 @@ msgstr "푸시 알림 Bouncer의 하위 도메인이 유효하지 않습니다."
 
 #: zilencer/auth.py:147
 msgid "Must validate with valid Zulip server API key"
-msgstr "유효한 Zulip 서버 API키로 유효화해야 한다."
+msgstr "유효한 SafeChat 서버 API키로 유효화해야 한다."
 
 #. error
 #: zilencer/views.py:128 zilencer/views.py:130

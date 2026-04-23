@@ -10,7 +10,7 @@
 # Tom Van Eyck, 2023
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:49+0000\n"
@@ -75,7 +75,7 @@ msgid ""
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
 msgstr ""
-"Jouw organisatie heeft geen resterende Zulip-licenties en kan geen nieuwe "
+"Jouw organisatie heeft geen resterende SafeChat-licenties en kan geen nieuwe "
 "gebruikers meer accepteren. [Verhoog het aantal licenties]"
 "({billing_page_link}) of [deactiveer inactieve gebruikers]"
 "({deactivate_user_help_page_link}) om nieuwe gebruikers toe te laten treden."
@@ -87,7 +87,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
 msgstr ""
-"Jouw organisatie heeft nog maar 1 resterende Zulip-licentie over. Je kan "
+"Jouw organisatie heeft nog maar 1 resterende SafeChat-licentie over. Je kan "
 "[het aantal licenties verhogen]({billing_page_link}) of [inactieve "
 "gebruikers deactiveren]({deactivate_user_help_page_link}) om meer dan 1 "
 "nieuwe gebruiker toe te laten treden."
@@ -99,7 +99,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than two users to join."
 msgstr ""
-"Jouw organisatie heeft nog maar 2 resterende Zulip-licenties over. Je kan "
+"Jouw organisatie heeft nog maar 2 resterende SafeChat-licenties over. Je kan "
 "[het aantal licenties verhogen]({billing_page_link}) of [inactieve "
 "gebruikers deactiveren]({deactivate_user_help_page_link}) om meer dan 2 "
 "nieuwe gebruiker toe te laten treden."
@@ -111,7 +111,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than three users to join."
 msgstr ""
-"Jouw organisatie heeft nog maar 3 resterende Zulip-licenties over. Je kan "
+"Jouw organisatie heeft nog maar 3 resterende SafeChat-licenties over. Je kan "
 "[het aantal licenties verhogen]({billing_page_link}) of [inactieve "
 "gebruikers deactiveren]({deactivate_user_help_page_link}) om meer dan 3 "
 "nieuwe gebruiker toe te laten treden."
@@ -283,7 +283,7 @@ msgstr ""
 "Jouw organisatie's aanvraag voor gesponsorde hosting is aanvaard! Je bent "
 "geüpgraded naar {plan_name}, zonder meerkost. {emoji}\n"
 "\n"
-"We zouden het ten zeerste op prijs stellen als je {begin_link} Zulip zou "
+"We zouden het ten zeerste op prijs stellen als je {begin_link} SafeChat zou "
 "kunnen weergeven als sponsor op jouw website{end_link}!"
 
 #: corporate/views/billing_page.py:349
@@ -411,7 +411,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Zulip analytics for %(target_name)s"
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "Zulip statistieken voor %(target_name)s"
+msgstr "SafeChat statistieken voor %(target_name)s"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -422,7 +422,7 @@ msgstr ""
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "Zulip statistieken voor %(target_name)s"
+msgstr "SafeChat statistieken voor %(target_name)s"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -561,7 +561,7 @@ msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 msgstr ""
-"Dit bevestigt dat het e-mailadres voor jouw Zulip account is veranderd van "
+"Dit bevestigt dat het e-mailadres voor jouw SafeChat account is veranderd van "
 "%(old_email_html_tag)s naar %(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
@@ -1314,7 +1314,7 @@ msgstr "Demo aanvragen"
 #: templates/corporate/for/use-cases.html:23
 #: templates/corporate/role/engineers.html:561
 msgid "Self-host Zulip"
-msgstr "Zulip self-hosten"
+msgstr "SafeChat self-hosten"
 
 #: templates/corporate/for/communities.html:35
 #: templates/corporate/for/communities.html:67
@@ -1339,11 +1339,11 @@ msgstr "Prijzen bekijken"
 #: templates/corporate/role/engineers.html:558
 #: templates/corporate/self-hosting.html:27
 msgid "Zulip for business"
-msgstr "Zulip voor ondernemingen"
+msgstr "SafeChat voor ondernemingen"
 
 #: templates/corporate/role/engineers.html:23
 msgid "Zulip for open source"
-msgstr "Zulip voor open-source"
+msgstr "SafeChat voor open-source"
 
 #: templates/corporate/role/engineers.html:64
 msgid "Dog in glasses with a laptop"
@@ -1352,16 +1352,16 @@ msgstr ""
 #: templates/corporate/role/engineers.html:77
 #: templates/corporate/role/engineers.html:123
 msgid "Screenshot of Zulip conversation"
-msgstr "Screenshot van een Zulip-gesprek"
+msgstr "Screenshot van een SafeChat-gesprek"
 
 #: templates/corporate/role/engineers.html:165
 msgid "Screenshot of Zulip conversation with sentry bot"
-msgstr "Screenshot van een Zulip-gesprek met een Sentry-bot"
+msgstr "Screenshot van een SafeChat-gesprek met een Sentry-bot"
 
 #: templates/corporate/role/engineers.html:178
 #: templates/corporate/role/engineers.html:215
 msgid "Screenshot of Zulip inbox"
-msgstr "Screenshot van Zulip-inbox"
+msgstr "Screenshot van SafeChat-inbox"
 
 #: templates/corporate/role/engineers.html:262
 msgid "Open laptop with book inside"
@@ -1433,7 +1433,7 @@ msgid ""
 "\">Zulip help center</a>."
 msgstr ""
 "Je kan antwoorden voor veelgestelde vragen vinden in het <a href=\"/help/"
-"\">helpcentrup van Zulip</a>."
+"\">helpcentrup van SafeChat</a>."
 
 #: templates/corporate/zulip-cloud.html:20
 msgid "Get started"
@@ -1464,7 +1464,7 @@ msgstr "Gebruikersvoorwaarden accepteren"
 
 #: templates/zerver/accounts_accept_terms.html:18
 msgid "Welcome to Zulip"
-msgstr "Welkom bij Zulip"
+msgstr "Welkom bij SafeChat"
 
 #: templates/zerver/accounts_accept_terms.html:25
 #: templates/zerver/create_user/accounts_home.html:63
@@ -1477,7 +1477,7 @@ msgstr "E-mail"
 #: templates/zerver/create_user/register.html:218
 #: templates/zerver/reset_confirm.html:64
 msgid "Subscribe me to Zulip's low-traffic newsletter (a few emails a year)."
-msgstr "Meld je aan voor Zulip's nieuwsbrief (een paar e-mails per jaar)."
+msgstr "Meld je aan voor SafeChat's nieuwsbrief (een paar e-mails per jaar)."
 
 #: templates/zerver/accounts_accept_terms.html:54
 msgid "Continue"
@@ -1496,7 +1496,7 @@ msgid ""
 "from Zulip."
 msgstr ""
 "Om je aanmelding te voltooien, check je e-mail (<span class=\"user_email "
-"semi-bold\">%(email)s</span>) voor een bevestigings-e-mail van Zulip."
+"semi-bold\">%(email)s</span>) voor een bevestigings-e-mail van SafeChat."
 
 #: templates/zerver/accounts_send_confirm.html:25
 msgid ""
@@ -1585,7 +1585,7 @@ msgstr ""
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Zulip-account niet gevonden."
+msgstr "SafeChat-account niet gevonden."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, python-format
@@ -1605,7 +1605,7 @@ msgstr "Verder met registratie"
 #, fuzzy
 #| msgid "Create a new Zulip organization"
 msgid "Try Zulip in a demo organization"
-msgstr "Maak een nieuwe Zulip-organisatie"
+msgstr "Maak een nieuwe SafeChat-organisatie"
 
 #: templates/zerver/create_realm/create_demo_realm.html:13
 #, python-format
@@ -1618,7 +1618,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Why Zulip"
 msgid "Try Zulip"
-msgstr "Waarom Zulip"
+msgstr "Waarom SafeChat"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1626,7 +1626,7 @@ msgstr "Maak een nieuwe organisatie"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Maak een nieuwe Zulip-organisatie"
+msgstr "Maak een nieuwe SafeChat-organisatie"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1738,7 +1738,7 @@ msgstr "Aanmelden"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Aanmelden voor Zulip"
+msgstr "Aanmelden voor SafeChat"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -2060,7 +2060,7 @@ msgstr "Bijwerken"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2076,7 +2076,7 @@ msgstr ""
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Welkom bij Zulip!"
+msgstr "Welkom bij SafeChat!"
 
 #: templates/zerver/emails/account_registered.html:16
 #, python-format
@@ -2274,7 +2274,7 @@ msgstr ""
 #: templates/zerver/emails/confirm_registration.html:18
 #: templates/zerver/emails/confirm_registration.txt:7
 msgid "You recently signed up for Zulip. Awesome!"
-msgstr "Je hebt je zojuist aangemeld voor Zulip. Super!"
+msgstr "Je hebt je zojuist aangemeld voor SafeChat. Super!"
 
 #: templates/zerver/emails/confirm_registration.html:23
 #: templates/zerver/emails/confirm_registration.txt:12
@@ -2769,7 +2769,7 @@ msgstr "Groet,"
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "Het Zulip-team"
+msgstr "Het SafeChat-team"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
@@ -2846,7 +2846,7 @@ msgstr "Bedankt,"
 #: templates/zerver/emails/notify_new_login.html:39
 #: templates/zerver/emails/notify_new_login.txt:21
 msgid "Zulip Security"
-msgstr "Zulip Security"
+msgstr "SafeChat Security"
 
 #: templates/zerver/emails/notify_new_login.html:44
 msgid "Unsubscribe from login notifications"
@@ -3078,7 +3078,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Naar Zulip"
+msgstr "Naar SafeChat"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3417,7 +3417,7 @@ msgstr ""
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "Zoek je Zulip accounts"
+msgstr "Zoek je SafeChat accounts"
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3463,7 +3463,7 @@ msgstr ""
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "Waarom Zulip"
+msgstr "Waarom SafeChat"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3477,7 +3477,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Zulip Cloud"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -6880,7 +6880,7 @@ msgstr "Aangepaste emoji"
 
 #: zerver/models/messages.py:382
 msgid "Zulip extra emoji"
-msgstr "Zulip extra emoji"
+msgstr "SafeChat extra emoji"
 
 #: zerver/models/realm_emoji.py:40
 msgid "Invalid characters in emoji name"
@@ -7199,7 +7199,7 @@ msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 msgstr ""
-"Sommige van die adressen gebruiken al Zulip, dus we hebben ze geen "
+"Sommige van die adressen gebruiken al SafeChat, dus we hebben ze geen "
 "uitnodiging gestuurd. We hebben alle anderen wel uitnodigingen gestuurd!"
 
 #: zerver/views/message_edit.py:126
@@ -8048,7 +8048,7 @@ msgstr ""
 
 #: zilencer/auth.py:147
 msgid "Must validate with valid Zulip server API key"
-msgstr "Moet worden gevalideerd met een geldige Zulip-server-API-sleutel"
+msgstr "Moet worden gevalideerd met een geldige SafeChat-server-API-sleutel"
 
 #. error
 #: zilencer/views.py:128 zilencer/views.py:130

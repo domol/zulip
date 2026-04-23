@@ -6,7 +6,7 @@
 # Panos Damelos, 2024
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:23+0000\n"
@@ -1462,7 +1462,7 @@ msgid ""
 msgstr ""
 "Για να ολοκληρώσετε την εγγραφή σας, δείτε στο email σας (<span "
 "class=\"user_email semi-bold\">%(email)s</span>) για ένα email επιβεβαίωσης "
-"από το Zulip."
+"από το SafeChat."
 
 #: templates/zerver/accounts_send_confirm.html:25
 msgid ""
@@ -1552,7 +1552,7 @@ msgstr "Ο λογαριασμός δεν βρέθηκε"
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Ο λογαριασμός Zulip δεν βρέθηκε."
+msgstr "Ο λογαριασμός SafeChat δεν βρέθηκε."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, python-format
@@ -1572,7 +1572,7 @@ msgstr "Προχωρήστε στην εγγραφή"
 #, fuzzy
 #| msgid "Create a new Zulip organization"
 msgid "Try Zulip in a demo organization"
-msgstr "Δημιουργία νέου οργανισμού Zulip"
+msgstr "Δημιουργία νέου οργανισμού SafeChat"
 
 #: templates/zerver/create_realm/create_demo_realm.html:13
 #, python-format
@@ -1585,7 +1585,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Try Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1593,7 +1593,7 @@ msgstr "Δημιουργία νέου οργανισμού"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Δημιουργία νέου οργανισμού Zulip"
+msgstr "Δημιουργία νέου οργανισμού SafeChat"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1705,7 +1705,7 @@ msgstr "Εγγραφείτε"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Εγγραφείτε στο Zulip"
+msgstr "Εγγραφείτε στο SafeChat"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -2021,7 +2021,7 @@ msgstr "Ανανέωση"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2037,7 +2037,7 @@ msgstr ""
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Καλώς ήρθατε στο Zulip!"
+msgstr "Καλώς ήρθατε στο SafeChat!"
 
 #: templates/zerver/emails/account_registered.html:16
 #, python-format
@@ -2409,7 +2409,7 @@ msgstr ""
 #: templates/zerver/emails/digest.txt:32
 #, python-format
 msgid "Log in to Zulip to catch up: %(organization_url)s."
-msgstr "Εισέλθετε στο Zulip για να ενημερωθείτε: %(organization_url)s."
+msgstr "Εισέλθετε στο SafeChat για να ενημερωθείτε: %(organization_url)s."
 
 #: templates/zerver/emails/digest.txt:35
 #: templates/zerver/emails/missed_message.txt:60
@@ -3036,7 +3036,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Πηγαίντε στο Zulip"
+msgstr "Πηγαίντε στο SafeChat"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3084,7 +3084,7 @@ msgstr ""
 #: templates/zerver/emails/password_reset.html:21
 #: templates/zerver/emails/password_reset.txt:11
 msgid "You do not have an account in that Zulip organization."
-msgstr "Δεν έχετε λογαριασμός σε αυτόν τον οργανισμό Zulip."
+msgstr "Δεν έχετε λογαριασμός σε αυτόν τον οργανισμό SafeChat."
 
 #: templates/zerver/emails/password_reset.html:26
 #: templates/zerver/emails/password_reset.txt:16
@@ -3377,7 +3377,7 @@ msgstr "Βρείτε τους λογαριασμούς σας"
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "Βρείτε τους λογαριασμούς σας στο Zulip"
+msgstr "Βρείτε τους λογαριασμούς σας στο SafeChat"
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3437,7 +3437,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Zulip Cloud"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -3732,7 +3732,7 @@ msgstr ""
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Συνδεθείτε στο Zulip"
+msgstr "Συνδεθείτε στο SafeChat"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."
@@ -5837,7 +5837,7 @@ msgstr ""
 #: zerver/lib/onboarding.py:388 zerver/lib/onboarding.py:440
 #: zerver/lib/onboarding.py:531
 msgid "welcome to Zulip!"
-msgstr "καλώς ήρθατε στο Zulip!"
+msgstr "καλώς ήρθατε στο SafeChat!"
 
 #: zerver/lib/onboarding.py:391
 msgid ""

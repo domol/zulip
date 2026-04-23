@@ -2298,7 +2298,7 @@ class RealmAPITest(ZulipTestCase):
             digest_weekday=[0, 1, 2],
             message_edit_history_visibility_policy=Realm.MESSAGE_EDIT_HISTORY_VISIBILITY_POLICY_TYPES,
             message_retention_days=[10, 20],
-            name=["Zulip", "New Name"],
+            name=["SafeChat", "New Name"],
             waiting_period_threshold=[10, 20],
             video_chat_provider=[
                 Realm.VIDEO_CHAT_PROVIDERS["jitsi_meet"]["id"],

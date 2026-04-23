@@ -603,8 +603,8 @@ def client_label_map(name: str) -> str:
         return "Mobile app (Flutter)"
     if name in ["ZulipPython", "API: Python"]:
         return "Python API"
-    if name.startswith("Zulip") and name.endswith("Webhook"):
-        return name.removeprefix("Zulip").removesuffix("Webhook") + " webhook"
+    if name.startswith("SafeChat") and name.endswith("Webhook"):
+        return name.removeprefix("SafeChat").removesuffix("Webhook") + " webhook"
     return name
 
 

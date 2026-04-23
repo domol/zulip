@@ -9,7 +9,7 @@
 # David Wood <heavy.spot0252@fuligin.ink>, 2019-2021
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 18:54+0000\n"
@@ -74,7 +74,7 @@ msgid ""
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
 msgstr ""
-"Your organisation has no Zulip licenses remaining and can no longer accept "
+"Your organisation has no SafeChat licenses remaining and can no longer accept "
 "new users. Please [increase the number of licenses]({billing_page_link}) or "
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
@@ -86,7 +86,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
 msgstr ""
-"Your organisation has only one Zulip license remaining. You can [increase "
+"Your organisation has only one SafeChat license remaining. You can [increase "
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
 
@@ -97,7 +97,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than two users to join."
 msgstr ""
-"Your organisation has only two Zulip licenses remaining. You can [increase "
+"Your organisation has only two SafeChat licenses remaining. You can [increase "
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than two users to join."
 
@@ -108,7 +108,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than three users to join."
 msgstr ""
-"Your organisation has only three Zulip licenses remaining. You can [increase "
+"Your organisation has only three SafeChat licenses remaining. You can [increase "
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than three users to join."
 
@@ -121,7 +121,7 @@ msgid ""
 "({billing_page_link}) is greater than the current number of users."
 msgstr ""
 "A new user ({email}) was unable to join because your organisation does not "
-"have enough Zulip licenses. To allow new users to join, make sure that the "
+"have enough SafeChat licenses. To allow new users to join, make sure that the "
 "[number of licenses for the current and next billing period]"
 "({billing_page_link}) is greater than the current number of users."
 
@@ -130,7 +130,7 @@ msgid ""
 "Your organization does not have enough Zulip licenses. Invitations were not "
 "sent."
 msgstr ""
-"Your organisation does not have enough Zulip licenses. Invitations were not "
+"Your organisation does not have enough SafeChat licenses. Invitations were not "
 "sent."
 
 #: corporate/lib/registration.py:133
@@ -138,7 +138,7 @@ msgid ""
 "Your organization does not have enough Zulip licenses to change a guest "
 "user's role."
 msgstr ""
-"Your organisation does not have enough Zulip licenses to change a guest "
+"Your organisation does not have enough SafeChat licenses to change a guest "
 "user's role."
 
 #: corporate/lib/remote_billing_util.py:144
@@ -298,7 +298,7 @@ msgstr ""
 "Your organisation's request for sponsored hosting has been approved! You "
 "have been upgraded to {plan_name}, free of charge. {emoji}\n"
 "\n"
-"If you could {begin_link}list Zulip as a sponsor on your website{end_link}, "
+"If you could {begin_link}list SafeChat as a sponsor on your website{end_link}, "
 "we would really appreciate it!"
 
 #: corporate/views/billing_page.py:349
@@ -336,7 +336,7 @@ msgstr "You must accept the Terms of Service to proceed."
 msgid ""
 "This zulip_org_id is not registered with Zulip's billing management system."
 msgstr ""
-"This zulip_org_id is not registered with Zulip's billing management system."
+"This zulip_org_id is not registered with SafeChat's billing management system."
 
 #: corporate/views/remote_billing_page.py:560
 msgid "Invalid zulip_org_key for this zulip_org_id."
@@ -415,8 +415,8 @@ msgid ""
 "a> with any questions."
 msgstr ""
 "Please try a different URL, <a href=\"%(root_domain_url)s/accounts/find/"
-"\">get a list of your Zulip Cloud accounts</a>, or <a href=\"mailto:"
-"%(support_email)s\">contact Zulip support</a>."
+"\">get a list of your SafeChat Cloud accounts</a>, or <a href=\"mailto:"
+"%(support_email)s\">contact SafeChat support</a>."
 
 #: templates/500.html:36
 msgid ""
@@ -449,12 +449,12 @@ msgid ""
 "href=\"%(troubleshooting_url)s\">Zulip server troubleshooting guide</a>."
 msgstr ""
 "If you administer this server, you may want to check out the <a "
-"href=\"%(troubleshooting_url)s\">Zulip server troubleshooting guide</a>."
+"href=\"%(troubleshooting_url)s\">SafeChat server troubleshooting guide</a>."
 
 #: templates/analytics/stats.html:6
 #, python-format
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "Analytics for %(target_name)s | Zulip"
+msgstr "Analytics for %(target_name)s | SafeChat"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -463,7 +463,7 @@ msgstr "Analytics are fully available 24 hours after organisation creation."
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "Zulip analytics for %(target_name)s"
+msgstr "SafeChat analytics for %(target_name)s"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -602,7 +602,7 @@ msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 msgstr ""
-"This confirms that the email address for your Zulip account has changed from "
+"This confirms that the email address for your SafeChat account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
@@ -731,11 +731,11 @@ msgid ""
 "management\">log in instructions</a> to administer the plan for your Zulip "
 "server."
 msgstr ""
-"Plan management is not available for this organisation, because your Zulip "
+"Plan management is not available for this organisation, because your SafeChat "
 "server is already on a %(server_plan_name)s plan, which covers all "
 "organizations on this server. See the <b>Server-level billing</b> tab of the "
 "<a href=\"https://zulip.com/help/self-hosted-billing#log-in-to-billing-"
-"management\">log in instructions</a> to administer the plan for your Zulip "
+"management\">log in instructions</a> to administer the plan for your SafeChat "
 "server."
 
 #: templates/corporate/billing/remote_realm_login_error_for_server_on_active_plan.html:23
@@ -1321,7 +1321,7 @@ msgstr "Not available"
 
 #: templates/corporate/development-community.html:16
 msgid "The Zulip development community"
-msgstr "The Zulip development community"
+msgstr "The SafeChat development community"
 
 #: templates/corporate/development-community.html:23
 #: templates/corporate/development-community.html:48
@@ -1375,7 +1375,7 @@ msgstr "Get a demo"
 #: templates/corporate/for/use-cases.html:23
 #: templates/corporate/role/engineers.html:561
 msgid "Self-host Zulip"
-msgstr "Self-host Zulip"
+msgstr "Self-host SafeChat"
 
 #: templates/corporate/for/communities.html:35
 #: templates/corporate/for/communities.html:67
@@ -1400,13 +1400,13 @@ msgstr "View pricing"
 #: templates/corporate/role/engineers.html:558
 #: templates/corporate/self-hosting.html:27
 msgid "Zulip for business"
-msgstr "Zulip for business"
+msgstr "SafeChat for business"
 
 #: templates/corporate/role/engineers.html:23
 #, fuzzy
 #| msgid "Zulip guide for open-source projects"
 msgid "Zulip for open source"
-msgstr "Zulip guide for open-source projects"
+msgstr "SafeChat guide for open-source projects"
 
 #: templates/corporate/role/engineers.html:64
 msgid "Dog in glasses with a laptop"
@@ -1500,7 +1500,7 @@ msgid ""
 "\">Zulip help center</a>."
 msgstr ""
 "You can find answers to frequently asked questions in the <a href=\"/help/"
-"\">Zulip help center</a>."
+"\">SafeChat help center</a>."
 
 #: templates/corporate/zulip-cloud.html:20
 #, fuzzy
@@ -1514,8 +1514,8 @@ msgid ""
 "href=\"https://zulip.com/policies/terms\">Zulip Terms of Service</a> to "
 "continue."
 msgstr ""
-"This team chat is now being hosted on Zulip Cloud. Please accept the <a "
-"href=\"https://zulip.com/policies/terms\">Zulip Terms of Service</a> to "
+"This team chat is now being hosted on SafeChat Cloud. Please accept the <a "
+"href=\"https://zulip.com/policies/terms\">SafeChat Terms of Service</a> to "
 "continue."
 
 #: templates/two_factor/_wizard_forms.html:26
@@ -1536,7 +1536,7 @@ msgstr "Accept the Terms of Service"
 
 #: templates/zerver/accounts_accept_terms.html:18
 msgid "Welcome to Zulip"
-msgstr "Welcome to Zulip"
+msgstr "Welcome to SafeChat"
 
 #: templates/zerver/accounts_accept_terms.html:25
 #: templates/zerver/create_user/accounts_home.html:63
@@ -1549,7 +1549,7 @@ msgstr "Email"
 #: templates/zerver/create_user/register.html:218
 #: templates/zerver/reset_confirm.html:64
 msgid "Subscribe me to Zulip's low-traffic newsletter (a few emails a year)."
-msgstr "Subscribe me to Zulip's low-traffic newsletter (a few emails a year)."
+msgstr "Subscribe me to SafeChat's low-traffic newsletter (a few emails a year)."
 
 #: templates/zerver/accounts_accept_terms.html:54
 msgid "Continue"
@@ -1569,7 +1569,7 @@ msgid ""
 msgstr ""
 "To complete your registration, check your email account (<span "
 "class=\"user_email semi-bold\">%(email)s</span>) for a confirmation email "
-"from Zulip."
+"from SafeChat."
 
 #: templates/zerver/accounts_send_confirm.html:25
 msgid ""
@@ -1582,7 +1582,7 @@ msgstr ""
 #: templates/zerver/app/index.html:6
 #, python-brace-format
 msgid "Public view of {org_name} | Zulip team chat"
-msgstr "Public view of {org_name} | Zulip team chat"
+msgstr "Public view of {org_name} | SafeChat team chat"
 
 #: templates/zerver/app/index.html:7
 #, python-brace-format
@@ -1615,7 +1615,7 @@ msgstr ""
 msgid ""
 "Error loading Zulip. Try <a class=\"reload-lnk\">reloading</a> the page."
 msgstr ""
-"Error loading Zulip. Try <a class=\"reload-lnk\">reloading</a> the page."
+"Error loading SafeChat. Try <a class=\"reload-lnk\">reloading</a> the page."
 
 #: templates/zerver/app/index.html:221
 msgid "No conversations match your filters."
@@ -1667,7 +1667,7 @@ msgstr "Account not found"
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Zulip account not found."
+msgstr "SafeChat account not found."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, fuzzy, python-format
@@ -1701,7 +1701,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Try Zulip now"
 msgid "Try Zulip"
-msgstr "Try Zulip now"
+msgstr "Try SafeChat now"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1709,7 +1709,7 @@ msgstr "Create a new organisation"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Create a new Zulip organisation"
+msgstr "Create a new SafeChat organisation"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1739,7 +1739,7 @@ msgstr ""
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:3
 msgid "How did you first hear about Zulip?"
-msgstr "How did you first hear about Zulip?"
+msgstr "How did you first hear about SafeChat?"
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:5
 msgid ""
@@ -1747,7 +1747,7 @@ msgid ""
 "sent to the Zulip team."
 msgstr ""
 "This value is used only if you sign up for a plan, in which case it will be "
-"sent to the Zulip team."
+"sent to the SafeChat team."
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:9
 msgid "Select an option"
@@ -1844,7 +1844,7 @@ msgstr "Sign up"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Sign up for Zulip"
+msgstr "Sign up for SafeChat"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -1879,7 +1879,7 @@ msgid ""
 "Zulip lets you control which roles in the organization can view your email "
 "address."
 msgstr ""
-"Zulip lets you control which roles in the organisation can view your email "
+"SafeChat lets you control which roles in the organisation can view your email "
 "address."
 
 #: templates/zerver/create_user/change_email_address_visibility_modal.html:17
@@ -1910,7 +1910,7 @@ msgid ""
 "Administrators of this Zulip organization will be able to see this email "
 "address."
 msgstr ""
-"Administrators of this Zulip organisation will be able to see this email "
+"Administrators of this SafeChat organisation will be able to see this email "
 "address."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:8
@@ -1918,21 +1918,21 @@ msgid ""
 "Administrators and moderators of this Zulip organization will be able to see "
 "this email address."
 msgstr ""
-"Administrators and moderators of this Zulip organisation will be able to see "
+"Administrators and moderators of this SafeChat organisation will be able to see "
 "this email address."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:11
 msgid ""
 "Nobody in this Zulip organization will be able to see this email address."
 msgstr ""
-"Nobody in this Zulip organisation will be able to see this email address."
+"Nobody in this SafeChat organisation will be able to see this email address."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:14
 msgid ""
 "Other users in this Zulip organization will be able to see this email "
 "address."
 msgstr ""
-"Other users in this Zulip organisation will be able to see this email "
+"Other users in this SafeChat organisation will be able to see this email "
 "address."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:18
@@ -1969,7 +1969,7 @@ msgstr "Don&rsquo;t import settings"
 
 #: templates/zerver/create_user/register.html:112
 msgid "Import settings from existing Zulip account"
-msgstr "Import settings from existing Zulip account"
+msgstr "Import settings from existing SafeChat account"
 
 #: templates/zerver/create_user/register.html:124
 msgid "Your full name"
@@ -1981,7 +1981,7 @@ msgstr "Name"
 
 #: templates/zerver/create_user/register.html:132
 msgid "This is how your account is displayed in Zulip."
-msgstr "This is how your account is displayed in Zulip."
+msgstr "This is how your account is displayed in SafeChat."
 
 #: templates/zerver/create_user/register.html:143
 #: templates/zerver/create_user/register.html:156
@@ -2062,7 +2062,7 @@ msgid ""
 msgstr ""
 "\n"
 "                In the meantime, you can <a href=\"mailto:"
-"%(support_email)s\">contact Zulip support</a>.\n"
+"%(support_email)s\">contact SafeChat support</a>.\n"
 "                "
 
 #: templates/zerver/deactivated.html:44
@@ -2096,7 +2096,7 @@ msgid ""
 "%(support_email)s\">contact Zulip support</a> to reactivate it."
 msgstr ""
 "If you are an owner of this organisation, you can <a href=\"mailto:"
-"%(support_email)s\">contact Zulip support</a> to reactivate it."
+"%(support_email)s\">contact SafeChat support</a> to reactivate it."
 
 #: templates/zerver/deactivated.html:55
 msgid ""
@@ -2113,7 +2113,7 @@ msgid ""
 "reactivate it."
 msgstr ""
 "If you are an owner of this organisation, you can <a href=\"mailto:"
-"%(support_email)s\">contact this Zulip server's administrators</a> to "
+"%(support_email)s\">contact this SafeChat server's administrators</a> to "
 "reactivate it."
 
 #: templates/zerver/desktop_login.html:5
@@ -2156,7 +2156,7 @@ msgstr "Log in to desktop app"
 msgid ""
 "Copy this login token and return to your Zulip app to finish logging in:"
 msgstr ""
-"Copy this login token and return to your Zulip app to finish logging in:"
+"Copy this login token and return to your SafeChat app to finish logging in:"
 
 #: templates/zerver/desktop_redirect.html:17
 msgid "Copy"
@@ -2211,7 +2211,7 @@ msgstr "Update"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2223,18 +2223,18 @@ msgid ""
 "Congratulations, you have created a new Zulip organization: "
 "<b>%(realm_name)s</b>."
 msgstr ""
-"Congratulations, you have created a new Zulip organisation: "
+"Congratulations, you have created a new SafeChat organisation: "
 "<b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Welcome to Zulip!"
+msgstr "Welcome to SafeChat!"
 
 #: templates/zerver/emails/account_registered.html:16
 #, python-format
 msgid "You've joined the Zulip organization <b>%(realm_name)s</b>."
-msgstr "You've joined the Zulip organisation <b>%(realm_name)s</b>."
+msgstr "You've joined the SafeChat organisation <b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/account_registered.html:22
 #, python-format
@@ -2242,7 +2242,7 @@ msgid ""
 "You will use the following info to log into the Zulip web, <a "
 "href=\"%(apps_page_link)s\">mobile and desktop</a> apps:"
 msgstr ""
-"You will use the following info to log into the Zulip web, <a "
+"You will use the following info to log into the SafeChat web, <a "
 "href=\"%(apps_page_link)s\">mobile and desktop</a> apps:"
 
 #: templates/zerver/emails/account_registered.html:25
@@ -2280,7 +2280,7 @@ msgid ""
 "If you are new to Zulip, check out our <a "
 "href=\"%(getting_user_started_link)s\">getting started guide</a>!"
 msgstr ""
-"If you are new to Zulip, check out our <a "
+"If you are new to SafeChat, check out our <a "
 "href=\"%(getting_user_started_link)s\">getting started guide</a>!"
 
 #: templates/zerver/emails/account_registered.html:43
@@ -2292,7 +2292,7 @@ msgid ""
 msgstr ""
 "We also have a guide for <a "
 "href=\"%(getting_organization_started_link)s\">moving your organisation to "
-"Zulip</a>."
+"SafeChat</a>."
 
 #: templates/zerver/emails/account_registered.html:49
 #, python-format
@@ -2306,24 +2306,24 @@ msgstr ""
 #: templates/zerver/emails/account_registered.subject.txt:2
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new organization details"
-msgstr "%(realm_name)s on Zulip: Your new organisation details"
+msgstr "%(realm_name)s on SafeChat: Your new organisation details"
 
 #: templates/zerver/emails/account_registered.subject.txt:4
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new account details"
-msgstr "%(realm_name)s on Zulip: Your new account details"
+msgstr "%(realm_name)s on SafeChat: Your new account details"
 
 #: templates/zerver/emails/account_registered.txt:4
 #, python-format
 msgid ""
 "Congratulations, you have created a new Zulip organization: %(realm_name)s."
 msgstr ""
-"Congratulations, you have created a new Zulip organisation: %(realm_name)s."
+"Congratulations, you have created a new SafeChat organisation: %(realm_name)s."
 
 #: templates/zerver/emails/account_registered.txt:6
 #, python-format
 msgid "You've joined the Zulip organization %(realm_name)s."
-msgstr "You've joined the Zulip organisation %(realm_name)s."
+msgstr "You've joined the SafeChat organisation %(realm_name)s."
 
 #: templates/zerver/emails/account_registered.txt:10
 #, python-format
@@ -2331,7 +2331,7 @@ msgid ""
 "You will use the following info to log into the Zulip web, mobile and "
 "desktop apps (%(apps_page_link)s):"
 msgstr ""
-"You will use the following info to log into the Zulip web, mobile and "
+"You will use the following info to log into the SafeChat web, mobile and "
 "desktop apps (%(apps_page_link)s):"
 
 #: templates/zerver/emails/account_registered.txt:25
@@ -2340,7 +2340,7 @@ msgid ""
 "If you are new to Zulip, check out our getting started guide "
 "(%(getting_user_started_link)s)!"
 msgstr ""
-"If you are new to Zulip, check out our getting started guide "
+"If you are new to SafeChat, check out our getting started guide "
 "(%(getting_user_started_link)s)!"
 
 #: templates/zerver/emails/account_registered.txt:27
@@ -2349,7 +2349,7 @@ msgid ""
 "We also have a guide for moving your organization to Zulip "
 "(%(getting_organization_started_link)s)."
 msgstr ""
-"We also have a guide for moving your organisation to Zulip "
+"We also have a guide for moving your organisation to SafeChat "
 "(%(getting_organization_started_link)s)."
 
 #: templates/zerver/emails/account_registered.txt:32
@@ -2368,7 +2368,7 @@ msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at %(support_email)s."
 msgstr ""
-"If you have any questions, please contact this Zulip server's administrators "
+"If you have any questions, please contact this SafeChat server's administrators "
 "at %(support_email)s."
 
 #: templates/zerver/emails/confirm_demo_organization_email.html:8
@@ -2388,7 +2388,7 @@ msgid ""
 "demo organization account on %(realm_url)s. To confirm this update and set a "
 "password for this account, please click below:"
 msgstr ""
-"We received a request to add the email address %(new_email)s to your Zulip "
+"We received a request to add the email address %(new_email)s to your SafeChat "
 "demo organisation account on %(realm_url)s. To confirm this update and set a "
 "password for this account, please click below:"
 
@@ -2410,7 +2410,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Verify your new email address for your demo Zulip organization"
 msgid "Verify your email address for your Zulip demo organization"
-msgstr "Verify your new email address for your demo Zulip organisation"
+msgstr "Verify your new email address for your demo SafeChat organisation"
 
 #: templates/zerver/emails/confirm_demo_organization_email.txt:9
 #: templates/zerver/emails/confirm_new_email.txt:9
@@ -2430,7 +2430,7 @@ msgid ""
 "%(realm_url)s from %(old_email)s to %(new_email)s. To confirm this change, "
 "please click below:"
 msgstr ""
-"We received a request to change the email address for the Zulip account on "
+"We received a request to change the email address for the SafeChat account on "
 "%(realm_url)s from %(old_email)s to %(new_email)s. To confirm this change, "
 "please click below:"
 
@@ -2446,7 +2446,7 @@ msgstr "Verify your new email address for %(organization_host)s"
 #: templates/zerver/emails/confirm_registration.html:10
 #: templates/zerver/emails/confirm_registration.txt:2
 msgid "You have requested a new Zulip organization:"
-msgstr "You have requested a new Zulip organisation:"
+msgstr "You have requested a new SafeChat organisation:"
 
 #: templates/zerver/emails/confirm_registration.html:14
 #: templates/zerver/emails/confirm_registration.txt:5
@@ -2457,7 +2457,7 @@ msgstr "Organisation type: %(organization_type)s"
 #: templates/zerver/emails/confirm_registration.html:18
 #: templates/zerver/emails/confirm_registration.txt:7
 msgid "You recently signed up for Zulip. Awesome!"
-msgstr "You recently signed up for Zulip. Awesome!"
+msgstr "You recently signed up for SafeChat. Awesome!"
 
 #: templates/zerver/emails/confirm_registration.html:23
 #: templates/zerver/emails/confirm_registration.txt:12
@@ -2480,11 +2480,11 @@ msgstr "Complete registration"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:2
 msgid "Create your Zulip organization"
-msgstr "Create your Zulip organisation"
+msgstr "Create your SafeChat organisation"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:4
 msgid "Activate your Zulip account"
-msgstr "Activate your Zulip account"
+msgstr "Activate your SafeChat account"
 
 #: templates/zerver/emails/confirm_registration.txt:14
 msgid "Click the link below to complete registration."
@@ -2522,7 +2522,7 @@ msgid ""
 "Your Zulip account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
 "deactivated, and you will no longer be able to log in."
 msgstr ""
-"Your Zulip account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
+"Your SafeChat account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
 "deactivated, and you will no longer be able to log in."
 
 #: templates/zerver/emails/deactivate.html:15
@@ -2541,7 +2541,7 @@ msgid ""
 "Your Zulip account on %(realm_url)s has been deactivated, and you will no "
 "longer be able to log in."
 msgstr ""
-"Your Zulip account on %(realm_url)s has been deactivated, and you will no "
+"Your SafeChat account on %(realm_url)s has been deactivated, and you will no "
 "longer be able to log in."
 
 #: templates/zerver/emails/digest.html:28 templates/zerver/emails/digest.txt:9
@@ -2607,7 +2607,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Click here to log in to Zulip and catch up."
 msgid "<a href=\"%(realm_url)s\">Log in</a> to Zulip to catch up."
-msgstr "Click here to log in to Zulip and catch up."
+msgstr "Click here to log in to SafeChat and catch up."
 
 #: templates/zerver/emails/digest.html:56
 msgid "Unsubscribe from digest emails"
@@ -2616,7 +2616,7 @@ msgstr "Unsubscribe from digest emails"
 #: templates/zerver/emails/digest.subject.txt:1
 #, python-format
 msgid "Zulip digest for %(realm_name)s"
-msgstr "Zulip digest for %(realm_name)s"
+msgstr "SafeChat digest for %(realm_name)s"
 
 #: templates/zerver/emails/digest.txt:14
 #, python-format
@@ -2674,7 +2674,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Click here to log in to Zulip and catch up: %(organization_url)s."
 msgid "Log in to Zulip to catch up: %(organization_url)s."
-msgstr "Click here to log in to Zulip and catch up: %(organization_url)s."
+msgstr "Click here to log in to SafeChat and catch up: %(organization_url)s."
 
 #: templates/zerver/emails/digest.txt:35
 #: templates/zerver/emails/missed_message.txt:60
@@ -2702,7 +2702,7 @@ msgid ""
 "Your email address %(email)s has accounts with the following Zulip Cloud "
 "organizations:"
 msgstr ""
-"Your email address %(email)s has accounts with the following Zulip Cloud "
+"Your email address %(email)s has accounts with the following SafeChat Cloud "
 "organisations:"
 
 #: templates/zerver/emails/find_team.html:14
@@ -2712,7 +2712,7 @@ msgid ""
 "Your email address %(email)s has accounts with the following Zulip "
 "organizations hosted by %(external_host)s:"
 msgstr ""
-"Your email address %(email)s has accounts with the following Zulip "
+"Your email address %(email)s has accounts with the following SafeChat "
 "organisations hosted by %(external_host)s:"
 
 #: templates/zerver/emails/find_team.html:24
@@ -2728,12 +2728,12 @@ msgstr ""
 #: templates/zerver/emails/find_team.txt:21
 #: templates/zerver/emails/find_team.txt:28
 msgid "You have requested a list of Zulip accounts for this email address."
-msgstr "You have requested a list of Zulip accounts for this email address."
+msgstr "You have requested a list of SafeChat accounts for this email address."
 
 #: templates/zerver/emails/find_team.html:30
 #: templates/zerver/emails/find_team.txt:21
 msgid "Unfortunately, no Zulip Cloud accounts were found."
-msgstr "Unfortunately, no Zulip Cloud accounts were found."
+msgstr "Unfortunately, no SafeChat Cloud accounts were found."
 
 #: templates/zerver/emails/find_team.html:32
 #: templates/zerver/emails/find_team.txt:28
@@ -2742,7 +2742,7 @@ msgid ""
 "Unfortunately, no accounts were found in Zulip organizations hosted by "
 "%(external_host)s."
 msgstr ""
-"Unfortunately, no accounts were found in Zulip organisations hosted by "
+"Unfortunately, no accounts were found in SafeChat organisations hosted by "
 "%(external_host)s."
 
 #: templates/zerver/emails/find_team.html:37
@@ -2765,11 +2765,11 @@ msgstr ""
 
 #: templates/zerver/emails/find_team.subject.txt:2
 msgid "Your Zulip accounts"
-msgstr "Your Zulip accounts"
+msgstr "Your SafeChat accounts"
 
 #: templates/zerver/emails/find_team.subject.txt:4
 msgid "No Zulip accounts found"
-msgstr "No Zulip accounts found"
+msgstr "No SafeChat accounts found"
 
 #: templates/zerver/emails/find_team.txt:15
 msgid "If you have trouble logging in, you can reset your password."
@@ -2796,7 +2796,7 @@ msgid ""
 "%(referrer_name)s wants you to join them on Zulip &mdash; the team "
 "communication tool designed for productivity."
 msgstr ""
-"%(referrer_name)s wants you to join them on Zulip &mdash; the team "
+"%(referrer_name)s wants you to join them on SafeChat &mdash; the team "
 "communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation.html:15
@@ -2815,7 +2815,7 @@ msgid ""
 "%(referrer_full_name)s (%(referrer_email)s) wants you to join them on Zulip "
 "-- the team communication tool designed for productivity."
 msgstr ""
-"%(referrer_full_name)s (%(referrer_email)s) wants you to join them on Zulip "
+"%(referrer_full_name)s (%(referrer_email)s) wants you to join them on SafeChat "
 "-- the team communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation.txt:5
@@ -2835,7 +2835,7 @@ msgid ""
 "Zulip &mdash; the team communication tool designed for productivity."
 msgstr ""
 "This is a friendly reminder that %(referrer_name)s wants you to join them on "
-"Zulip &mdash; the team communication tool designed for productivity."
+"SafeChat &mdash; the team communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation_reminder.html:18
 #: templates/zerver/emails/invitation_reminder.txt:8
@@ -2865,7 +2865,7 @@ msgid ""
 "productivity."
 msgstr ""
 "This is a friendly reminder that %(referrer_name)s (%(referrer_email)s) "
-"wants you to join them on Zulip -- the team communication tool designed for "
+"wants you to join them on SafeChat -- the team communication tool designed for "
 "productivity."
 
 #: templates/zerver/emails/macros.html:14
@@ -2874,7 +2874,7 @@ msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at <a href=\"mailto:%(email)s\">%(email)s</a>."
 msgstr ""
-"If you have any questions, please contact this Zulip server's administrators "
+"If you have any questions, please contact this SafeChat server's administrators "
 "at <a href=\"mailto:%(email)s\">%(email)s</a>."
 
 #: templates/zerver/emails/macros.html:18
@@ -2955,7 +2955,7 @@ msgid ""
 "preferences</a>."
 msgstr ""
 "Reply to this email directly, <a href=\"%(narrow_url)s\">view it in "
-"%(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage email "
+"%(realm_name)s SafeChat</a>, or <a href=\"%(notif_url)s\">manage email "
 "preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:48
@@ -2964,7 +2964,7 @@ msgid ""
 "<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 msgstr ""
-"<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s Zulip</a>, or <a "
+"<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s SafeChat</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:50
@@ -2973,7 +2973,7 @@ msgid ""
 "<a href=\"%(narrow_url)s\">Reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 msgstr ""
-"<a href=\"%(narrow_url)s\">Reply in %(realm_name)s Zulip</a>, or <a "
+"<a href=\"%(narrow_url)s\">Reply in %(realm_name)s SafeChat</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:52
@@ -2982,7 +2982,7 @@ msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails (<a href=\"%(url)s\">help</a>)."
 msgstr ""
-"Do not reply to this email. This Zulip server is not configured to accept "
+"Do not reply to this email. This SafeChat server is not configured to accept "
 "incoming emails (<a href=\"%(url)s\">help</a>)."
 
 #: templates/zerver/emails/missed_message.subject.txt:2
@@ -3007,24 +3007,24 @@ msgstr "New messages"
 #: templates/zerver/emails/missed_message.txt:41
 #, python-format
 msgid "Reply to this email directly, or view it in %(realm_name)s Zulip:"
-msgstr "Reply to this email directly, or view it in %(realm_name)s Zulip:"
+msgstr "Reply to this email directly, or view it in %(realm_name)s SafeChat:"
 
 #: templates/zerver/emails/missed_message.txt:45
 #, python-format
 msgid "View or reply in %(realm_name)s Zulip:"
-msgstr "View or reply in %(realm_name)s Zulip:"
+msgstr "View or reply in %(realm_name)s SafeChat:"
 
 #: templates/zerver/emails/missed_message.txt:49
 #, python-format
 msgid "Reply in %(realm_name)s Zulip:"
-msgstr "Reply in %(realm_name)s Zulip:"
+msgstr "Reply in %(realm_name)s SafeChat:"
 
 #: templates/zerver/emails/missed_message.txt:53
 msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails. Help:"
 msgstr ""
-"Do not reply to this email. This Zulip server is not configured to accept "
+"Do not reply to this email. This SafeChat server is not configured to accept "
 "incoming emails. Help:"
 
 #: templates/zerver/emails/notify_change_in_email.html:10
@@ -3034,7 +3034,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at %(support_email)s."
 msgstr ""
-"The email associated with your Zulip account was recently changed to "
+"The email associated with your SafeChat account was recently changed to "
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at %(support_email)s."
 
@@ -3046,12 +3046,12 @@ msgstr "Best,"
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "Team Zulip"
+msgstr "Team SafeChat"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
 msgid "Zulip email changed for %(realm_name)s"
-msgstr "Zulip email changed for %(realm_name)s"
+msgstr "SafeChat email changed for %(realm_name)s"
 
 #: templates/zerver/emails/notify_change_in_email.txt:3
 #, python-format
@@ -3060,7 +3060,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at <%(support_email)s>."
 msgstr ""
-"The email associated with your Zulip account was recently changed to "
+"The email associated with your SafeChat account was recently changed to "
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at <%(support_email)s>."
 
@@ -3074,7 +3074,7 @@ msgstr ""
 #: templates/zerver/emails/notify_new_login.html:12
 #: templates/zerver/emails/notify_new_login.txt:1
 msgid "We noticed a recent login for the following Zulip account."
-msgstr "We noticed a recent login for the following Zulip account."
+msgstr "We noticed a recent login for the following SafeChat account."
 
 #: templates/zerver/emails/notify_new_login.html:15
 #, python-format
@@ -3129,7 +3129,7 @@ msgstr "Thanks,"
 #: templates/zerver/emails/notify_new_login.html:39
 #: templates/zerver/emails/notify_new_login.txt:21
 msgid "Zulip Security"
-msgstr "Zulip Security"
+msgstr "SafeChat Security"
 
 #: templates/zerver/emails/notify_new_login.html:44
 msgid "Unsubscribe from login notifications"
@@ -3163,9 +3163,9 @@ msgid ""
 "can use our <a href=\"%(get_organization_started)s\">guide for moving to "
 "Zulip</a> to get started."
 msgstr ""
-"If you've already decided to use Zulip for your organisation, welcome! You "
+"If you've already decided to use SafeChat for your organisation, welcome! You "
 "can use our <a href=\"%(get_organization_started)s\">guide for moving to "
-"Zulip</a> to get started."
+"SafeChat</a> to get started."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.html:13
 msgid ""
@@ -3207,7 +3207,7 @@ msgid ""
 "communication</a>, and we hope these tips help your team experience it in "
 "action."
 msgstr ""
-"Zulip is designed to <a href=\"%(why_zulip)s\">enable efficient "
+"SafeChat is designed to <a href=\"%(why_zulip)s\">enable efficient "
 "communication</a>, and we hope these tips help your team experience it in "
 "action."
 
@@ -3230,8 +3230,8 @@ msgid ""
 "If you've already decided to use Zulip for your organization, welcome! You "
 "can use our guide for moving to Zulip to get started."
 msgstr ""
-"If you've already decided to use Zulip for your organisation, welcome! You "
-"can use our guide for moving to Zulip to get started."
+"If you've already decided to use SafeChat for your organisation, welcome! You "
+"can use our guide for moving to SafeChat to get started."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.txt:3
 msgid ""
@@ -3264,7 +3264,7 @@ msgid ""
 "Zulip is designed to enable efficient communication, and we hope these tips "
 "help your team experience it in action."
 msgstr ""
-"Zulip is designed to enable efficient communication, and we hope these tips "
+"SafeChat is designed to enable efficient communication, and we hope these tips "
 "help your team experience it in action."
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:9
@@ -3274,72 +3274,72 @@ msgid ""
 "can work best for your needs. Check out this guide to key Zulip features for "
 "organizations like yours!"
 msgstr ""
-"As you are getting started with Zulip, we'd love to help you discover how it "
-"can work best for your needs. Check out this guide to key Zulip features for "
+"As you are getting started with SafeChat, we'd love to help you discover how it "
+"can work best for your needs. Check out this guide to key SafeChat features for "
 "organisations like yours!"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:13
 #: templates/zerver/emails/onboarding_zulip_guide.txt:4
 msgid "View Zulip guide for businesses"
-msgstr "View Zulip guide for businesses"
+msgstr "View SafeChat guide for businesses"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:15
 #: templates/zerver/emails/onboarding_zulip_guide.txt:6
 msgid "View Zulip guide for open-source projects"
-msgstr "View Zulip guide for open-source projects"
+msgstr "View SafeChat guide for open-source projects"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:17
 #: templates/zerver/emails/onboarding_zulip_guide.txt:8
 msgid "View Zulip guide for education"
-msgstr "View Zulip guide for education"
+msgstr "View SafeChat guide for education"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:19
 #: templates/zerver/emails/onboarding_zulip_guide.txt:10
 msgid "View Zulip guide for research"
-msgstr "View Zulip guide for research"
+msgstr "View SafeChat guide for research"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:21
 #: templates/zerver/emails/onboarding_zulip_guide.txt:12
 msgid "View Zulip guide for events and conferences"
-msgstr "View Zulip guide for events and conferences"
+msgstr "View SafeChat guide for events and conferences"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:23
 #: templates/zerver/emails/onboarding_zulip_guide.txt:14
 msgid "View Zulip guide for non-profits"
-msgstr "View Zulip guide for non-profits"
+msgstr "View SafeChat guide for non-profits"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:25
 #: templates/zerver/emails/onboarding_zulip_guide.txt:16
 msgid "View Zulip guide for communities"
-msgstr "View Zulip guide for communities"
+msgstr "View SafeChat guide for communities"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:2
 msgid "Zulip guide for businesses"
-msgstr "Zulip guide for businesses"
+msgstr "SafeChat guide for businesses"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:4
 msgid "Zulip guide for open-source projects"
-msgstr "Zulip guide for open-source projects"
+msgstr "SafeChat guide for open-source projects"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:6
 msgid "Zulip guide for education"
-msgstr "Zulip guide for education"
+msgstr "SafeChat guide for education"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:8
 msgid "Zulip guide for research"
-msgstr "Zulip guide for research"
+msgstr "SafeChat guide for research"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:10
 msgid "Zulip guide for events and conferences"
-msgstr "Zulip guide for events and conferences"
+msgstr "SafeChat guide for events and conferences"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:12
 msgid "Zulip guide for non-profits"
-msgstr "Zulip guide for non-profits"
+msgstr "SafeChat guide for non-profits"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:14
 msgid "Zulip guide for communities"
-msgstr "Zulip guide for communities"
+msgstr "SafeChat guide for communities"
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:9
 #: templates/zerver/emails/onboarding_zulip_topics.txt:1
@@ -3347,7 +3347,7 @@ msgid ""
 "Here are some tips for keeping your Zulip conversations organized with "
 "topics."
 msgstr ""
-"Here are some tips for keeping your Zulip conversations organised with "
+"Here are some tips for keeping your SafeChat conversations organised with "
 "topics."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:13
@@ -3355,7 +3355,7 @@ msgid ""
 "In Zulip, <b>channels</b> determine who gets a message. <b>Topics</b> tell "
 "you what the message is about."
 msgstr ""
-"In Zulip, <b>channels</b> determine who gets a message. <b>Topics</b> tell "
+"In SafeChat, <b>channels</b> determine who gets a message. <b>Topics</b> tell "
 "you what the message is about."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:13
@@ -3364,12 +3364,12 @@ msgid ""
 "Using topics, you can read Zulip one conversation at a time. You'll see each "
 "message in context, no matter how many different discussions are going on."
 msgstr ""
-"Using topics, you can read Zulip one conversation at a time. You'll see each "
+"Using topics, you can read SafeChat one conversation at a time. You'll see each "
 "message in context, no matter how many different discussions are going on."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:16
 msgid "Channels and topics in the Zulip app"
-msgstr "Channels and topics in the Zulip app"
+msgstr "Channels and topics in the SafeChat app"
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:19
 #: templates/zerver/emails/onboarding_zulip_topics.txt:5
@@ -3405,7 +3405,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Go to Zulip"
+msgstr "Go to SafeChat"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3416,7 +3416,7 @@ msgid ""
 "In Zulip, channels determine who gets a message. Topics tell you what the "
 "message is about."
 msgstr ""
-"In Zulip, channels determine who gets a message. Topics tell you what the "
+"In SafeChat, channels determine who gets a message. Topics tell you what the "
 "message is about."
 
 #: templates/zerver/emails/onboarding_zulip_topics.txt:7
@@ -3439,7 +3439,7 @@ msgid ""
 "Somebody (possibly you) requested a new password for the Zulip account "
 "%(email)s on %(realm_url)s."
 msgstr ""
-"Somebody (possibly you) requested a new password for the Zulip account "
+"Somebody (possibly you) requested a new password for the SafeChat account "
 "%(email)s on %(realm_url)s."
 
 #: templates/zerver/emails/password_reset.html:13
@@ -3464,7 +3464,7 @@ msgstr ""
 #: templates/zerver/emails/password_reset.html:21
 #: templates/zerver/emails/password_reset.txt:11
 msgid "You do not have an account in that Zulip organization."
-msgstr "You do not have an account in that Zulip organisation."
+msgstr "You do not have an account in that SafeChat organisation."
 
 #: templates/zerver/emails/password_reset.html:26
 #: templates/zerver/emails/password_reset.txt:16
@@ -3513,7 +3513,7 @@ msgid ""
 "have been voided."
 msgstr ""
 "Your organisation, %(organization_name_with_link)s, has been downgraded to "
-"the Zulip Cloud Free plan because of unpaid invoices. The unpaid invoices "
+"the SafeChat Cloud Free plan because of unpaid invoices. The unpaid invoices "
 "have been voided."
 
 #: templates/zerver/emails/realm_auto_downgraded.html:15
@@ -3522,7 +3522,7 @@ msgid ""
 "To continue on the Zulip Cloud Standard plan, please upgrade again by going "
 "to %(upgrade_url)s."
 msgstr ""
-"To continue on the Zulip Cloud Standard plan, please upgrade again by going "
+"To continue on the SafeChat Cloud Standard plan, please upgrade again by going "
 "to %(upgrade_url)s."
 
 #: templates/zerver/emails/realm_auto_downgraded.html:22
@@ -3544,7 +3544,7 @@ msgid ""
 "You have deactivated your Zulip demo organization, %(realm_name)s, on "
 "%(localized_date)s."
 msgstr ""
-"You have deactivated your Zulip organisation, %(realm_name)s, on "
+"You have deactivated your SafeChat organisation, %(realm_name)s, on "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:17
@@ -3557,7 +3557,7 @@ msgid ""
 "Your Zulip demo organization, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 msgstr ""
-"Your Zulip organisation, %(realm_name)s, was deactivated by "
+"Your SafeChat organisation, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:19
@@ -3570,7 +3570,7 @@ msgid ""
 "Your Zulip demo organization, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
 msgstr ""
-"Your Zulip organisation, %(realm_name)s, was deactivated on "
+"Your SafeChat organisation, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:23
@@ -3580,7 +3580,7 @@ msgid ""
 "You have deactivated your Zulip organization, %(realm_name)s, on "
 "%(localized_date)s."
 msgstr ""
-"You have deactivated your Zulip organisation, %(realm_name)s, on "
+"You have deactivated your SafeChat organisation, %(realm_name)s, on "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:25
@@ -3590,7 +3590,7 @@ msgid ""
 "Your Zulip organization, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 msgstr ""
-"Your Zulip organisation, %(realm_name)s, was deactivated by "
+"Your SafeChat organisation, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:27
@@ -3600,7 +3600,7 @@ msgid ""
 "Your Zulip organization, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
 msgstr ""
-"Your Zulip organisation, %(realm_name)s, was deactivated on "
+"Your SafeChat organisation, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:31
@@ -3632,7 +3632,7 @@ msgstr ""
 #: templates/zerver/emails/realm_deactivated.subject.txt:1
 #, python-format
 msgid "Your Zulip organization %(realm_name)s has been deactivated"
-msgstr "Your Zulip organisation %(realm_name)s has been deactivated"
+msgstr "Your SafeChat organisation %(realm_name)s has been deactivated"
 
 #: templates/zerver/emails/realm_reactivation.html:8
 #: templates/zerver/emails/realm_reactivation.txt:1
@@ -3651,7 +3651,7 @@ msgid ""
 "deactivated Zulip demo organization hosted at %(realm_url)s."
 msgstr ""
 "One of your administrators requested reactivation of the previously "
-"deactivated Zulip organisation hosted at %(realm_url)s."
+"deactivated SafeChat organisation hosted at %(realm_url)s."
 
 #: templates/zerver/emails/realm_reactivation.html:13
 #: templates/zerver/emails/realm_reactivation.txt:7
@@ -3661,7 +3661,7 @@ msgid ""
 "deactivated Zulip organization hosted at %(realm_url)s."
 msgstr ""
 "One of your administrators requested reactivation of the previously "
-"deactivated Zulip organisation hosted at %(realm_url)s."
+"deactivated SafeChat organisation hosted at %(realm_url)s."
 
 #: templates/zerver/emails/realm_reactivation.html:17
 msgid "Click the button below to reactivate your organization."
@@ -3684,11 +3684,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Reactivate your Zulip organization"
 msgid "Reactivate your Zulip demo organization"
-msgstr "Reactivate your Zulip organisation"
+msgstr "Reactivate your SafeChat organisation"
 
 #: templates/zerver/emails/realm_reactivation.subject.txt:4
 msgid "Reactivate your Zulip organization"
-msgstr "Reactivate your Zulip organisation"
+msgstr "Reactivate your SafeChat organisation"
 
 #: templates/zerver/emails/realm_reactivation.txt:11
 msgid "Click the link below to reactivate your organization."
@@ -3701,7 +3701,7 @@ msgid ""
 "the Zulip plan for <b>%(remote_server_hostname)s</b>."
 msgstr ""
 "Either you, or someone on your behalf, has requested a log in link to manage "
-"the Zulip plan for <b>%(remote_server_hostname)s</b>."
+"the SafeChat plan for <b>%(remote_server_hostname)s</b>."
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.html:12
 #, fuzzy
@@ -3727,7 +3727,7 @@ msgstr ""
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.subject.txt:1
 msgid "Log in to Zulip plan management"
-msgstr "Log in to Zulip plan management"
+msgstr "Log in to SafeChat plan management"
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.txt:1
 #, python-format
@@ -3736,7 +3736,7 @@ msgid ""
 "the Zulip plan for %(remote_server_hostname)s."
 msgstr ""
 "Either you, or someone on your behalf, has requested a log in link to manage "
-"the Zulip plan for %(remote_server_hostname)s."
+"the SafeChat plan for %(remote_server_hostname)s."
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.txt:4
 msgid "Click the link below to log in."
@@ -3758,7 +3758,7 @@ msgid ""
 "Click the button below to confirm your email and log in to Zulip plan "
 "management for <b>%(remote_realm_host)s</b>."
 msgstr ""
-"Click the button below to confirm your email and log in to Zulip plan "
+"Click the button below to confirm your email and log in to SafeChat plan "
 "management for <b>%(remote_realm_host)s</b>."
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.html:14
@@ -3768,7 +3768,7 @@ msgstr "Confirm and log in"
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.subject.txt:1
 msgid "Confirm email for Zulip plan management"
-msgstr "Confirm email for Zulip plan management"
+msgstr "Confirm email for SafeChat plan management"
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.txt:1
 #, python-format
@@ -3776,7 +3776,7 @@ msgid ""
 "Click the link below to confirm your email and log in to Zulip plan "
 "management for %(remote_realm_host)s."
 msgstr ""
-"Click the link below to confirm your email and log in to Zulip plan "
+"Click the link below to confirm your email and log in to SafeChat plan "
 "management for %(remote_realm_host)s."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.html:9
@@ -3785,8 +3785,8 @@ msgid ""
 "Your request for Zulip sponsorship has been approved! Your organization has "
 "been upgraded to the <a href=\"%(plans_link)s\">Zulip Community plan</a>."
 msgstr ""
-"Your request for Zulip sponsorship has been approved! Your organisation has "
-"been upgraded to the <a href=\"%(plans_link)s\">Zulip Community plan</a>."
+"Your request for SafeChat sponsorship has been approved! Your organisation has "
+"been upgraded to the <a href=\"%(plans_link)s\">SafeChat Community plan</a>."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.html:12
 #, python-format
@@ -3794,7 +3794,7 @@ msgid ""
 "If you could <a href=\"%(link_to_zulip)s\">list Zulip as a sponsor on your "
 "website</a>, we would really appreciate it!"
 msgstr ""
-"If you could <a href=\"%(link_to_zulip)s\">list Zulip as a sponsor on your "
+"If you could <a href=\"%(link_to_zulip)s\">list SafeChat as a sponsor on your "
 "website</a>, we would really appreciate it!"
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.subject.txt:1
@@ -3807,15 +3807,15 @@ msgid ""
 "Your request for Zulip sponsorship has been approved! Your organization has "
 "been upgraded to the Zulip Community plan."
 msgstr ""
-"Your request for Zulip sponsorship has been approved! Your organisation has "
-"been upgraded to the Zulip Community plan."
+"Your request for SafeChat sponsorship has been approved! Your organisation has "
+"been upgraded to the SafeChat Community plan."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.txt:4
 msgid ""
 "If you could list Zulip as a sponsor on your website, we would really "
 "appreciate it!"
 msgstr ""
-"If you could list Zulip as a sponsor on your website, we would really "
+"If you could list SafeChat as a sponsor on your website, we would really "
 "appreciate it!"
 
 #: templates/zerver/find_account.html:4
@@ -3824,7 +3824,7 @@ msgstr "Find your accounts"
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "Find your Zulip accounts"
+msgstr "Find your SafeChat accounts"
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3846,7 +3846,7 @@ msgid ""
 "Enter your email address to receive an email with the URLs for all the Zulip "
 "Cloud organizations in which you have active accounts."
 msgstr ""
-"Enter your email address to receive an email with the URLs for all the Zulip "
+"Enter your email address to receive an email with the URLs for all the SafeChat "
 "Cloud organisations in which you have active accounts."
 
 #: templates/zerver/find_account.html:44
@@ -3854,7 +3854,7 @@ msgid ""
 "Enter your email address to receive an email with the URLs for all the Zulip "
 "organizations on this server in which you have active accounts."
 msgstr ""
-"Enter your email address to receive an email with the URLs for all the Zulip "
+"Enter your email address to receive an email with the URLs for all the SafeChat "
 "organisations on this server in which you have active accounts."
 
 #: templates/zerver/find_account.html:46
@@ -3879,7 +3879,7 @@ msgstr "Product"
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "Why Zulip"
+msgstr "Why SafeChat"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3893,7 +3893,7 @@ msgstr "Plans & pricing"
 #, fuzzy
 #| msgid "Zulip Cloud status"
 msgid "Zulip Cloud"
-msgstr "Zulip Cloud status"
+msgstr "SafeChat Cloud status"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -3977,19 +3977,19 @@ msgstr ""
 
 #: templates/zerver/footer.html:49
 msgid "Zulip Cloud status"
-msgstr "Zulip Cloud status"
+msgstr "SafeChat Cloud status"
 
 #: templates/zerver/footer.html:52
 msgid "Moving to Zulip"
-msgstr "Moving to Zulip"
+msgstr "Moving to SafeChat"
 
 #: templates/zerver/footer.html:57
 msgid "Installing a Zulip server"
-msgstr "Installing a Zulip server"
+msgstr "Installing a SafeChat server"
 
 #: templates/zerver/footer.html:62
 msgid "Upgrading a Zulip server"
-msgstr "Upgrading a Zulip server"
+msgstr "Upgrading a SafeChat server"
 
 #: templates/zerver/footer.html:69
 msgid "Contributing"
@@ -4037,7 +4037,7 @@ msgstr "Blog"
 
 #: templates/zerver/footer.html:100
 msgid "Support Zulip"
-msgstr "Support Zulip"
+msgstr "Support SafeChat"
 
 #: templates/zerver/footer.html:103
 msgid "X (Twitter)"
@@ -4053,7 +4053,7 @@ msgstr "LinkedIn"
 
 #: templates/zerver/footer.html:115
 msgid "Powered by <a href=\"https://zulip.com\">Zulip</a>"
-msgstr "Powered by <a href=\"https://zulip.com\">Zulip</a>"
+msgstr "Powered by <a href=\"https://zulip.com\">SafeChat</a>"
 
 #: templates/zerver/footer.html:121
 msgid "Terms of Service"
@@ -4168,7 +4168,7 @@ msgstr "No organisation found"
 #: templates/zerver/invalid_realm.html:17
 #, python-format
 msgid "There is no Zulip organization at <b>%(current_url)s</b>."
-msgstr "There is no Zulip organisation at <b>%(current_url)s</b>."
+msgstr "There is no SafeChat organisation at <b>%(current_url)s</b>."
 
 #: templates/zerver/invalid_realm.html:21
 #, python-format
@@ -4178,8 +4178,8 @@ msgid ""
 "%(support_email)s\">contact Zulip support</a>."
 msgstr ""
 "Please try a different URL, <a href=\"%(root_domain_url)s/accounts/find/"
-"\">get a list of your Zulip Cloud accounts</a>, or <a href=\"mailto:"
-"%(support_email)s\">contact Zulip support</a>."
+"\">get a list of your SafeChat Cloud accounts</a>, or <a href=\"mailto:"
+"%(support_email)s\">contact SafeChat support</a>."
 
 #: templates/zerver/invalid_realm.html:23
 #, python-format
@@ -4190,7 +4190,7 @@ msgid ""
 msgstr ""
 "Please try a different URL, <a href=\"%(root_domain_url)s/accounts/find/"
 "\">get a list of your accounts</a> on this server, or <a href=\"mailto:"
-"%(support_email)s\">contact this Zulip server's administrators</a>."
+"%(support_email)s\">contact this SafeChat server's administrators</a>."
 
 #: templates/zerver/invalid_realm.html:28
 #, python-format
@@ -4199,7 +4199,7 @@ msgid ""
 "management for your Zulip server."
 msgstr ""
 "<a href=\"%(current_url)s/serverlogin/\">Click here</a> to access plan "
-"management for your Zulip server."
+"management for your SafeChat server."
 
 #: templates/zerver/log_into_subdomain_token_invalid.html:4
 msgid "Invalid or expired login session"
@@ -4211,7 +4211,7 @@ msgstr "Invalid or expired login session."
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Log in to Zulip"
+msgstr "Log in to SafeChat"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."
@@ -4260,7 +4260,7 @@ msgid ""
 "a> because all Zulip Cloud licenses are in use."
 msgstr ""
 "New members cannot currently join <a href=\"%(realm_url)s\">%(realm_name)s</"
-"a> because all Zulip Cloud licenses are in use."
+"a> because all SafeChat Cloud licenses are in use."
 
 #: templates/zerver/no_spare_licenses.html:19
 msgid ""
@@ -4312,7 +4312,7 @@ msgid ""
 "You are using old version of the Zulip desktop app that is no longer "
 "supported."
 msgstr ""
-"You are using old version of the Zulip desktop app that is no longer "
+"You are using old version of the SafeChat desktop app that is no longer "
 "supported."
 
 #: templates/zerver/portico_error_pages/insecure_desktop_app.html:21
@@ -4320,7 +4320,7 @@ msgid ""
 "The auto-update feature in this old version of Zulip desktop app no longer "
 "works."
 msgstr ""
-"The auto-update feature in this old version of Zulip desktop app no longer "
+"The auto-update feature in this old version of SafeChat desktop app no longer "
 "works."
 
 #: templates/zerver/portico_error_pages/insecure_desktop_app.html:30
@@ -4365,7 +4365,7 @@ msgstr ""
 
 #: templates/zerver/portico_error_pages/remote_realm_server_mismatch_error.html:11
 msgid "Unexpected Zulip server registration"
-msgstr "Unexpected Zulip server registration"
+msgstr "Unexpected SafeChat server registration"
 
 #: templates/zerver/portico_error_pages/remote_realm_server_mismatch_error.html:13
 #, python-format
@@ -4374,9 +4374,9 @@ msgid ""
 "server installation. Please <a href=\"mailto:%(support_email)s\">contact "
 "Zulip support</a> for assistance in resolving this issue."
 msgstr ""
-"Your Zulip organisation is registered as associated with a different Zulip "
+"Your SafeChat organisation is registered as associated with a different SafeChat "
 "server installation. Please <a href=\"mailto:%(support_email)s\">contact "
-"Zulip support</a> for assistance in resolving this issue."
+"SafeChat support</a> for assistance in resolving this issue."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:4
 #: templates/zerver/portico_error_pages/unsupported_browser.html:11
@@ -4386,7 +4386,7 @@ msgstr "Unsupported browser"
 #: templates/zerver/portico_error_pages/unsupported_browser.html:13
 #, python-format
 msgid "%(browser_name)s is not supported by Zulip."
-msgstr "%(browser_name)s is not supported by Zulip."
+msgstr "%(browser_name)s is not supported by SafeChat."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:18
 #, python-format
@@ -4394,7 +4394,7 @@ msgid ""
 "Zulip supports <a href=\"%(supported_browsers_page_link)s\">modern browsers</"
 "a> like Firefox, Chrome, and Edge."
 msgstr ""
-"Zulip supports <a href=\"%(supported_browsers_page_link)s\">modern browsers</"
+"SafeChat supports <a href=\"%(supported_browsers_page_link)s\">modern browsers</"
 "a> like Firefox, Chrome, and Edge."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:24
@@ -4402,7 +4402,7 @@ msgstr ""
 msgid ""
 "You can also use the <a href=\"%(apps_page_link)s\">Zulip desktop app</a>."
 msgstr ""
-"You can also use the <a href=\"%(apps_page_link)s\">Zulip desktop app</a>."
+"You can also use the <a href=\"%(apps_page_link)s\">SafeChat desktop app</a>."
 
 #: templates/zerver/portico_error_pages/user_deactivated.html:4
 #: templates/zerver/portico_error_pages/user_deactivated.html:11
@@ -4494,7 +4494,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Self-host Zulip"
 msgid "Self-hosting Zulip?"
-msgstr "Self-host Zulip"
+msgstr "Self-host SafeChat"
 
 #: templates/zerver/realm_redirect.html:53
 #, fuzzy, python-format
@@ -4623,7 +4623,7 @@ msgstr ""
 #| "Nobody in this Zulip organization will be able to see this email address."
 msgid "Who will be allowed to see other users' email addresses?"
 msgstr ""
-"Nobody in this Zulip organisation will be able to see this email address."
+"Nobody in this SafeChat organisation will be able to see this email address."
 
 #: templates/zerver/slack_import.html:104
 msgid ""
@@ -4683,7 +4683,7 @@ msgid ""
 "To use one of these to log in to Zulip, you must first <a href=\"https://"
 "github.com/settings/emails\">verify it with GitHub.</a>"
 msgstr ""
-"To use one of these to log in to Zulip, you must first <a href=\"https://"
+"To use one of these to log in to SafeChat, you must first <a href=\"https://"
 "github.com/settings/emails\">verify it with GitHub.</a>"
 
 #: templates/zerver/unsubscribe_link_error.html:4
@@ -4724,7 +4724,7 @@ msgid ""
 "You've successfully unsubscribed from Zulip %(subscription_type)s emails for "
 "<a href=\"%(realm_url)s\">%(realm_name)s</a>."
 msgstr ""
-"You've successfully unsubscribed from Zulip %(subscription_type)s emails for "
+"You've successfully unsubscribed from SafeChat %(subscription_type)s emails for "
 "<a href=\"%(realm_url)s\">%(realm_name)s</a>."
 
 #: templates/zerver/unsubscribe_success.html:27
@@ -4743,11 +4743,11 @@ msgstr "Invalid order mapping."
 
 #: zerver/actions/create_realm.py:346
 msgid "Questions and discussion about using Zulip."
-msgstr "Questions and discussion about using Zulip."
+msgstr "Questions and discussion about using SafeChat."
 
 #: zerver/actions/create_realm.py:352
 msgid "Experiment with Zulip here. :test_tube:"
-msgstr "Experiment with Zulip here. :test_tube:"
+msgstr "Experiment with SafeChat here. :test_tube:"
 
 #: zerver/actions/create_realm.py:358
 msgid "For team-wide conversations"
@@ -4765,7 +4765,7 @@ msgstr "{user} joined this organisation."
 #: zerver/actions/create_user.py:310
 #, python-brace-format
 msgid "{user} accepted your invitation to join Zulip!"
-msgstr "{user} accepted your invitation to join Zulip!"
+msgstr "{user} accepted your invitation to join SafeChat!"
 
 #: zerver/actions/create_user.py:713
 msgid ""
@@ -4856,7 +4856,7 @@ msgid ""
 "To protect users, Zulip limits the number of invitations you can send in one "
 "day. Because you have reached the limit, no invitations were sent."
 msgstr ""
-"To protect users, Zulip limits the number of invitations you can send in one "
+"To protect users, SafeChat limits the number of invitations you can send in one "
 "day. Because you have reached the limit, no invitations were sent."
 
 #: zerver/actions/invites.py:226
@@ -5430,7 +5430,7 @@ msgid ""
 "use. Please contact the person who invited you and ask them to increase the "
 "number of licenses, then try again."
 msgstr ""
-"New members cannot join this organisation because all Zulip licenses are in "
+"New members cannot join this organisation because all SafeChat licenses are in "
 "use. Please contact the person who invited you and ask them to increase the "
 "number of licenses, then try again."
 
@@ -5495,7 +5495,7 @@ msgstr "Please enter at most 10 emails."
 
 #: zerver/forms.py:738
 msgid "We couldn't find that Zulip organization."
-msgstr "We couldn't find that Zulip organisation."
+msgstr "We couldn't find that SafeChat organisation."
 
 #: zerver/lib/addressee.py:25
 #, python-brace-format
@@ -5667,7 +5667,7 @@ msgstr "Email with no subject"
 
 #: zerver/lib/email_notifications.py:162 zerver/lib/email_notifications.py:184
 msgid "Open Zulip to see the spoiler content"
-msgstr "Open Zulip to see the spoiler content"
+msgstr "Open SafeChat to see the spoiler content"
 
 #: zerver/lib/email_notifications.py:630
 #, python-brace-format
@@ -5936,8 +5936,8 @@ msgid ""
 "Your organization is registered to a different Zulip server. Please contact "
 "Zulip support for assistance in resolving this issue."
 msgstr ""
-"Your organisation is registered to a different Zulip server. Please contact "
-"Zulip support for assistance in resolving this issue."
+"Your organisation is registered to a different SafeChat server. Please contact "
+"SafeChat support for assistance in resolving this issue."
 
 #: zerver/lib/exceptions.py:720
 msgid "Organization not registered"
@@ -6302,7 +6302,7 @@ msgid ""
 "({getting_started_url})!\n"
 msgstr ""
 "\n"
-"To learn more, check out our [using Zulip for a class guide]"
+"To learn more, check out our [using SafeChat for a class guide]"
 "({getting_started_url})!\n"
 
 #: zerver/lib/onboarding.py:97
@@ -6324,7 +6324,7 @@ msgid ""
 "({organization_setup_url}).\n"
 msgstr ""
 "\n"
-"We also have a guide for [setting up Zulip for a class]"
+"We also have a guide for [setting up SafeChat for a class]"
 "({organization_setup_url}).\n"
 
 #: zerver/lib/onboarding.py:109
@@ -6335,7 +6335,7 @@ msgid ""
 "({organization_setup_url}).\n"
 msgstr ""
 "\n"
-"We also have a guide for [moving your organisation to Zulip]"
+"We also have a guide for [moving your organisation to SafeChat]"
 "({organization_setup_url}).\n"
 
 #: zerver/lib/onboarding.py:120
@@ -6374,7 +6374,7 @@ msgid ""
 "({navigation_tour_video_url}) for a quick app overview.\n"
 msgstr ""
 "\n"
-"You can always come back to the [Welcome to Zulip video]"
+"You can always come back to the [Welcome to SafeChat video]"
 "({navigation_tour_video_url}) for a quick app overview.\n"
 
 #: zerver/lib/onboarding.py:148
@@ -6392,7 +6392,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Hello, and welcome to Zulip!👋 "
+"Hello, and welcome to SafeChat!👋 "
 "{inform_about_tracked_onboarding_messages_text}\n"
 "\n"
 "{getting_started_text} {organization_setup_text}\n"
@@ -6410,7 +6410,7 @@ msgid ""
 msgstr ""
 "\n"
 "You can [download](/apps/) the [mobile and desktop apps](/apps/).\n"
-"Zulip also works great in a browser.\n"
+"SafeChat also works great in a browser.\n"
 
 #: zerver/lib/onboarding.py:223
 msgid ""
@@ -6439,7 +6439,7 @@ msgstr ""
 "favorite emoji set](/help/emoji-and-emoticons#change-your-emoji-set), "
 "[change\n"
 "your language](/help/change-your-language), and otherwise customise your "
-"Zulip\n"
+"SafeChat\n"
 "experience in your [Preferences](#settings/preferences).\n"
 
 #: zerver/lib/onboarding.py:235
@@ -6477,8 +6477,8 @@ msgid ""
 msgstr ""
 "\n"
 "[Topics](/help/introduction-to-topics) summarise what each conversation in "
-"Zulip\n"
-"is about. You can read Zulip one topic at a time, seeing each message in\n"
+"SafeChat\n"
+"is about. You can read SafeChat one topic at a time, seeing each message in\n"
 "context, no matter how many other conversations are going on.\n"
 "\n"
 "When you start a conversation, label it with a new topic. For a good topic "
@@ -6498,7 +6498,7 @@ msgid ""
 "Press `?` any time to see a [cheat sheet](#keyboard-shortcuts).\n"
 msgstr ""
 "\n"
-"Zulip's [keyboard shortcuts](#keyboard-shortcuts) let you navigate the app\n"
+"SafeChat's [keyboard shortcuts](#keyboard-shortcuts) let you navigate the app\n"
 "quickly and efficiently.\n"
 "\n"
 "Press `?` any time to see a [cheat sheet](#keyboard-shortcuts).\n"
@@ -6596,7 +6596,7 @@ msgid ""
 "and above.\n"
 msgstr ""
 "\n"
-"Zulip is organised to help you communicate more efficiently. Conversations "
+"SafeChat is organised to help you communicate more efficiently. Conversations "
 "are\n"
 "labeled with topics, which summarise what the conversation is about.\n"
 "\n"
@@ -6608,7 +6608,7 @@ msgstr ""
 #: zerver/lib/onboarding.py:388 zerver/lib/onboarding.py:440
 #: zerver/lib/onboarding.py:531
 msgid "welcome to Zulip!"
-msgstr "welcome to Zulip!"
+msgstr "welcome to SafeChat!"
 
 #: zerver/lib/onboarding.py:391
 msgid ""
@@ -6618,7 +6618,7 @@ msgid ""
 "no matter how many other conversations are going on.\n"
 msgstr ""
 "\n"
-"You can read Zulip one conversation at a time, seeing each message in "
+"You can read SafeChat one conversation at a time, seeing each message in "
 "context,\n"
 "no matter how many other conversations are going on.\n"
 
@@ -6672,7 +6672,7 @@ msgid ""
 "({format_message_help_url}).\n"
 msgstr ""
 "\n"
-":point_right:  Use this topic to try out [Zulip's messaging features]"
+":point_right:  Use this topic to try out [SafeChat's messaging features]"
 "({format_message_help_url}).\n"
 
 #: zerver/lib/onboarding.py:422
@@ -6861,7 +6861,7 @@ msgstr "User not authorised for this query"
 #: zerver/lib/recipient_users.py:75
 #, python-brace-format
 msgid "'{email}' is no longer using Zulip."
-msgstr "'{email}' is no longer using Zulip."
+msgstr "'{email}' is no longer using SafeChat."
 
 #: zerver/lib/recipient_users.py:82
 msgid "You can't send direct messages outside of your organization."
@@ -7649,7 +7649,7 @@ msgstr "Custom emoji"
 
 #: zerver/models/messages.py:382
 msgid "Zulip extra emoji"
-msgstr "Zulip extra emoji"
+msgstr "SafeChat extra emoji"
 
 #: zerver/models/realm_emoji.py:40
 msgid "Invalid characters in emoji name"
@@ -7701,15 +7701,15 @@ msgstr ""
 
 #: zerver/models/realms.py:496
 msgid "Zulip updates"
-msgstr "Zulip updates"
+msgstr "SafeChat updates"
 
 #: zerver/models/realms.py:622
 msgid "Available on Zulip Cloud Standard. Upgrade to access."
-msgstr "Available on Zulip Cloud Standard. Upgrade to access."
+msgstr "Available on SafeChat Cloud Standard. Upgrade to access."
 
 #: zerver/models/realms.py:623
 msgid "Available on Zulip Cloud Plus. Upgrade to access."
-msgstr "Available on Zulip Cloud Plus. Upgrade to access."
+msgstr "Available on SafeChat Cloud Plus. Upgrade to access."
 
 #: zerver/models/realms.py:695
 msgid "Disabled"
@@ -7970,7 +7970,7 @@ msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 msgstr ""
-"Some of those addresses are already using Zulip, so we didn't send them an "
+"Some of those addresses are already using SafeChat, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 
 #: zerver/views/message_edit.py:126
@@ -8082,7 +8082,7 @@ msgid ""
 "later. Is this a good time?\n"
 msgstr ""
 "\n"
-"You asked to watch the [Welcome to Zulip video]({navigation_tour_video_url}) "
+"You asked to watch the [Welcome to SafeChat video]({navigation_tour_video_url}) "
 "later. Is this a good time?\n"
 
 #: zerver/views/presence.py:52
@@ -8618,7 +8618,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "Your Zulip password is managed in LDAP"
+msgstr "Your SafeChat password is managed in LDAP"
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"
@@ -8652,7 +8652,7 @@ msgstr "Cannot deactivate the only organisation owner"
 #| "Nobody in this Zulip organization will be able to see this email address."
 msgid "User is not allowed to delete other user's messages."
 msgstr ""
-"Nobody in this Zulip organisation will be able to see this email address."
+"Nobody in this SafeChat organisation will be able to see this email address."
 
 #: zerver/views/users.py:297
 msgid "User not authorized to change user emails"
@@ -8873,7 +8873,7 @@ msgstr "Invalid subdomain for push notifications bouncer"
 
 #: zilencer/auth.py:147
 msgid "Must validate with valid Zulip server API key"
-msgstr "Must validate with valid Zulip server API key"
+msgstr "Must validate with valid SafeChat server API key"
 
 #. error
 #: zilencer/views.py:128 zilencer/views.py:130

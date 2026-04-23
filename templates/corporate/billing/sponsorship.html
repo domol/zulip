@@ -4,14 +4,14 @@
 {% block title %}
 <title>
     {% if is_sponsored or is_sponsorship_pending %}
-        Zulip
+        SafeChat
         {% if is_remotely_hosted %}
         {% else %}
         Cloud
         {% endif %}
         billing for {{ org_name }}
     {% else %}
-        Request Zulip
+        Request SafeChat
         {% if is_remotely_hosted %}
         {% else %}
         Cloud
@@ -28,18 +28,18 @@
     <div class="center-block new-style">
         <div class="alert alert-success sponsorship-page-success" id="sponsorship-status-success-message-top">
             {% if is_sponsored %}
-            Zulip is sponsoring a free <a href="{{ billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan for this organization. 🎉
+            SafeChat is sponsoring a free <a href="{{ billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan for this organization. 🎉
             {% else %}
             This organization has requested sponsorship for a
             {% if is_remotely_hosted and sponsorship_plan_name != "Community" %}
             discounted
             {% endif %}
-            <a href="{{ billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan.<br/><a href="mailto:support@zulip.com">Contact Zulip support</a> with any questions or updates.
+            <a href="{{ billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan.<br/><a href="mailto:support@zulip.com">Contact SafeChat support</a> with any questions or updates.
             {% endif %}
         </div>
         <div class="pitch">
             <h1>
-                Zulip
+                SafeChat
                 {% if is_remotely_hosted %}
                 {% else %}
                 Cloud
@@ -55,7 +55,7 @@
                         {% if is_sponsored %}
                         <a href="{{ billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a>
                         {% elif complimentary_access %}
-                        <a href="{{ billing_base_url }}/plans/">Zulip Basic</a> <i>(complimentary access)</i>
+                        <a href="{{ billing_base_url }}/plans/">SafeChat Basic</a> <i>(complimentary access)</i>
                         {% else %}
                         <a href="{{ billing_base_url }}/plans/">{{ plan_name }}</a>
                         {% endif %}
@@ -67,7 +67,7 @@
         <hr />
         <div class="support-link">
             <p>
-                To make changes to your plan or view your billing history <a href="mailto:support@zulip.com">contact Zulip support</a>.
+                To make changes to your plan or view your billing history <a href="mailto:support@zulip.com">contact SafeChat support</a>.
             </p>
         </div>
         {% endif %}
@@ -80,7 +80,7 @@
     <div class="center-block new-style">
         <div class="pitch">
             <h1>
-                Request Zulip
+                Request SafeChat
                 {% if is_remotely_hosted %}
                 {% else %}
                 Cloud
@@ -152,7 +152,7 @@
                     </div>
                     <div class="input-box sponsorship-form-field">
                         <label for="plan-to-use-zulip" class="inline-block
-                          label-title">How do you plan to use Zulip?</label>
+                          label-title">How do you plan to use SafeChat?</label>
                         <textarea id="plan-to-use-zulip" name="plan_to_use_zulip" cols="100" rows="2"></textarea>
                         <div id="sponsorship-plan-to-use-zulip-error" class="alert alert-danger sponsorship-field-error"></div>
                     </div>

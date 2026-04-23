@@ -1,1 +1,1 @@
-{% trans %}Zulip digest for {{ realm_name }}{% endtrans %}
+{% trans %}SafeChat digest for {{ realm_name }}{% endtrans %}

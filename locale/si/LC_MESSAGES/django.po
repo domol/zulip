@@ -8,7 +8,7 @@
 # HelaBasa Group <transifex-helabasa-group@yalu.lk>, 2022
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:03+0000\n"

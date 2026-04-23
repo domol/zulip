@@ -44,7 +44,7 @@
                     <span class="remote-label">Remote server{% if remote_server.deactivated %}: deactivated{% endif %}</span>
                     <h3>{{ remote_server.hostname }} {{ server_analytics_link(remote_server.id ) }}</h3>
                     {% if remote_server.plan_type == SPONSORED_PLAN_TYPE %}
-                        <p class="support-section-header">On 100% sponsored Zulip Community plan 🎉</p>
+                        <p class="support-section-header">On 100% sponsored SafeChat Community plan 🎉</p>
                     {% endif %}
                     {% if remote_servers_support_data[remote_server.id].sponsorship_data.has_discount %}
                         <p class="support-section-header">Has a discount 💸</p>
@@ -64,7 +64,7 @@
                     <br />
                     <b>UUID</b>: {{ remote_server.uuid }}<br />
                     <b>Date created</b>: {{ remote_servers_support_data[remote_server.id].date_created.strftime('%d %B %Y') }}<br />
-                    <b>Zulip version</b>: {{ remote_server.last_version }}<br />
+                    <b>SafeChat version</b>: {{ remote_server.last_version }}<br />
                     <b>Has remote realms</b>: {{ remote_realms[remote_server.id] != [] }}<br />
                     <br />
                     <b>Max monthly messages</b>: {{ remote_server_to_max_monthly_messages[remote_server.id] }}<br />

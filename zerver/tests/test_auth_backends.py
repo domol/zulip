@@ -5192,7 +5192,7 @@ class GitHubAuthBackendTest(SocialAuthBase):
         self.assertEqual(data["full_name"], self.name)
         self.assertEqual(data["subdomain"], "zulip")
 
-    @override_settings(SOCIAL_AUTH_GITHUB_ORG_NAME="Zulip")
+    @override_settings(SOCIAL_AUTH_GITHUB_ORG_NAME="SafeChat")
     def test_social_auth_github_organization_not_member_failed(self) -> None:
         def mock_user_data(
             backend: GithubOrganizationOAuth2, *args: object, **kwargs: object
@@ -5223,7 +5223,7 @@ class GitHubAuthBackendTest(SocialAuthBase):
             ],
         )
 
-    @override_settings(SOCIAL_AUTH_GITHUB_ORG_NAME="Zulip")
+    @override_settings(SOCIAL_AUTH_GITHUB_ORG_NAME="SafeChat")
     def test_social_auth_github_organization_member_success(self) -> None:
         account_data_dict = self.get_account_data_dict(email=self.email, name=self.name)
         with mock.patch(

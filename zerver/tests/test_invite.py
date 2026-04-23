@@ -200,7 +200,7 @@ class InviteUserBase(ZulipTestCase):
         if len(mail.outbox) == 0:
             return
 
-        self.assertIn("Zulip", self.email_display_from(mail.outbox[0]))
+        self.assertIn("SafeChat", self.email_display_from(mail.outbox[0]))
 
         self.assertEqual(self.email_envelope_from(mail.outbox[0]), settings.NOREPLY_EMAIL_ADDRESS)
         self.assertRegex(
@@ -996,7 +996,7 @@ class InviteUserTest(InviteUserBase):
 
         verona = get_stream("Verona", realm)
         sandbox = get_stream("sandbox", realm)
-        zulip = get_stream("Zulip", realm)
+        zulip = get_stream("SafeChat", realm)
         default_streams = get_slim_realm_default_streams(realm.id)
         self.assertEqual(default_streams, {verona, sandbox, zulip})
 
@@ -3457,7 +3457,7 @@ class MultiuseInviteTest(ZulipTestCase):
         default_streams = get_slim_realm_default_streams(self.realm.id)
         verona = get_stream("Verona", self.realm)
         sandbox = get_stream("sandbox", self.realm)
-        zulip = get_stream("Zulip", self.realm)
+        zulip = get_stream("SafeChat", self.realm)
         self.assertEqual(default_streams, {verona, sandbox, zulip})
 
         # Check that user is subscribed to the streams that were set as default

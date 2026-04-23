@@ -265,16 +265,16 @@ class TestBrowserAndOsUserAgentStrings(ZulipTestCase):
                 "macOS",
             ),
             # Miscellaneous
-            ("ZulipAndroid/1.0", "Zulip", "Android"),
-            ("ZulipMobile/1.0.12 (Android 7.1.1)", "Zulip", "Android"),
-            ("ZulipMobile/0.7.1.1 (iOS 10.3.1)", "Zulip", "iOS"),
+            ("ZulipAndroid/1.0", "SafeChat", "Android"),
+            ("ZulipMobile/1.0.12 (Android 7.1.1)", "SafeChat", "Android"),
+            ("ZulipMobile/0.7.1.1 (iOS 10.3.1)", "SafeChat", "iOS"),
             (
                 (
                     "ZulipElectron/1.1.0-beta Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
                     " AppleWebKit/537.36 (KHTML, like Gecko) Zulip/1.1.0-beta"
                     " Chrome/56.0.2924.87 Electron/1.6.8 Safari/537.36"
                 ),
-                "Zulip",
+                "SafeChat",
                 "Windows",
             ),
             (

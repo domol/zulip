@@ -134,6 +134,67 @@ copy_if_exists "favicon.png"      "static/images/favicon.png"
 copy_if_exists "email-logo.png"   "static/images/emails/email_logo.png"
 copy_if_exists "apple-touch-icon.png" "static/images/logo/apple-touch-icon-precomposed.png"
 
+# ── Comprehensive sweep ───────────────────────────────────────────────────────
+# Catches everything the surgical replacements above missed.
+#
+# PO files:  msgstr lines only — msgid (source keys) stay as "Zulip" so the
+#            translation lookup chain still resolves correctly.
+# Templates: broad replace — "Zulip" in HTML is always the brand name.
+# Python:    quoted string literals only — leaves class names (ZulipApp etc.)
+#            and import paths untouched.
+# TypeScript: same as Python.
+#
+# Excluded: migrations (DB schema), puppet (system user/paths), .git, *.mo
+
+echo "  locale/ — $(find locale -name '*.po' | wc -l | tr -d ' ') PO files (msgstr only)"
+
+PO_SCRIPT='
+import sys
+path, brand = sys.argv[1], sys.argv[2]
+lines = open(path).readlines()
+result = []
+in_msgstr = False
+for line in lines:
+    if line.startswith("msgstr"):
+        in_msgstr = True
+        result.append(line.replace("Zulip", brand))
+    elif line.startswith("msgid"):
+        in_msgstr = False
+        result.append(line)
+    elif in_msgstr and line.startswith("\""):
+        result.append(line.replace("Zulip", brand))
+    else:
+        in_msgstr = False
+        result.append(line)
+open(path, "w").writelines(result)
+'
+
+find locale -name "*.po" | while read -r po; do
+    if $DRY_RUN; then
+        echo "  [dry-run] $po"
+    else
+        python3 -c "$PO_SCRIPT" "$po" "$BRAND_NAME"
+    fi
+done
+
+echo "  templates/ — HTML and text files"
+find templates -type f \( -name "*.html" -o -name "*.txt" \) | while read -r f; do
+    s "$f" 'Zulip' "$BRAND_NAME"
+done
+
+echo "  Python source — quoted string literals (migrations excluded)"
+find zerver zilencer analytics corporate -name "*.py" \
+    -not -path "*/migrations/*" | while read -r f; do
+    s "$f" '"Zulip"'  "\"$BRAND_NAME\""
+    s "$f" "'Zulip'"  "'$BRAND_NAME'"
+done
+
+echo "  TypeScript/JavaScript — quoted string literals"
+find web/src -type f \( -name "*.ts" -o -name "*.js" \) | while read -r f; do
+    s "$f" '"Zulip"'  "\"$BRAND_NAME\""
+    s "$f" "'Zulip'"  "'$BRAND_NAME'"
+done
+
 # ── Done ──────────────────────────────────────────────────────────────────────
 
 echo ""

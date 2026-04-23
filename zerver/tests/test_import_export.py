@@ -555,7 +555,7 @@ class RealmImportExportTest(ExportFile):
                 "Venice",
                 "Verona",
                 "core team",
-                "Zulip",
+                "SafeChat",
                 "sandbox",
             },
         )
@@ -1147,7 +1147,7 @@ class RealmImportExportTest(ExportFile):
                 "Scotland",
                 "Venice",
                 "Verona",
-                "Zulip",
+                "SafeChat",
                 "sandbox",
                 "Private A",
                 "Private B",
@@ -1175,7 +1175,7 @@ class RealmImportExportTest(ExportFile):
             "Scotland",
             "Venice",
             "Verona",
-            "Zulip",
+            "SafeChat",
             "sandbox",
         ]
         public_stream_ids = Stream.objects.filter(name__in=public_stream_names).values_list(

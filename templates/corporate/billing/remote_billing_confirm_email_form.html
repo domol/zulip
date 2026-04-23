@@ -3,9 +3,9 @@
 
 {% block title %}
 {% if remote_server_hostname %}
-<title>Enter log in email | Zulip</title>
+<title>Enter log in email | SafeChat</title>
 {% else %}
-<title>Enter email | Zulip</title>
+<title>Enter email | SafeChat</title>
 {% endif %}
 {% endblock %}
 
@@ -28,9 +28,9 @@
                 <div class="input-box server-login-form-field" id="remote-billing-confirm-email-intro">
                     <div class="not-editable-realm-field">
                         {% if remote_server_hostname %}
-                            Enter the email address of the person who is logging in to manage plans and billing for this server (yourself or someone else). They will receive an email from Zulip with a log in link.
+                            Enter the email address of the person who is logging in to manage plans and billing for this server (yourself or someone else). They will receive an email from SafeChat with a log in link.
                         {% else %}
-                            Enter the email address you want to use for Zulip plan management. You will receive a one-time confirmation email.
+                            Enter the email address you want to use for SafeChat plan management. You will receive a one-time confirmation email.
                         {% endif %}
                     </div>
                 </div>

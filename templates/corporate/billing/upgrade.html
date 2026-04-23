@@ -2,7 +2,7 @@
 {% set entrypoint = "upgrade" %}
 
 {% block title %}
-<title>{{ _("Upgrade") }} | Zulip</title>
+<title>{{ _("Upgrade") }} | SafeChat</title>
 {% endblock %}
 
 {% block portico_content %}
@@ -14,7 +14,7 @@
             {% if sponsorship_plan_name == "Business" %}
             discounted
             {% endif %}
-            <a href="{{ page_params.billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan.<br/><a href="mailto:support@zulip.com">Contact Zulip support</a> with any questions or updates.
+            <a href="{{ page_params.billing_base_url }}/plans/">{{ sponsorship_plan_name }}</a> plan.<br/><a href="mailto:support@zulip.com">Contact SafeChat support</a> with any questions or updates.
         </div>
         {% endif %}
         {% if success_message %}
@@ -75,7 +75,7 @@
                         {% if page_params.free_trial_days %}
                         <div class="not-editable-realm-field">
                             {% if page_params.setup_payment_by_invoice %}
-                            An invoice will immediately be sent to <b>{{ stripe_email }}</b>. To ensure continuous access to Zulip Basic,
+                            An invoice will immediately be sent to <b>{{ stripe_email }}</b>. To ensure continuous access to SafeChat Basic,
                             please pay your invoice before your free trial ends on {{ free_trial_end_date }}.
                             {% else %}
                             Add a credit card to start your <b>{{ page_params.free_trial_days }}-day free trial</b> of
@@ -191,7 +191,7 @@
                     <div id="license-management-details" class="input-box upgrade-page-field license-management-section">
                         {% if fixed_price_plan %}
                         <p class="not-editable-realm-field">
-                            This is a fixed-price plan. You will be contacted by Zulip Sales a couple of months before the plan ends to discuss plan renewal.
+                            This is a fixed-price plan. You will be contacted by SafeChat Sales a couple of months before the plan ends to discuss plan renewal.
                         </p>
                         {% elif not manual_license_management %}
                         <p class="not-editable-realm-field">

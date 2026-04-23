@@ -14,7 +14,7 @@
 # Tim Abbott <tabbott@kandralabs.com>, 2020
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:30+0000\n"
@@ -81,7 +81,7 @@ msgid ""
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
 msgstr ""
-"A szerveződéseteknek már semennyi Zulip licensze sem maradt. Kérjük [növeld "
+"A szerveződéseteknek már semennyi SafeChat licensze sem maradt. Kérjük [növeld "
 "a licenszeid számát]({billing_page_link}) vagy [deaktiválj passzív "
 "felhasználókat]({deactivate_user_help_page_link}), hogy tudjatok új tagokat "
 "hívni."
@@ -93,7 +93,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
 msgstr ""
-"A szerveződéseteknek már csak egy Zulip licensze maradt. Kérjük [növeld a "
+"A szerveződéseteknek már csak egy SafeChat licensze maradt. Kérjük [növeld a "
 "licenszeid számát]({billing_page_link}) vagy [deaktiválj passzív "
 "felhasználókat]({deactivate_user_help_page_link}), hogy egynél több tagot is "
 "meghívhassatok."
@@ -105,7 +105,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than two users to join."
 msgstr ""
-"A szerveződéseteknek már csak kettő Zulip licensze maradt. Kérjük [növeld a "
+"A szerveződéseteknek már csak kettő SafeChat licensze maradt. Kérjük [növeld a "
 "licenszeid számát]({billing_page_link}) vagy [deaktiválj passzív "
 "felhasználókat]({deactivate_user_help_page_link}), hogy kettőnél több tagot "
 "is meghívhassatok."
@@ -117,7 +117,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than three users to join."
 msgstr ""
-"A szerveződéseteknek már csak három Zulip licensze maradt. Kérjük [növeld a "
+"A szerveződéseteknek már csak három SafeChat licensze maradt. Kérjük [növeld a "
 "licenszeid számát]({billing_page_link}) vagy [deaktiválj passzív "
 "felhasználókat]({deactivate_user_help_page_link}), hogy háromnál több tagot "
 "is meghívhassatok."
@@ -414,7 +414,7 @@ msgstr ""
 #: templates/analytics/stats.html:6
 #, python-format
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "Analitika %(target_name)s számára | Zulip"
+msgstr "Analitika %(target_name)s számára | SafeChat"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -425,7 +425,7 @@ msgstr ""
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "Zulip analitika %(target_name)s számára"
+msgstr "SafeChat analitika %(target_name)s számára"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -564,7 +564,7 @@ msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 msgstr ""
-"Megerősítjük, hogy a Zulip-fiókja e-mail címe megváltozott a régi "
+"Megerősítjük, hogy a SafeChat-fiókja e-mail címe megváltozott a régi "
 "%(old_email_html_tag)s helyett erre: %(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
@@ -1267,7 +1267,7 @@ msgstr ""
 
 #: templates/corporate/development-community.html:16
 msgid "The Zulip development community"
-msgstr "A Zulip fejlesztési közösség"
+msgstr "A SafeChat fejlesztési közösség"
 
 #: templates/corporate/development-community.html:23
 #: templates/corporate/development-community.html:48
@@ -1321,7 +1321,7 @@ msgstr ""
 #: templates/corporate/for/use-cases.html:23
 #: templates/corporate/role/engineers.html:561
 msgid "Self-host Zulip"
-msgstr "Légy Zulip szerver-gazda"
+msgstr "Légy SafeChat szerver-gazda"
 
 #: templates/corporate/for/communities.html:35
 #: templates/corporate/for/communities.html:67
@@ -1346,13 +1346,13 @@ msgstr "Áraink"
 #: templates/corporate/role/engineers.html:558
 #: templates/corporate/self-hosting.html:27
 msgid "Zulip for business"
-msgstr "Zulip üzleti használatra"
+msgstr "SafeChat üzleti használatra"
 
 #: templates/corporate/role/engineers.html:23
 #, fuzzy
 #| msgid "Zulip for business"
 msgid "Zulip for open source"
-msgstr "Zulip üzleti használatra"
+msgstr "SafeChat üzleti használatra"
 
 #: templates/corporate/role/engineers.html:64
 msgid "Dog in glasses with a laptop"
@@ -1363,7 +1363,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Create your Zulip organization"
 msgid "Screenshot of Zulip conversation"
-msgstr "Kezd el saját Zulip szerveződésed"
+msgstr "Kezd el saját SafeChat szerveződésed"
 
 #: templates/corporate/role/engineers.html:165
 msgid "Screenshot of Zulip conversation with sentry bot"
@@ -1490,7 +1490,7 @@ msgstr "E-mail"
 #: templates/zerver/create_user/register.html:218
 #: templates/zerver/reset_confirm.html:64
 msgid "Subscribe me to Zulip's low-traffic newsletter (a few emails a year)."
-msgstr "Feliratkoznék a Zulip ritkásan érkező hírlevelére (évente pár e-mail)."
+msgstr "Feliratkoznék a SafeChat ritkásan érkező hírlevelére (évente pár e-mail)."
 
 #: templates/zerver/accounts_accept_terms.html:54
 msgid "Continue"
@@ -1594,7 +1594,7 @@ msgstr ""
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Zulip fiók nem található."
+msgstr "SafeChat fiók nem található."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, fuzzy, python-format
@@ -1628,7 +1628,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Why Zulip"
 msgid "Try Zulip"
-msgstr "Miért a Zulip"
+msgstr "Miért a SafeChat"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1636,7 +1636,7 @@ msgstr "Új szervezet létrehozása"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Új Zulip szervezet létrehozása"
+msgstr "Új SafeChat szervezet létrehozása"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1750,7 +1750,7 @@ msgstr "Feliratkozás"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Zulip regisztráció"
+msgstr "SafeChat regisztráció"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -1863,7 +1863,7 @@ msgstr "Ne importálja a beállításokat"
 
 #: templates/zerver/create_user/register.html:112
 msgid "Import settings from existing Zulip account"
-msgstr "Beállítások importálása meglévő Zulip fiókból"
+msgstr "Beállítások importálása meglévő SafeChat fiókból"
 
 #: templates/zerver/create_user/register.html:124
 msgid "Your full name"
@@ -2021,7 +2021,7 @@ msgstr ""
 msgid ""
 "Copy this login token and return to your Zulip app to finish logging in:"
 msgstr ""
-"Másold ezt a tokent vágólapra és térj vissza a Zulip alkalmazásodhoz a "
+"Másold ezt a tokent vágólapra és térj vissza a SafeChat alkalmazásodhoz a "
 "belépés befejezéséhez:"
 
 #: templates/zerver/desktop_redirect.html:17
@@ -2077,7 +2077,7 @@ msgstr "Frissítés"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2089,18 +2089,18 @@ msgstr ""
 msgid ""
 "Congratulations, you have created a new Zulip organization: "
 "<b>%(realm_name)s</b>."
-msgstr "Beléptél a(z) %(realm_name)s nevű Zulip szervezetbe."
+msgstr "Beléptél a(z) %(realm_name)s nevű SafeChat szervezetbe."
 
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Üdvözlünk a Zulipban!"
+msgstr "Üdvözlünk a SafeChatban!"
 
 #: templates/zerver/emails/account_registered.html:16
 #, fuzzy, python-format
 #| msgid "You've joined the Zulip organization %(realm_name)s."
 msgid "You've joined the Zulip organization <b>%(realm_name)s</b>."
-msgstr "Beléptél a(z) %(realm_name)s nevű Zulip szervezetbe."
+msgstr "Beléptél a(z) %(realm_name)s nevű SafeChat szervezetbe."
 
 #: templates/zerver/emails/account_registered.html:22
 #, python-format
@@ -2163,12 +2163,12 @@ msgstr ""
 #: templates/zerver/emails/account_registered.subject.txt:2
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new organization details"
-msgstr "%(realm_name)s a Zulipon: az új szervezeted részletei"
+msgstr "%(realm_name)s a SafeChaton: az új szervezeted részletei"
 
 #: templates/zerver/emails/account_registered.subject.txt:4
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new account details"
-msgstr "%(realm_name)sa Zulipon: az új fiókod részletei"
+msgstr "%(realm_name)sa SafeChaton: az új fiókod részletei"
 
 #: templates/zerver/emails/account_registered.txt:4
 #, python-format
@@ -2179,7 +2179,7 @@ msgstr ""
 #: templates/zerver/emails/account_registered.txt:6
 #, python-format
 msgid "You've joined the Zulip organization %(realm_name)s."
-msgstr "Beléptél a(z) %(realm_name)s nevű Zulip szervezetbe."
+msgstr "Beléptél a(z) %(realm_name)s nevű SafeChat szervezetbe."
 
 #: templates/zerver/emails/account_registered.txt:10
 #, python-format
@@ -2255,7 +2255,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Create your Zulip organization"
 msgid "Verify your email address for your Zulip demo organization"
-msgstr "Kezd el saját Zulip szerveződésed"
+msgstr "Kezd el saját SafeChat szerveződésed"
 
 #: templates/zerver/emails/confirm_demo_organization_email.txt:9
 #: templates/zerver/emails/confirm_new_email.txt:9
@@ -2299,7 +2299,7 @@ msgstr ""
 #: templates/zerver/emails/confirm_registration.html:18
 #: templates/zerver/emails/confirm_registration.txt:7
 msgid "You recently signed up for Zulip. Awesome!"
-msgstr "Épp most regisztráltál a Zulip-ba. Kiváló!"
+msgstr "Épp most regisztráltál a SafeChat-ba. Kiváló!"
 
 #: templates/zerver/emails/confirm_registration.html:23
 #: templates/zerver/emails/confirm_registration.txt:12
@@ -2320,11 +2320,11 @@ msgstr "Regisztráció befejezése"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:2
 msgid "Create your Zulip organization"
-msgstr "Kezd el saját Zulip szerveződésed"
+msgstr "Kezd el saját SafeChat szerveződésed"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:4
 msgid "Activate your Zulip account"
-msgstr "Zulip fiók aktiválása"
+msgstr "SafeChat fiók aktiválása"
 
 #: templates/zerver/emails/confirm_registration.txt:14
 msgid "Click the link below to complete registration."
@@ -2441,7 +2441,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Click here to log in to Zulip and catch up."
 msgid "<a href=\"%(realm_url)s\">Log in</a> to Zulip to catch up."
-msgstr "Kattints ide a Zulip belépéshez és kerülj képbe mielőbb."
+msgstr "Kattints ide a SafeChat belépéshez és kerülj képbe mielőbb."
 
 #: templates/zerver/emails/digest.html:56
 msgid "Unsubscribe from digest emails"
@@ -2450,7 +2450,7 @@ msgstr "Leiratkozás az összefoglaló e-mailekről"
 #: templates/zerver/emails/digest.subject.txt:1
 #, python-format
 msgid "Zulip digest for %(realm_name)s"
-msgstr "Zulip összefoglaló %(realm_name)s számára"
+msgstr "SafeChat összefoglaló %(realm_name)s számára"
 
 #: templates/zerver/emails/digest.txt:14
 #, python-format
@@ -2544,7 +2544,7 @@ msgid ""
 "Your email address %(email)s has accounts with the following Zulip "
 "organizations hosted by %(external_host)s:"
 msgstr ""
-"E-mail címed %(email)s a következő Zulip szerveknél rendelkezik fiókkal "
+"E-mail címed %(email)s a következő SafeChat szerveknél rendelkezik fiókkal "
 "%(external_host)s:"
 
 #: templates/zerver/emails/find_team.html:24
@@ -2589,7 +2589,7 @@ msgstr ""
 
 #: templates/zerver/emails/find_team.subject.txt:2
 msgid "Your Zulip accounts"
-msgstr "Zulip fiókjaid"
+msgstr "SafeChat fiókjaid"
 
 #: templates/zerver/emails/find_team.subject.txt:4
 msgid "No Zulip accounts found"
@@ -2618,7 +2618,7 @@ msgid ""
 "%(referrer_name)s wants you to join them on Zulip &mdash; the team "
 "communication tool designed for productivity."
 msgstr ""
-"%(referrer_name)s szeretné, ha csatlakoznál hozzá a Zulip-ban, ami egy "
+"%(referrer_name)s szeretné, ha csatlakoznál hozzá a SafeChat-ban, ami egy "
 "hatékony csapatkommunikációs eszköz."
 
 #: templates/zerver/emails/invitation.html:15
@@ -2640,7 +2640,7 @@ msgid ""
 "-- the team communication tool designed for productivity."
 msgstr ""
 "%(referrer_full_name)s(%(referrer_email)s) szeretné, ha csatlakozná hozzá a "
-"Zulip-ban -- ami egy hatékony csapatkommunikációs eszköz."
+"SafeChat-ban -- ami egy hatékony csapatkommunikációs eszköz."
 
 #: templates/zerver/emails/invitation.txt:5
 #: templates/zerver/emails/invitation_reminder.txt:5
@@ -2659,7 +2659,7 @@ msgid ""
 "Zulip &mdash; the team communication tool designed for productivity."
 msgstr ""
 "Ez egy baráti emlékeztető arról, hogy %(referrer_name)s szeretné, ha "
-"csatlakoznál hozzá a Zulip-ban — ami egy hatékony csapatkommunikációs eszköz."
+"csatlakoznál hozzá a SafeChat-ban — ami egy hatékony csapatkommunikációs eszköz."
 
 #: templates/zerver/emails/invitation_reminder.html:18
 #: templates/zerver/emails/invitation_reminder.txt:8
@@ -2691,7 +2691,7 @@ msgid ""
 "productivity."
 msgstr ""
 "Ez egy baráti emlékeztető arról, hogy %(referrer_name)s (%(referrer_email)s) "
-"szeretné, ha csatlakoznál hozzá a Zulip-ban -- ami egy hatékony "
+"szeretné, ha csatlakoznál hozzá a SafeChat-ban -- ami egy hatékony "
 "csapatkommunikációs eszköz."
 
 #: templates/zerver/emails/macros.html:14
@@ -2787,7 +2787,7 @@ msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails (<a href=\"%(url)s\">help</a>)."
 msgstr ""
-"Ne válaszolj erre az e-mailre. Ezen a Zulip szerveren a bejövő levelek "
+"Ne válaszolj erre az e-mailre. Ezen a SafeChat szerveren a bejövő levelek "
 "feldolgozása nincs beállítva (<a href=\"%(url)s\">súgó</a>)."
 
 #: templates/zerver/emails/missed_message.subject.txt:2
@@ -2829,7 +2829,7 @@ msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails. Help:"
 msgstr ""
-"Ne válaszolj erre az e-mailre. Ezen a Zulip szerveren a bejövő levelek "
+"Ne válaszolj erre az e-mailre. Ezen a SafeChat szerveren a bejövő levelek "
 "feldolgozása nincs beállítva. Súgó:"
 
 #: templates/zerver/emails/notify_change_in_email.html:10
@@ -2839,7 +2839,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at %(support_email)s."
 msgstr ""
-"A Zulip fiókodhoz tartozó e-mail cím nemrég változott meg erre: "
+"A SafeChat fiókodhoz tartozó e-mail cím nemrég változott meg erre: "
 "%(new_email)s. Ha nem te akartad a változtatást, sürgősen írj nekünk erre a "
 "címre: %(support_email)s."
 
@@ -2851,12 +2851,12 @@ msgstr "A legjobbakat,"
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "Zulip csapat"
+msgstr "SafeChat csapat"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
 msgid "Zulip email changed for %(realm_name)s"
-msgstr "Zulip email módosítva %(realm_name)s számára"
+msgstr "SafeChat email módosítva %(realm_name)s számára"
 
 #: templates/zerver/emails/notify_change_in_email.txt:3
 #, python-format
@@ -2865,7 +2865,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at <%(support_email)s>."
 msgstr ""
-"A Zulip fiókodhoz tartozó e-mail cím nemrég változott meg erre: "
+"A SafeChat fiókodhoz tartozó e-mail cím nemrég változott meg erre: "
 "%(new_email)s. Ha nem te akartad a változtatást, sürgősen írj nekünk erre a "
 "címre: <%(support_email)s>."
 
@@ -2879,7 +2879,7 @@ msgstr ""
 #: templates/zerver/emails/notify_new_login.html:12
 #: templates/zerver/emails/notify_new_login.txt:1
 msgid "We noticed a recent login for the following Zulip account."
-msgstr "Egy új belépést láttunk az alábbi Zulip fióknál."
+msgstr "Egy új belépést láttunk az alábbi SafeChat fióknál."
 
 #: templates/zerver/emails/notify_new_login.html:15
 #, python-format
@@ -2934,7 +2934,7 @@ msgstr "Köszi,"
 #: templates/zerver/emails/notify_new_login.html:39
 #: templates/zerver/emails/notify_new_login.txt:21
 msgid "Zulip Security"
-msgstr "Zulip Biztonsági Szolgálat"
+msgstr "SafeChat Biztonsági Szolgálat"
 
 #: templates/zerver/emails/notify_new_login.html:44
 msgid "Unsubscribe from login notifications"
@@ -3171,7 +3171,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Tovább a Zulipba"
+msgstr "Tovább a SafeChatba"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3222,7 +3222,7 @@ msgstr ""
 #: templates/zerver/emails/password_reset.html:21
 #: templates/zerver/emails/password_reset.txt:11
 msgid "You do not have an account in that Zulip organization."
-msgstr "Nincs fiókod ebben a Zulip szervezetben."
+msgstr "Nincs fiókod ebben a SafeChat szervezetben."
 
 #: templates/zerver/emails/password_reset.html:26
 #: templates/zerver/emails/password_reset.txt:16
@@ -3267,7 +3267,7 @@ msgid ""
 "the Zulip Cloud Free plan because of unpaid invoices. The unpaid invoices "
 "have been voided."
 msgstr ""
-"A szervezeted, %(organization_name_with_link)s, átkerült a Zulip Cloud Free "
+"A szervezeted, %(organization_name_with_link)s, átkerült a SafeChat Cloud Free "
 "szerződésre, fizetetlen számlák miatt. Ezen számlák semmissé váltak."
 
 #: templates/zerver/emails/realm_auto_downgraded.html:15
@@ -3276,7 +3276,7 @@ msgid ""
 "To continue on the Zulip Cloud Standard plan, please upgrade again by going "
 "to %(upgrade_url)s."
 msgstr ""
-"Hogy folytathasd a Zulip Cloud Standard szerződés keretein belül, kérjük "
+"Hogy folytathasd a SafeChat Cloud Standard szerződés keretein belül, kérjük "
 "köss újra szerződést %(upgrade_url)s."
 
 #: templates/zerver/emails/realm_auto_downgraded.html:22
@@ -3295,7 +3295,7 @@ msgstr ""
 msgid ""
 "You have deactivated your Zulip demo organization, %(realm_name)s, on "
 "%(localized_date)s."
-msgstr "Beléptél a(z) %(realm_name)s nevű Zulip szervezetbe."
+msgstr "Beléptél a(z) %(realm_name)s nevű SafeChat szervezetbe."
 
 #: templates/zerver/emails/realm_deactivated.html:17
 #: templates/zerver/emails/realm_deactivated.txt:9
@@ -3406,11 +3406,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Reactivate your Zulip organization"
 msgid "Reactivate your Zulip demo organization"
-msgstr "Aktiváld újra Zulip szervezetedet"
+msgstr "Aktiváld újra SafeChat szervezetedet"
 
 #: templates/zerver/emails/realm_reactivation.subject.txt:4
 msgid "Reactivate your Zulip organization"
-msgstr "Aktiváld újra Zulip szervezetedet"
+msgstr "Aktiváld újra SafeChat szervezetedet"
 
 #: templates/zerver/emails/realm_reactivation.txt:11
 msgid "Click the link below to reactivate your organization."
@@ -3526,7 +3526,7 @@ msgstr ""
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "Keress meg Zulip fiókjaidat"
+msgstr "Keress meg SafeChat fiókjaidat"
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3572,7 +3572,7 @@ msgstr "Termék"
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "Miért a Zulip"
+msgstr "Miért a SafeChat"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3586,7 +3586,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Zulip Cloud"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -3678,11 +3678,11 @@ msgstr ""
 
 #: templates/zerver/footer.html:57
 msgid "Installing a Zulip server"
-msgstr "Zulip szerver telepítése"
+msgstr "SafeChat szerver telepítése"
 
 #: templates/zerver/footer.html:62
 msgid "Upgrading a Zulip server"
-msgstr "Zulip szerver frissítése"
+msgstr "SafeChat szerver frissítése"
 
 #: templates/zerver/footer.html:69
 msgid "Contributing"
@@ -3730,7 +3730,7 @@ msgstr "Blog"
 
 #: templates/zerver/footer.html:100
 msgid "Support Zulip"
-msgstr "Támogasd a Zulipot"
+msgstr "Támogasd a SafeChatot"
 
 #: templates/zerver/footer.html:103
 msgid "X (Twitter)"
@@ -3887,7 +3887,7 @@ msgstr "Érvénytelen vagy lejárt munkamenet."
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Belépés a Zulipba"
+msgstr "Belépés a SafeChatba"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."
@@ -4138,7 +4138,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Self-host Zulip"
 msgid "Self-hosting Zulip?"
-msgstr "Légy Zulip szerver-gazda"
+msgstr "Légy SafeChat szerver-gazda"
 
 #: templates/zerver/realm_redirect.html:53
 #, python-format
@@ -4312,7 +4312,7 @@ msgid ""
 "To use one of these to log in to Zulip, you must first <a href=\"https://"
 "github.com/settings/emails\">verify it with GitHub.</a>"
 msgstr ""
-"Ha ezek valamelyikét használni szeretnéd a Zulip szolgáltatásba történő "
+"Ha ezek valamelyikét használni szeretnéd a SafeChat szolgáltatásba történő "
 "bejelentkezéshez, akkor először <a href=\"https://github.com/settings/"
 "emails\">ellenőrizd a GitHub segítségével </a>"
 
@@ -4386,7 +4386,7 @@ msgstr ""
 #: zerver/actions/create_user.py:310
 #, python-brace-format
 msgid "{user} accepted your invitation to join Zulip!"
-msgstr "{user} elfogadta a Zulip meghívódat!"
+msgstr "{user} elfogadta a SafeChat meghívódat!"
 
 #: zerver/actions/create_user.py:713
 msgid ""
@@ -4468,7 +4468,7 @@ msgid ""
 "To protect users, Zulip limits the number of invitations you can send in one "
 "day. Because you have reached the limit, no invitations were sent."
 msgstr ""
-"A felhasználók védelme érdekében a Zulip korlátozza az egy napon belül "
+"A felhasználók védelme érdekében a SafeChat korlátozza az egy napon belül "
 "elküldhető meghívók számát. Mivel elérte a korlátot, nem küldtünk ki "
 "meghívót."
 
@@ -5013,7 +5013,7 @@ msgid ""
 "use. Please contact the person who invited you and ask them to increase the "
 "number of licenses, then try again."
 msgstr ""
-"Új tagok nem csatlakozhatnak ehhez a szerveződéshez, mert az összes Zulip "
+"Új tagok nem csatlakozhatnak ehhez a szerveződéshez, mert az összes SafeChat "
 "lincenszük már használt. Kérjük, szólj a tagnak, aki meghívott, hogy "
 "növeljék a lincenszek számát, majd próbálkozz újra."
 
@@ -5073,7 +5073,7 @@ msgstr "Maximum 10 e-mail címet adhatsz meg."
 
 #: zerver/forms.py:738
 msgid "We couldn't find that Zulip organization."
-msgstr "Nem találtuk meg ezt a Zulip szervezetet."
+msgstr "Nem találtuk meg ezt a SafeChat szervezetet."
 
 #: zerver/lib/addressee.py:25
 #, python-brace-format
@@ -5230,7 +5230,7 @@ msgstr ""
 
 #: zerver/lib/email_notifications.py:162 zerver/lib/email_notifications.py:184
 msgid "Open Zulip to see the spoiler content"
-msgstr "Nyisd meg a Zulipot, hogy lásd a zárolt tartalmat"
+msgstr "Nyisd meg a SafeChatot, hogy lásd a zárolt tartalmat"
 
 #: zerver/lib/email_notifications.py:630
 #, python-brace-format
@@ -6243,7 +6243,7 @@ msgstr "Erre a lekérdezésre a felhasználó nem jogosult"
 #: zerver/lib/recipient_users.py:75
 #, python-brace-format
 msgid "'{email}' is no longer using Zulip."
-msgstr "'{email}' már nem használja a Zulip-et."
+msgstr "'{email}' már nem használja a SafeChat-et."
 
 #: zerver/lib/recipient_users.py:82
 msgid "You can't send direct messages outside of your organization."
@@ -7029,7 +7029,7 @@ msgstr "Egyedi hangulatjel"
 
 #: zerver/models/messages.py:382
 msgid "Zulip extra emoji"
-msgstr "Zulip extra hangulatjel"
+msgstr "SafeChat extra hangulatjel"
 
 #: zerver/models/realm_emoji.py:40
 msgid "Invalid characters in emoji name"
@@ -7350,7 +7350,7 @@ msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 msgstr ""
-"Néhány címzett már használja a Zulipot, ezért nem küldtünk nekik meghívót. "
+"Néhány címzett már használja a SafeChatot, ezért nem küldtünk nekik meghívót. "
 "Mindenki másnak viszont igen!"
 
 #: zerver/views/message_edit.py:126
@@ -7971,7 +7971,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "A Zulip jelszavad LDAP-ban kezelhető"
+msgstr "A SafeChat jelszavad LDAP-ban kezelhető"
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"
@@ -8227,7 +8227,7 @@ msgstr "Érvénytelen aldomain a push értesítés bouncerhez"
 
 #: zilencer/auth.py:147
 msgid "Must validate with valid Zulip server API key"
-msgstr "Érvényesítsd a Zulip szervert érvényes API kulccsal"
+msgstr "Érvényesítsd a SafeChat szervert érvényes API kulccsal"
 
 #. error
 #: zilencer/views.py:128 zilencer/views.py:130

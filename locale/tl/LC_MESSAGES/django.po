@@ -6,7 +6,7 @@
 # Gabriel Ferrer, 2022
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:44+0000\n"
@@ -2257,7 +2257,7 @@ msgstr "Gumawa ng iyong Kapisanang Tulip"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:4
 msgid "Activate your Zulip account"
-msgstr "Buhayin ang iyong Kwenta sa Zulip"
+msgstr "Buhayin ang iyong Kwenta sa SafeChat"
 
 #: templates/zerver/emails/confirm_registration.txt:14
 msgid "Click the link below to complete registration."
@@ -3726,7 +3726,7 @@ msgstr ""
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Papasok sa Zulip"
+msgstr "Papasok sa SafeChat"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."

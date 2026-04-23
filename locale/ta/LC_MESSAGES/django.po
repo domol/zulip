@@ -6,7 +6,7 @@
 # Kracekumar <kracethekingmaker@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:08+0000\n"
@@ -2121,7 +2121,7 @@ msgid ""
 "You will use the following info to log into the Zulip web, <a "
 "href=\"%(apps_page_link)s\">mobile and desktop</a> apps:"
 msgstr ""
-"Zulip வலையில் உள்நுழைய பின்வரும் தகவலைப் பயன்படுத்துவீர்கள், <a href = "
+"SafeChat வலையில் உள்நுழைய பின்வரும் தகவலைப் பயன்படுத்துவீர்கள், <a href = "
 "\"%(apps_page_link)s\"> மொபைல் மற்றும் டெச்க்டாப் </a> பயன்பாடுகள்:"
 
 #: templates/zerver/emails/account_registered.html:25
@@ -3268,7 +3268,7 @@ msgid ""
 "Somebody (possibly you) requested a new password for the Zulip account "
 "%(email)s on %(realm_url)s."
 msgstr ""
-"யாரோ (ஒருவேளை நீங்கள்) Zulip கணக்கு %(email)s இல் %(realm_url)s க்கு புதிய "
+"யாரோ (ஒருவேளை நீங்கள்) SafeChat கணக்கு %(email)s இல் %(realm_url)s க்கு புதிய "
 "கடவுச்சொல்லைக் கோரினர்."
 
 #: templates/zerver/emails/password_reset.html:13
@@ -3858,7 +3858,7 @@ msgstr "சென்டர்"
 
 #: templates/zerver/footer.html:115
 msgid "Powered by <a href=\"https://zulip.com\">Zulip</a>"
-msgstr "<a href=\"https://zulip.com\">Zulip</a> ஆல் இயக்கப்படுகிறது"
+msgstr "<a href=\"https://zulip.com\">SafeChat</a> ஆல் இயக்கப்படுகிறது"
 
 #: templates/zerver/footer.html:121
 msgid "Terms of Service"
@@ -6371,7 +6371,7 @@ msgid ""
 "({format_message_help_url}).\n"
 msgstr ""
 "\n"
-":point_right:  Use this topic பெறுநர் try out [Zulip's messaging features]"
+":point_right:  Use this topic பெறுநர் try out [SafeChat's messaging features]"
 "({format_message_help_url}).\n"
 
 #: zerver/lib/onboarding.py:422

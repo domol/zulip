@@ -6,7 +6,7 @@
 # hosêyň abāspanā <hosseinabaspanah@gmail.com>, 2023
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:46+0000\n"
@@ -1575,7 +1575,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Why Zulip"
 msgid "Try Zulip"
-msgstr "sičê Zulip?"
+msgstr "sičê SafeChat?"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1695,7 +1695,7 @@ msgstr "sabtê nom"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "sabtê nom mênê Zulip"
+msgstr "sabtê nom mênê SafeChat"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -2011,7 +2011,7 @@ msgstr ""
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2718,7 +2718,7 @@ msgstr ""
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "timê Zulip"
+msgstr "timê SafeChat"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
@@ -3026,7 +3026,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "ra'ďên vê Zulip"
+msgstr "ra'ďên vê SafeChat"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3409,7 +3409,7 @@ msgstr ""
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "sičê Zulip?"
+msgstr "sičê SafeChat?"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3423,7 +3423,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Zulip"
 msgid "Zulip Cloud"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"

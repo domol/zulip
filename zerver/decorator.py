@@ -245,7 +245,7 @@ def process_client(
     # We could check for a browser's name being "Mozilla", but
     # e.g. Opera and MobileSafari don't set that, and it seems
     # more robust to just key off whether it was a browser view
-    if is_browser_view and not client_name.startswith("Zulip"):
+    if is_browser_view and not client_name.startswith("SafeChat"):
         # Avoid changing the client string for browsers, but let
         # the Zulip desktop apps be themselves.
         client_name = "website"

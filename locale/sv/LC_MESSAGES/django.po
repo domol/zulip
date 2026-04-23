@@ -6,7 +6,7 @@
 # Sven Stark <sven.stark.1989@gmail.com>, 2020
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 18:50+0000\n"
@@ -381,7 +381,7 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid "Zulip analytics for %(target_name)s"
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "Zulip-analys for %(target_name)s"
+msgstr "SafeChat-analys for %(target_name)s"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -390,7 +390,7 @@ msgstr ""
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "Zulip-analys for %(target_name)s"
+msgstr "SafeChat-analys for %(target_name)s"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -1545,7 +1545,7 @@ msgstr ""
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Inget Zulip-konto hittades."
+msgstr "Inget SafeChat-konto hittades."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, python-format
@@ -1565,7 +1565,7 @@ msgstr "Fortsätt till registreringen"
 #, fuzzy
 #| msgid "Create a new Zulip organization"
 msgid "Try Zulip in a demo organization"
-msgstr "Skapa en ny Zulip-organisation"
+msgstr "Skapa en ny SafeChat-organisation"
 
 #: templates/zerver/create_realm/create_demo_realm.html:13
 #, python-format
@@ -1584,7 +1584,7 @@ msgstr "Skapa en ny organisation"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Skapa en ny Zulip-organisation"
+msgstr "Skapa en ny SafeChat-organisation"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1696,7 +1696,7 @@ msgstr "Gå med"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Gå med i Zulip"
+msgstr "Gå med i SafeChat"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."

@@ -1,7 +1,7 @@
 {% extends "zerver/portico_error_pages/portico_error_page.html" %}
 
 {% block title %}
-<title>{{ _("Plan management not available") }} | Zulip</title>
+<title>{{ _("Plan management not available") }} | SafeChat</title>
 {% endblock %}
 
 {% block error_page_content %}
@@ -11,12 +11,12 @@
         <h1 class="lead">{{ _("Plan management not available") }}</h1>
         <p>
             {% trans %} Plan management is not available for this
-            organization, because your Zulip server is already on a
+            organization, because your SafeChat server is already on a
             {{ server_plan_name }} plan, which covers all
             organizations on this server. See the <b>Server-level billing</b> tab of the
             <a href="https://zulip.com/help/self-hosted-billing#log-in-to-billing-management">log
             in instructions</a> to administer the plan for your
-            Zulip server.
+            SafeChat server.
             {% endtrans %}
         </p>
         <p>

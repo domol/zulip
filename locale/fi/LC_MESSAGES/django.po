@@ -15,7 +15,7 @@
 # Tim Abbott <tabbott@kandralabs.com>, 2022,2024
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 19:05+0000\n"
@@ -83,7 +83,7 @@ msgid ""
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
 msgstr ""
-"Organisaatiollasi ei ole enää Zulip-lisenssejä, eikä se voi enää ottaa "
+"Organisaatiollasi ei ole enää SafeChat-lisenssejä, eikä se voi enää ottaa "
 "vastaan uusia käyttäjiä. [Lisää lisenssien määrää]({billing_page_link}) tai "
 "[poista käytöstä passiiviset käyttäjät]({deactivate_user_help_page_link}), "
 "jotta uudet käyttäjät voivat liittyä."
@@ -95,7 +95,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
 msgstr ""
-"Organisaatiollasi on vain yksi Zulip-lisenssiä jäljellä. Voit [lisätä "
+"Organisaatiollasi on vain yksi SafeChat-lisenssiä jäljellä. Voit [lisätä "
 "lisenssien määrää]({billing_page_link}) tai [poistaa käytöstä ei-aktiiviset "
 "käyttäjät]({deactivate_user_help_page_link}) mahdollistaaksesi useamman kuin "
 "yhden käyttäjän liittymisen."
@@ -107,7 +107,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than two users to join."
 msgstr ""
-"Organisaatiollasi on vain kaksi Zulip-lisenssiä jäljellä. Voit [lisätä "
+"Organisaatiollasi on vain kaksi SafeChat-lisenssiä jäljellä. Voit [lisätä "
 "lisenssien määrää]({billing_page_link}) tai [poistaa käytöstä ei-aktiiviset "
 "käyttäjät]({deactivate_user_help_page_link}) mahdollistaaksesi useamman kuin "
 "kahden käyttäjän liittymisen."
@@ -119,7 +119,7 @@ msgid ""
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than three users to join."
 msgstr ""
-"Organisaatiollasi on vain kolme Zulip-lisenssiä jäljellä. Voit [lisätä "
+"Organisaatiollasi on vain kolme SafeChat-lisenssiä jäljellä. Voit [lisätä "
 "lisenssien määrää]({billing_page_link}) tai [poistaa käytöstä ei-aktiiviset "
 "käyttäjät]({deactivate_user_help_page_link}) mahdollistaaksesi useamman kuin "
 "kolmen käyttäjän liittymisen."
@@ -133,7 +133,7 @@ msgid ""
 "({billing_page_link}) is greater than the current number of users."
 msgstr ""
 "Uusi käyttäjä ({email}) ei voinut liittyä, koska organisaatiolla ei ole "
-"tarpeeksi Zulip-lisenssejä. Jotta uusia käyttäjiä voi liittyä, varmista että "
+"tarpeeksi SafeChat-lisenssejä. Jotta uusia käyttäjiä voi liittyä, varmista että "
 "[lisenssejä nykyisellä ja seuraavalla laskutuskaudella]({billing_page_link}) "
 "on enemmän kuin käyttäjiä."
 
@@ -142,14 +142,14 @@ msgid ""
 "Your organization does not have enough Zulip licenses. Invitations were not "
 "sent."
 msgstr ""
-"Organisaatiolla ei ole tarpeeksi Zulip-lisenssejä. Kutsuja ei lähetetty."
+"Organisaatiolla ei ole tarpeeksi SafeChat-lisenssejä. Kutsuja ei lähetetty."
 
 #: corporate/lib/registration.py:133
 msgid ""
 "Your organization does not have enough Zulip licenses to change a guest "
 "user's role."
 msgstr ""
-"Organisaatiolla ei ole tarpeeksi Zulip-lisenssejä vieraskäyttäjän roolin "
+"Organisaatiolla ei ole tarpeeksi SafeChat-lisenssejä vieraskäyttäjän roolin "
 "vaihtamiseksi."
 
 #: corporate/lib/remote_billing_util.py:144
@@ -346,7 +346,7 @@ msgstr "Käyttöehdot pitää hyväksyä että voi jatkaa."
 msgid ""
 "This zulip_org_id is not registered with Zulip's billing management system."
 msgstr ""
-"Tämä zulip_org_id ei ole rekisteröitynä Zulipin "
+"Tämä zulip_org_id ei ole rekisteröitynä SafeChatin "
 "rahoituksenhallintasysteemissä."
 
 #: corporate/views/remote_billing_page.py:560
@@ -373,7 +373,7 @@ msgid ""
 "%(support_email)s\">contact support</a>."
 msgstr ""
 "Jos tämä on odottamaton virhe voit <a href=\"mailto:"
-"%(support_email)s\">ottaa yhteyttä Zulipin tukeen</a>."
+"%(support_email)s\">ottaa yhteyttä SafeChatin tukeen</a>."
 
 #: templates/4xx.html:11
 msgid "Access forbidden (403)"
@@ -414,7 +414,7 @@ msgid ""
 "working to fix it. Zulip will load automatically once it is working again."
 msgstr ""
 "Jotain meni pieleen. Ongelma on tiedossa ja sitä korjataan parhaillaan. "
-"Zulip uudelleenlatautuu kun ongelmat on ratkaistu."
+"SafeChat uudelleenlatautuu kun ongelmat on ratkaistu."
 
 #: templates/500.html:27
 #, python-format
@@ -423,15 +423,15 @@ msgid ""
 "information, and <a href=\"mailto:%(support_email)s\">contact Zulip support</"
 "a> with any questions."
 msgstr ""
-"Katso <a href=\"%(status_url)s/accounts/find/\">Zulip-pilven tila</a> tai <a "
-"href=\"mailto:%(support_email)s\">ota yhteys Zulipin tukeen</a>."
+"Katso <a href=\"%(status_url)s/accounts/find/\">SafeChat-pilven tila</a> tai <a "
+"href=\"mailto:%(support_email)s\">ota yhteys SafeChatin tukeen</a>."
 
 #: templates/500.html:36
 msgid ""
 "Something went wrong. Sorry about that! Zulip will load automatically once "
 "it is working again."
 msgstr ""
-"Jotain meni pieleen. Zulip latautuu uudelleen kun ongelma on ratkaistu."
+"Jotain meni pieleen. SafeChat latautuu uudelleen kun ongelma on ratkaistu."
 
 #: templates/500.html:42
 #, python-format
@@ -449,12 +449,12 @@ msgid ""
 "href=\"%(troubleshooting_url)s\">Zulip server troubleshooting guide</a>."
 msgstr ""
 "Jos ylläpidät palvelint, voit lukea <a "
-"href=\"%(troubleshooting_url)s\">Zulipin virheohjetta</a>."
+"href=\"%(troubleshooting_url)s\">SafeChatin virheohjetta</a>."
 
 #: templates/analytics/stats.html:6
 #, python-format
 msgid "Analytics for %(target_name)s | Zulip"
-msgstr "analytiikkaa kohteelle %(target_name)s | Zulip"
+msgstr "analytiikkaa kohteelle %(target_name)s | SafeChat"
 
 #: templates/analytics/stats.html:18
 msgid "Analytics are fully available 24 hours after organization creation."
@@ -464,7 +464,7 @@ msgstr ""
 #: templates/analytics/stats.html:23
 #, python-format
 msgid "Zulip analytics for %(target_name)s"
-msgstr "Zulipin analytiikka organisaatiolle %(target_name)s"
+msgstr "SafeChatin analytiikka organisaatiolle %(target_name)s"
 
 #: templates/analytics/stats.html:25
 msgid "Organization summary"
@@ -603,7 +603,7 @@ msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
 msgstr ""
-"Tämä varmistaa, että sähköpostiosoite Zulip tunnuksellesi on vaihtunut "
+"Tämä varmistaa, että sähköpostiosoite SafeChat tunnuksellesi on vaihtunut "
 "osoitteesta %(old_email_html_tag)s osoitteeksi %(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
@@ -730,11 +730,11 @@ msgid ""
 "management\">log in instructions</a> to administer the plan for your Zulip "
 "server."
 msgstr ""
-"Maksusuunnitelmaa ei le saatavilla tälle organisaatiolle koska Zulip-"
+"Maksusuunnitelmaa ei le saatavilla tälle organisaatiolle koska SafeChat-"
 "palvelimella on jo %(server_plan_name)s -suunnitelma joka kattaa kaikki "
 "organisaatiot palvelimella. Katos <b>Palvelimen laskutus</b> -välilehti <a "
 "href=\"https://zulip.com/help/self-hosted-billing#log-in-to-billing-"
-"management\">loki ohjeissa</a> ylläpitäjälle suunnitelma Zulip-palvelimelle."
+"management\">loki ohjeissa</a> ylläpitäjälle suunnitelma SafeChat-palvelimelle."
 
 #: templates/corporate/billing/remote_realm_login_error_for_server_on_active_plan.html:23
 msgid ""
@@ -1317,7 +1317,7 @@ msgstr "Ei saatavilla"
 
 #: templates/corporate/development-community.html:16
 msgid "The Zulip development community"
-msgstr "Zulip kehitysyhteisö"
+msgstr "SafeChat kehitysyhteisö"
 
 #: templates/corporate/development-community.html:23
 #: templates/corporate/development-community.html:48
@@ -1371,7 +1371,7 @@ msgstr "Hae demo"
 #: templates/corporate/for/use-cases.html:23
 #: templates/corporate/role/engineers.html:561
 msgid "Self-host Zulip"
-msgstr "Isännöi omaa Zulipia"
+msgstr "Isännöi omaa SafeChatia"
 
 #: templates/corporate/for/communities.html:35
 #: templates/corporate/for/communities.html:67
@@ -1396,11 +1396,11 @@ msgstr "Katso hinnoittelu"
 #: templates/corporate/role/engineers.html:558
 #: templates/corporate/self-hosting.html:27
 msgid "Zulip for business"
-msgstr "Zulip yrityksille"
+msgstr "SafeChat yrityksille"
 
 #: templates/corporate/role/engineers.html:23
 msgid "Zulip for open source"
-msgstr "Zulip avoimen lähdekoodin projekteille"
+msgstr "SafeChat avoimen lähdekoodin projekteille"
 
 #: templates/corporate/role/engineers.html:64
 msgid "Dog in glasses with a laptop"
@@ -1409,7 +1409,7 @@ msgstr "Silmälaseilla varustettu koira kannettavan kanssa"
 #: templates/corporate/role/engineers.html:77
 #: templates/corporate/role/engineers.html:123
 msgid "Screenshot of Zulip conversation"
-msgstr "Kuvakaappaus Zulip keskustelusta"
+msgstr "Kuvakaappaus SafeChat keskustelusta"
 
 #: templates/corporate/role/engineers.html:165
 msgid "Screenshot of Zulip conversation with sentry bot"
@@ -1418,7 +1418,7 @@ msgstr ""
 #: templates/corporate/role/engineers.html:178
 #: templates/corporate/role/engineers.html:215
 msgid "Screenshot of Zulip inbox"
-msgstr "Kuvakaappaus Zulip saapuneet-näkymästä"
+msgstr "Kuvakaappaus SafeChat saapuneet-näkymästä"
 
 #: templates/corporate/role/engineers.html:262
 msgid "Open laptop with book inside"
@@ -1491,7 +1491,7 @@ msgid ""
 "You can find answers to frequently asked questions in the <a href=\"/help/"
 "\">Zulip help center</a>."
 msgstr ""
-"Lisätietoja on yleisissä kysymyksissä <a href=\"/help/\">Zulipin "
+"Lisätietoja on yleisissä kysymyksissä <a href=\"/help/\">SafeChatin "
 "ohjekeskuksessa</a>."
 
 #: templates/corporate/zulip-cloud.html:20
@@ -1506,8 +1506,8 @@ msgid ""
 "href=\"https://zulip.com/policies/terms\">Zulip Terms of Service</a> to "
 "continue."
 msgstr ""
-"Tätä tiimichattia isännöidään nyt Zulip Cloudissa. Hyväksy <a href=\"https://"
-"zulip.com/policies/terms\">Zulipin käyttöehdo</a>t jatkaaksesi."
+"Tätä tiimichattia isännöidään nyt SafeChat Cloudissa. Hyväksy <a href=\"https://"
+"zulip.com/policies/terms\">SafeChatin käyttöehdo</a>t jatkaaksesi."
 
 #: templates/two_factor/_wizard_forms.html:26
 msgid "Or, alternatively, use one of your backup phones:"
@@ -1527,7 +1527,7 @@ msgstr "Hyväksy käyttöehdot"
 
 #: templates/zerver/accounts_accept_terms.html:18
 msgid "Welcome to Zulip"
-msgstr "Tervetuloa Zulipiin"
+msgstr "Tervetuloa SafeChatiin"
 
 #: templates/zerver/accounts_accept_terms.html:25
 #: templates/zerver/create_user/accounts_home.html:63
@@ -1541,7 +1541,7 @@ msgstr "Sähköposti"
 #: templates/zerver/reset_confirm.html:64
 msgid "Subscribe me to Zulip's low-traffic newsletter (a few emails a year)."
 msgstr ""
-"Tilaa minulle Zulipin vähäliikenteinen uutiskirje (muutama sähköposti "
+"Tilaa minulle SafeChatin vähäliikenteinen uutiskirje (muutama sähköposti "
 "vuodessa)."
 
 #: templates/zerver/accounts_accept_terms.html:54
@@ -1562,7 +1562,7 @@ msgid ""
 msgstr ""
 "Viimeistele rekisteröitymisesi seuramalla sähköpostiin (<span "
 "class=\"user_email semi-bold\">%(email)s</span>) tulleen hyväksyntäviestin "
-"ohjeita Zulipilta."
+"ohjeita SafeChatilta."
 
 #: templates/zerver/accounts_send_confirm.html:25
 msgid ""
@@ -1575,7 +1575,7 @@ msgstr ""
 #: templates/zerver/app/index.html:6
 #, python-brace-format
 msgid "Public view of {org_name} | Zulip team chat"
-msgstr "Julkinen näkymä {org_name} | Zulipin ryhmäkeskustelu"
+msgstr "Julkinen näkymä {org_name} | SafeChatin ryhmäkeskustelu"
 
 #: templates/zerver/app/index.html:7
 #, python-brace-format
@@ -1658,7 +1658,7 @@ msgstr "Tiliä ei löydy"
 
 #: templates/zerver/confirm_continue_registration.html:14
 msgid "Zulip account not found."
-msgstr "Zulip-tiliä ei löydy."
+msgstr "SafeChat-tiliä ei löydy."
 
 #: templates/zerver/confirm_continue_registration.html:18
 #, python-format
@@ -1689,7 +1689,7 @@ msgstr ""
 
 #: templates/zerver/create_realm/create_demo_realm.html:27
 msgid "Try Zulip"
-msgstr "Kokeile Zulippia"
+msgstr "Kokeile SafeChatpia"
 
 #: templates/zerver/create_realm/create_realm.html:5
 msgid "Create a new organization"
@@ -1697,7 +1697,7 @@ msgstr "Luo uusi organisaatio"
 
 #: templates/zerver/create_realm/create_realm.html:16
 msgid "Create a new Zulip organization"
-msgstr "Luo uusi Zulip-organisaatio"
+msgstr "Luo uusi SafeChat-organisaatio"
 
 #: templates/zerver/create_realm/create_realm.html:19
 #, python-format
@@ -1727,14 +1727,14 @@ msgstr ""
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:3
 msgid "How did you first hear about Zulip?"
-msgstr "Missä kuulit Zulipista ensin?"
+msgstr "Missä kuulit SafeChatista ensin?"
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:5
 msgid ""
 "This value is used only if you sign up for a plan, in which case it will be "
 "sent to the Zulip team."
 msgstr ""
-"Tätä käytetään vain jos ostat tilauksen jolloin se lähetetään Zulipin "
+"Tätä käytetään vain jos ostat tilauksen jolloin se lähetetään SafeChatin "
 "tiimille."
 
 #: templates/zerver/create_realm/found_zulip_form_field.html:9
@@ -1817,7 +1817,7 @@ msgstr "Rekisteröidy"
 
 #: templates/zerver/create_user/accounts_home.html:18
 msgid "Sign up for Zulip"
-msgstr "Rekisteröidy Zulipiin"
+msgstr "Rekisteröidy SafeChatiin"
 
 #: templates/zerver/create_user/accounts_home.html:37
 msgid "You need an invitation to join this organization."
@@ -1852,7 +1852,7 @@ msgid ""
 "Zulip lets you control which roles in the organization can view your email "
 "address."
 msgstr ""
-"Zulipissa voi valita millä rooleilla organisaatiossa näkee "
+"SafeChatissa voi valita millä rooleilla organisaatiossa näkee "
 "sähköpostiosoitteesi."
 
 #: templates/zerver/create_user/change_email_address_visibility_modal.html:17
@@ -1888,21 +1888,21 @@ msgid ""
 "Administrators and moderators of this Zulip organization will be able to see "
 "this email address."
 msgstr ""
-"Adminstraattorit ja moderaattorit tässä Zulip-organisaatiossa näkevät tämän "
+"Adminstraattorit ja moderaattorit tässä SafeChat-organisaatiossa näkevät tämän "
 "sähköpostiosoitteen."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:11
 msgid ""
 "Nobody in this Zulip organization will be able to see this email address."
 msgstr ""
-"Kukaan täss Zulip-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
+"Kukaan täss SafeChat-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:14
 msgid ""
 "Other users in this Zulip organization will be able to see this email "
 "address."
 msgstr ""
-"Muut käyttäjät tässä Zulip-organisaatiossa pystyvät näkemään tämän "
+"Muut käyttäjät tässä SafeChat-organisaatiossa pystyvät näkemään tämän "
 "sähköpostiosoitteen."
 
 #: templates/zerver/create_user/new_user_email_address_visibility.html:18
@@ -1939,7 +1939,7 @@ msgstr "Don&rsquo;t tuo asetukset"
 
 #: templates/zerver/create_user/register.html:112
 msgid "Import settings from existing Zulip account"
-msgstr "Tuo asetukset olemassa olevalta Zulip-tililtä"
+msgstr "Tuo asetukset olemassa olevalta SafeChat-tililtä"
 
 #: templates/zerver/create_user/register.html:124
 msgid "Your full name"
@@ -1951,7 +1951,7 @@ msgstr "Nimi"
 
 #: templates/zerver/create_user/register.html:132
 msgid "This is how your account is displayed in Zulip."
-msgstr "Tämä on miten tili näytetään Zulipissa."
+msgstr "Tämä on miten tili näytetään SafeChatissa."
 
 #: templates/zerver/create_user/register.html:143
 #: templates/zerver/create_user/register.html:156
@@ -2029,7 +2029,7 @@ msgid ""
 "You can <a href=\"mailto:%(support_email)s\">contact Zulip support</a> to "
 "inquire about reusing this URL for a new organization."
 msgstr ""
-"Voit <a href=\"mailto:%(support_email)s\">ottaa yhteyttä Zulipin tukeen</a> "
+"Voit <a href=\"mailto:%(support_email)s\">ottaa yhteyttä SafeChatin tukeen</a> "
 "tiedustellaksesi tämän osoitteen uudelleenkäytöstä uuden organisaation "
 "kanssa."
 
@@ -2054,7 +2054,7 @@ msgid ""
 "%(support_email)s\">contact Zulip support</a> to reactivate it."
 msgstr ""
 "Jos olet organisaation omistaja, voit <a href=\"mailto:"
-"%(support_email)s\">ottaa yhteyttä Zulipin tukeen</a> "
+"%(support_email)s\">ottaa yhteyttä SafeChatin tukeen</a> "
 "uudelleenaktivoimiseksi."
 
 #: templates/zerver/deactivated.html:55
@@ -2074,7 +2074,7 @@ msgid ""
 "reactivate it."
 msgstr ""
 "Jos olet omistaja tässä organisaatiossa, voit <a href=\"mailto:"
-"%(support_email)s\">ottaa yhteyttä Zulipin palvelimen ylläpitoon</a> "
+"%(support_email)s\">ottaa yhteyttä SafeChatin palvelimen ylläpitoon</a> "
 "uudeelleenaktivoimiseksi."
 
 #: templates/zerver/desktop_login.html:5
@@ -2117,7 +2117,7 @@ msgstr "Kirjaudu työpöutäsovelluksella"
 msgid ""
 "Copy this login token and return to your Zulip app to finish logging in:"
 msgstr ""
-"Kopioi tämä kirjautumiskoodi ja palaa Zulip sovellukseesi viimeistelläksesi "
+"Kopioi tämä kirjautumiskoodi ja palaa SafeChat sovellukseesi viimeistelläksesi "
 "sisäänkirjautuminen:"
 
 #: templates/zerver/desktop_redirect.html:17
@@ -2173,7 +2173,7 @@ msgstr "Päivitä"
 #: templates/zerver/portico-header.html:8
 #: templates/zerver/portico-header.html:12 zerver/models/realms.py:462
 msgid "Zulip"
-msgstr "Zulip"
+msgstr "SafeChat"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
@@ -2184,17 +2184,17 @@ msgstr "Tiivistelmä"
 msgid ""
 "Congratulations, you have created a new Zulip organization: "
 "<b>%(realm_name)s</b>."
-msgstr "Olet nyt luonut uuden Zulip-organisaation: <b>%(realm_name)s</b>."
+msgstr "Olet nyt luonut uuden SafeChat-organisaation: <b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/account_registered.html:14
 #: templates/zerver/emails/account_registered.txt:1
 msgid "Welcome to Zulip!"
-msgstr "Tervetuloa Zulipiin."
+msgstr "Tervetuloa SafeChatiin."
 
 #: templates/zerver/emails/account_registered.html:16
 #, python-format
 msgid "You've joined the Zulip organization <b>%(realm_name)s</b>."
-msgstr "Olet liittynyt Zulip-organisaatioon <b>%(realm_name)s</b>."
+msgstr "Olet liittynyt SafeChat-organisaatioon <b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/account_registered.html:22
 #, python-format
@@ -2202,7 +2202,7 @@ msgid ""
 "You will use the following info to log into the Zulip web, <a "
 "href=\"%(apps_page_link)s\">mobile and desktop</a> apps:"
 msgstr ""
-"Käytä seuraavia tietoja Zulipiin kirjautumiseksi verkossa, <a "
+"Käytä seuraavia tietoja SafeChatiin kirjautumiseksi verkossa, <a "
 "href=\"%(apps_page_link)s\">mobiili- ja työpöytäsovelluksilla</a>:"
 
 #: templates/zerver/emails/account_registered.html:25
@@ -2240,7 +2240,7 @@ msgid ""
 "If you are new to Zulip, check out our <a "
 "href=\"%(getting_user_started_link)s\">getting started guide</a>!"
 msgstr ""
-"Jos Zulip on uusi, tutustu <a "
+"Jos SafeChat on uusi, tutustu <a "
 "href=\"%(getting_user_started_link)s\">aloitusohjeeseen</a>,-"
 
 #: templates/zerver/emails/account_registered.html:43
@@ -2252,7 +2252,7 @@ msgid ""
 msgstr ""
 "Meillä on myös ohje <a "
 "href=\"%(getting_organization_started_link)s\">organisaation muuttamista "
-"Zulipiin varten</a>."
+"SafeChatiin varten</a>."
 
 #: templates/zerver/emails/account_registered.html:49
 #, python-format
@@ -2264,23 +2264,23 @@ msgstr "Kysymyksiä? <a href=\"mailto:%(support_email)s\">Ota yhteys</a>."
 #: templates/zerver/emails/account_registered.subject.txt:2
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new organization details"
-msgstr "%(realm_name)sZulipissa: Organisaatiotiedot"
+msgstr "%(realm_name)sSafeChatissa: Organisaatiotiedot"
 
 #: templates/zerver/emails/account_registered.subject.txt:4
 #, python-format
 msgid "%(realm_name)s on Zulip: Your new account details"
-msgstr "%(realm_name)sZulipissa: Uudet tilitiedot"
+msgstr "%(realm_name)sSafeChatissa: Uudet tilitiedot"
 
 #: templates/zerver/emails/account_registered.txt:4
 #, python-format
 msgid ""
 "Congratulations, you have created a new Zulip organization: %(realm_name)s."
-msgstr "Olet luonut uuden Zulip-organisaation: %(realm_name)s."
+msgstr "Olet luonut uuden SafeChat-organisaation: %(realm_name)s."
 
 #: templates/zerver/emails/account_registered.txt:6
 #, python-format
 msgid "You've joined the Zulip organization %(realm_name)s."
-msgstr "Liityttiin Zulip-organisaatioon: %(realm_name)s."
+msgstr "Liityttiin SafeChat-organisaatioon: %(realm_name)s."
 
 #: templates/zerver/emails/account_registered.txt:10
 #, python-format
@@ -2288,7 +2288,7 @@ msgid ""
 "You will use the following info to log into the Zulip web, mobile and "
 "desktop apps (%(apps_page_link)s):"
 msgstr ""
-"Käytä seuraavia tietoja kirjautuessasi Zulipiin verkossa, mobiililla tai "
+"Käytä seuraavia tietoja kirjautuessasi SafeChatiin verkossa, mobiililla tai "
 "työpöytäsovelluksella (%(apps_page_link)s):"
 
 #: templates/zerver/emails/account_registered.txt:25
@@ -2297,7 +2297,7 @@ msgid ""
 "If you are new to Zulip, check out our getting started guide "
 "(%(getting_user_started_link)s)!"
 msgstr ""
-"Jos olet uusi Zulip-käyttäjä, tutustu aloitusohjeeseen "
+"Jos olet uusi SafeChat-käyttäjä, tutustu aloitusohjeeseen "
 "(%(getting_user_started_link)s)"
 
 #: templates/zerver/emails/account_registered.txt:27
@@ -2306,7 +2306,7 @@ msgid ""
 "We also have a guide for moving your organization to Zulip "
 "(%(getting_organization_started_link)s)."
 msgstr ""
-"Meillä on myös ohje organisaation muuttamiseksi Zulipiiin "
+"Meillä on myös ohje organisaation muuttamiseksi SafeChatiiin "
 "(%(getting_organization_started_link)s)."
 
 #: templates/zerver/emails/account_registered.txt:32
@@ -2325,7 +2325,7 @@ msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at %(support_email)s."
 msgstr ""
-"Jos sinulla on kysymyksiä niin ota yhteyttä tämän Zulip-palvelimen "
+"Jos sinulla on kysymyksiä niin ota yhteyttä tämän SafeChat-palvelimen "
 "ylläpitoon sähköpostilla %(support_email)s."
 
 #: templates/zerver/emails/confirm_demo_organization_email.html:8
@@ -2345,7 +2345,7 @@ msgid ""
 "demo organization account on %(realm_url)s. To confirm this update and set a "
 "password for this account, please click below:"
 msgstr ""
-"Saimme pyynnön sähköpostiosoitteesta %(new_email)sZulipin demo-"
+"Saimme pyynnön sähköpostiosoitteesta %(new_email)sSafeChatin demo-"
 "organisaatiolle %(realm_url)s. Vahvista päivitys ja aseta salasana tilille "
 "alta:"
 
@@ -2367,7 +2367,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Verify your new email address for your demo Zulip organization"
 msgid "Verify your email address for your Zulip demo organization"
-msgstr "vahvista uusi sähköpostiosoite Zulipin demo-organisaatiolle"
+msgstr "vahvista uusi sähköpostiosoite SafeChatin demo-organisaatiolle"
 
 #: templates/zerver/emails/confirm_demo_organization_email.txt:9
 #: templates/zerver/emails/confirm_new_email.txt:9
@@ -2387,7 +2387,7 @@ msgid ""
 "%(realm_url)s from %(old_email)s to %(new_email)s. To confirm this change, "
 "please click below:"
 msgstr ""
-"Saimme pyynnön sähköpostiosoitteen muuttamistesta Zulip-tilin%(realm_url)s "
+"Saimme pyynnön sähköpostiosoitteen muuttamistesta SafeChat-tilin%(realm_url)s "
 "osoitteesta %(old_email)s osoitteeseen %(new_email)s. Vahvista alta:"
 
 #: templates/zerver/emails/confirm_new_email.html:11
@@ -2403,7 +2403,7 @@ msgstr ""
 #: templates/zerver/emails/confirm_registration.html:10
 #: templates/zerver/emails/confirm_registration.txt:2
 msgid "You have requested a new Zulip organization:"
-msgstr "Olet pyytänyt uutta Zulip-organisaatiota:"
+msgstr "Olet pyytänyt uutta SafeChat-organisaatiota:"
 
 #: templates/zerver/emails/confirm_registration.html:14
 #: templates/zerver/emails/confirm_registration.txt:5
@@ -2414,7 +2414,7 @@ msgstr "Organisaation tyyppi: %(organization_type)s"
 #: templates/zerver/emails/confirm_registration.html:18
 #: templates/zerver/emails/confirm_registration.txt:7
 msgid "You recently signed up for Zulip. Awesome!"
-msgstr "Kirjauduit Zulipin käyttäjäksi hiljattain, hienoa."
+msgstr "Kirjauduit SafeChatin käyttäjäksi hiljattain, hienoa."
 
 #: templates/zerver/emails/confirm_registration.html:23
 #: templates/zerver/emails/confirm_registration.txt:12
@@ -2437,11 +2437,11 @@ msgstr "Vie rekisteröinti päätökseen"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:2
 msgid "Create your Zulip organization"
-msgstr "Luo Zulip-organisaatiosi"
+msgstr "Luo SafeChat-organisaatiosi"
 
 #: templates/zerver/emails/confirm_registration.subject.txt:4
 msgid "Activate your Zulip account"
-msgstr "Aktivoi Zulip-tilisi"
+msgstr "Aktivoi SafeChat-tilisi"
 
 #: templates/zerver/emails/confirm_registration.txt:14
 msgid "Click the link below to complete registration."
@@ -2477,7 +2477,7 @@ msgid ""
 "Your Zulip account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
 "deactivated, and you will no longer be able to log in."
 msgstr ""
-"Zulip-tilisi on <a href=\"%(realm_url)s\">%(realm_url)s</a>deaktivoitu ja "
+"SafeChat-tilisi on <a href=\"%(realm_url)s\">%(realm_url)s</a>deaktivoitu ja "
 "sille ei voi kirjautua."
 
 #: templates/zerver/emails/deactivate.html:15
@@ -2496,7 +2496,7 @@ msgid ""
 "Your Zulip account on %(realm_url)s has been deactivated, and you will no "
 "longer be able to log in."
 msgstr ""
-"Zulip-tili kohteessa %(realm_url)s on deaktivoitu ja sille ei voi kirjautua."
+"SafeChat-tili kohteessa %(realm_url)s on deaktivoitu ja sille ei voi kirjautua."
 
 #: templates/zerver/emails/digest.html:28 templates/zerver/emails/digest.txt:9
 msgid "New channels"
@@ -2557,7 +2557,7 @@ msgstr ""
 #: templates/zerver/emails/digest.html:50
 #, python-format
 msgid "<a href=\"%(realm_url)s\">Log in</a> to Zulip to catch up."
-msgstr "<a href=\"%(realm_url)s\">Kirjaudu sisään</a> Zulipiin."
+msgstr "<a href=\"%(realm_url)s\">Kirjaudu sisään</a> SafeChatiin."
 
 #: templates/zerver/emails/digest.html:56
 msgid "Unsubscribe from digest emails"
@@ -2566,7 +2566,7 @@ msgstr "Peru sähköpostitilaus kokoelmaviestien osalta"
 #: templates/zerver/emails/digest.subject.txt:1
 #, python-format
 msgid "Zulip digest for %(realm_name)s"
-msgstr "Zulip-koonti kohteelle %(realm_name)s"
+msgstr "SafeChat-koonti kohteelle %(realm_name)s"
 
 #: templates/zerver/emails/digest.txt:14
 #, python-format
@@ -2614,7 +2614,7 @@ msgstr ""
 #, python-format
 msgid "Log in to Zulip to catch up: %(organization_url)s."
 msgstr ""
-"Kirjaudu Zulipiiin ja selaa lukemattomia viestejä: %(organization_url)s."
+"Kirjaudu SafeChatiiin ja selaa lukemattomia viestejä: %(organization_url)s."
 
 #: templates/zerver/emails/digest.txt:35
 #: templates/zerver/emails/missed_message.txt:60
@@ -2642,7 +2642,7 @@ msgid ""
 "Your email address %(email)s has accounts with the following Zulip Cloud "
 "organizations:"
 msgstr ""
-"Sähköpostisoitteellasi %(email)s on tilejä seuraavissa Zulip Cloud -"
+"Sähköpostisoitteellasi %(email)s on tilejä seuraavissa SafeChat Cloud -"
 "organisaatioissa:"
 
 #: templates/zerver/emails/find_team.html:14
@@ -2652,7 +2652,7 @@ msgid ""
 "Your email address %(email)s has accounts with the following Zulip "
 "organizations hosted by %(external_host)s:"
 msgstr ""
-"Sähköpostiosoitteellasi %(email)s on tilejä seuraavissa Zulip-"
+"Sähköpostiosoitteellasi %(email)s on tilejä seuraavissa SafeChat-"
 "organisaatioissa, joita isännöi %(external_host)s:"
 
 #: templates/zerver/emails/find_team.html:24
@@ -2668,12 +2668,12 @@ msgstr ""
 #: templates/zerver/emails/find_team.txt:21
 #: templates/zerver/emails/find_team.txt:28
 msgid "You have requested a list of Zulip accounts for this email address."
-msgstr "Olet hakenut luetteloa Zulip-tileistä tälle sähköpostiosoitteelle."
+msgstr "Olet hakenut luetteloa SafeChat-tileistä tälle sähköpostiosoitteelle."
 
 #: templates/zerver/emails/find_team.html:30
 #: templates/zerver/emails/find_team.txt:21
 msgid "Unfortunately, no Zulip Cloud accounts were found."
-msgstr "Valitettavasti Zulip Cloud -tilejä ei löytynyt."
+msgstr "Valitettavasti SafeChat Cloud -tilejä ei löytynyt."
 
 #: templates/zerver/emails/find_team.html:32
 #: templates/zerver/emails/find_team.txt:28
@@ -2682,7 +2682,7 @@ msgid ""
 "Unfortunately, no accounts were found in Zulip organizations hosted by "
 "%(external_host)s."
 msgstr ""
-"Valitettavasti, Zulip-organisaatioita ei löytynyt kohteesta "
+"Valitettavasti, SafeChat-organisaatioita ei löytynyt kohteesta "
 "%(external_host)s."
 
 #: templates/zerver/emails/find_team.html:37
@@ -2706,11 +2706,11 @@ msgstr ""
 
 #: templates/zerver/emails/find_team.subject.txt:2
 msgid "Your Zulip accounts"
-msgstr "Zulip tilisi"
+msgstr "SafeChat tilisi"
 
 #: templates/zerver/emails/find_team.subject.txt:4
 msgid "No Zulip accounts found"
-msgstr "Zulip-tilejä ei löytynyt"
+msgstr "SafeChat-tilejä ei löytynyt"
 
 #: templates/zerver/emails/find_team.txt:15
 msgid "If you have trouble logging in, you can reset your password."
@@ -2738,7 +2738,7 @@ msgid ""
 "%(referrer_name)s wants you to join them on Zulip &mdash; the team "
 "communication tool designed for productivity."
 msgstr ""
-"%(referrer_name)s toivoo, että liittyisit seuraan Zulipissa &mdash; "
+"%(referrer_name)s toivoo, että liittyisit seuraan SafeChatissa &mdash; "
 "tuottavuuteen suunnitellussa viestintätyökalussa."
 
 #: templates/zerver/emails/invitation.html:15
@@ -2758,7 +2758,7 @@ msgid ""
 "-- the team communication tool designed for productivity."
 msgstr ""
 "%(referrer_full_name)s (%(referrer_email)s) toivoo, että liittyisit seuraan "
-"Zulipissa -- tuottavuuteen suunnitellussa viestintätyökalussa."
+"SafeChatissa -- tuottavuuteen suunnitellussa viestintätyökalussa."
 
 #: templates/zerver/emails/invitation.txt:5
 #: templates/zerver/emails/invitation_reminder.txt:5
@@ -2777,7 +2777,7 @@ msgid ""
 "Zulip &mdash; the team communication tool designed for productivity."
 msgstr ""
 "Ystävällinen muistutus: %(referrer_name)s toivoo, että liittyisit seuraan "
-"Zulipissa &mdash; tuottavuuteen suunnitellussa viestintätyökalussa."
+"SafeChatissa &mdash; tuottavuuteen suunnitellussa viestintätyökalussa."
 
 #: templates/zerver/emails/invitation_reminder.html:18
 #: templates/zerver/emails/invitation_reminder.txt:8
@@ -2808,7 +2808,7 @@ msgid ""
 "productivity."
 msgstr ""
 "Ystävällinen muistutus: %(referrer_name)s (%(referrer_email)s) toivoo, että "
-"liittyisit seuraan Zulipissa -- tuottavuuteen suunnitellussa "
+"liittyisit seuraan SafeChatissa -- tuottavuuteen suunnitellussa "
 "viestintätyökalussa."
 
 #: templates/zerver/emails/macros.html:14
@@ -2817,7 +2817,7 @@ msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at <a href=\"mailto:%(email)s\">%(email)s</a>."
 msgstr ""
-"Jos sinulla on kysymyksiä, niin ota yhteyttä tämän Zulip-palvelimen "
+"Jos sinulla on kysymyksiä, niin ota yhteyttä tämän SafeChat-palvelimen "
 "ylläpitoon sähköpostilla <a href=\"mailto:%(email)s\">%(email)s</a>."
 
 #: templates/zerver/emails/macros.html:18
@@ -2897,7 +2897,7 @@ msgid ""
 "preferences</a>."
 msgstr ""
 "Vastaa tähän sähköpostiin suoraan <a href=\"%(narrow_url)s\">katso sitä "
-"%(realm_name)s Zulipissa</a>, tai <a href=\"%(notif_url)s\">muokkaa "
+"%(realm_name)s SafeChatissa</a>, tai <a href=\"%(notif_url)s\">muokkaa "
 "sähköpostiasetuksia</a>."
 
 #: templates/zerver/emails/missed_message.html:48
@@ -2906,7 +2906,7 @@ msgid ""
 "<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 msgstr ""
-"<a href=\"%(narrow_url)s\">Katso tätä viestiä %(realm_name)sZulipissa </a>, "
+"<a href=\"%(narrow_url)s\">Katso tätä viestiä %(realm_name)sSafeChatissa </a>, "
 "tai <a href=\"%(notif_url)s\">muokkaa sähköpostiasetuksia</a>."
 
 #: templates/zerver/emails/missed_message.html:50
@@ -2915,7 +2915,7 @@ msgid ""
 "<a href=\"%(narrow_url)s\">Reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
 msgstr ""
-"<a href=\"%(narrow_url)s\">Vastaa %(realm_name)s Zulipissa</a> tai <a "
+"<a href=\"%(narrow_url)s\">Vastaa %(realm_name)s SafeChatissa</a> tai <a "
 "href=\"%(notif_url)s\">muokkaa sähköpostiasetuksia</a>."
 
 #: templates/zerver/emails/missed_message.html:52
@@ -2924,7 +2924,7 @@ msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails (<a href=\"%(url)s\">help</a>)."
 msgstr ""
-"Älä vastaa tähän sähköpostiin. Tätä Zulip-palvelinta ei ole määritetty "
+"Älä vastaa tähän sähköpostiin. Tätä SafeChat-palvelinta ei ole määritetty "
 "vastaanottamaan saapuvia sähköposteja. (<a href=\"%(url)s\">ohjeita</a>)."
 
 #: templates/zerver/emails/missed_message.subject.txt:2
@@ -2949,24 +2949,24 @@ msgstr "Uudet viestit"
 #: templates/zerver/emails/missed_message.txt:41
 #, python-format
 msgid "Reply to this email directly, or view it in %(realm_name)s Zulip:"
-msgstr "Vastaa viestiin suoraan tai katsele sitä %(realm_name)s Zulipissa:"
+msgstr "Vastaa viestiin suoraan tai katsele sitä %(realm_name)s SafeChatissa:"
 
 #: templates/zerver/emails/missed_message.txt:45
 #, python-format
 msgid "View or reply in %(realm_name)s Zulip:"
-msgstr "Katso tai vasta a%(realm_name)sZulipissa:"
+msgstr "Katso tai vasta a%(realm_name)sSafeChatissa:"
 
 #: templates/zerver/emails/missed_message.txt:49
 #, python-format
 msgid "Reply in %(realm_name)s Zulip:"
-msgstr "Vastaa %(realm_name)s Zulipissa"
+msgstr "Vastaa %(realm_name)s SafeChatissa"
 
 #: templates/zerver/emails/missed_message.txt:53
 msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails. Help:"
 msgstr ""
-"Älä vastaa tähän sähköpostiin. Tätä Zulip-palvelinta ei ole määritetty "
+"Älä vastaa tähän sähköpostiin. Tätä SafeChat-palvelinta ei ole määritetty "
 "vastaanottamaan sähköpostia. Auta:"
 
 #: templates/zerver/emails/notify_change_in_email.html:10
@@ -2976,7 +2976,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at %(support_email)s."
 msgstr ""
-"Zulip-tunnukseen määritelty sähköpostiosoiteeksi vaihdettiin äskettäin "
+"SafeChat-tunnukseen määritelty sähköpostiosoiteeksi vaihdettiin äskettäin "
 "%(new_email)s. Jos et pyytänyt tätä muutosta itse, ota pikimmiten yhteyttä "
 "%(support_email)s."
 
@@ -2988,12 +2988,12 @@ msgstr "Parhain terveisin,"
 #: templates/zerver/emails/notify_change_in_email.html:14
 #: templates/zerver/emails/notify_change_in_email.txt:7
 msgid "Team Zulip"
-msgstr "Zulip-tiimi"
+msgstr "SafeChat-tiimi"
 
 #: templates/zerver/emails/notify_change_in_email.subject.txt:1
 #, python-format
 msgid "Zulip email changed for %(realm_name)s"
-msgstr "Zulip-sähköposti vaihdettu organisaatiolle %(realm_name)s"
+msgstr "SafeChat-sähköposti vaihdettu organisaatiolle %(realm_name)s"
 
 #: templates/zerver/emails/notify_change_in_email.txt:3
 #, python-format
@@ -3002,7 +3002,7 @@ msgid ""
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at <%(support_email)s>."
 msgstr ""
-"Zulip-tiliisi yhdistetty sähköpostiosoite muutettiin äskettäin muotoon "
+"SafeChat-tiliisi yhdistetty sähköpostiosoite muutettiin äskettäin muotoon "
 "%(new_email)s. Jos et pyytänyt tätä muutosta, ota meihin välittömästi "
 "yhteyttä osoitteessa <%(support_email)s>."
 
@@ -3017,7 +3017,7 @@ msgstr ""
 #: templates/zerver/emails/notify_new_login.html:12
 #: templates/zerver/emails/notify_new_login.txt:1
 msgid "We noticed a recent login for the following Zulip account."
-msgstr "Olemme havainneet hiljattain kirjautumisen seuraavalle Zulip-tilille."
+msgstr "Olemme havainneet hiljattain kirjautumisen seuraavalle SafeChat-tilille."
 
 #: templates/zerver/emails/notify_new_login.html:15
 #, python-format
@@ -3074,7 +3074,7 @@ msgstr "Kiitokset,"
 #: templates/zerver/emails/notify_new_login.html:39
 #: templates/zerver/emails/notify_new_login.txt:21
 msgid "Zulip Security"
-msgstr "Zulip-tietoturva"
+msgstr "SafeChat-tietoturva"
 
 #: templates/zerver/emails/notify_new_login.html:44
 msgid "Unsubscribe from login notifications"
@@ -3109,8 +3109,8 @@ msgid ""
 "can use our <a href=\"%(get_organization_started)s\">guide for moving to "
 "Zulip</a> to get started."
 msgstr ""
-"Jos olet jo päättänyt Zulipista organisaatiollesi tervetuloa. Voit lukea <a "
-"href=\"%(get_organization_started)s\">muutto-ohjetta Zulipiin</a> aluksi."
+"Jos olet jo päättänyt SafeChatista organisaatiollesi tervetuloa. Voit lukea <a "
+"href=\"%(get_organization_started)s\">muutto-ohjetta SafeChatiin</a> aluksi."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.html:13
 msgid ""
@@ -3152,7 +3152,7 @@ msgid ""
 "communication</a>, and we hope these tips help your team experience it in "
 "action."
 msgstr ""
-"Zulip on suunniteltu <a href=\"%(why_zulip)s\">tehokkaaseen kommunikaatioon</"
+"SafeChat on suunniteltu <a href=\"%(why_zulip)s\">tehokkaaseen kommunikaatioon</"
 "a> ja toivomme että nämä vinkit auttavat ryhmääsi kokemaan sen."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.html:38
@@ -3174,7 +3174,7 @@ msgid ""
 "If you've already decided to use Zulip for your organization, welcome! You "
 "can use our guide for moving to Zulip to get started."
 msgstr ""
-"Jos olet jo päätynyt Zulipiin organisaatiollesi tervetuloa. Voit lukea "
+"Jos olet jo päätynyt SafeChatiin organisaatiollesi tervetuloa. Voit lukea "
 "ohjeita muuttamisesta aluksi."
 
 #: templates/zerver/emails/onboarding_team_to_zulip.txt:3
@@ -3206,7 +3206,7 @@ msgid ""
 "Zulip is designed to enable efficient communication, and we hope these tips "
 "help your team experience it in action."
 msgstr ""
-"Zulip on suunniteltu tehokkaaseen kommunikaatioon ja toivomme että nämä "
+"SafeChat on suunniteltu tehokkaaseen kommunikaatioon ja toivomme että nämä "
 "vinkit auttavat ryhmääsi kokemaan sen."
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:9
@@ -3216,71 +3216,71 @@ msgid ""
 "can work best for your needs. Check out this guide to key Zulip features for "
 "organizations like yours!"
 msgstr ""
-"Kun aloitat Zulipin käyttöä, opastamme sovittamaan sen tarpeisiisi. Tässä "
-"oppaasse on Zulipin keskeiset ominasuudet organisaatiotasi varten."
+"Kun aloitat SafeChatin käyttöä, opastamme sovittamaan sen tarpeisiisi. Tässä "
+"oppaasse on SafeChatin keskeiset ominasuudet organisaatiotasi varten."
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:13
 #: templates/zerver/emails/onboarding_zulip_guide.txt:4
 msgid "View Zulip guide for businesses"
-msgstr "Katso Zulipin ohje yrityksille"
+msgstr "Katso SafeChatin ohje yrityksille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:15
 #: templates/zerver/emails/onboarding_zulip_guide.txt:6
 msgid "View Zulip guide for open-source projects"
-msgstr "Katso Zulipin ohjeet avoimen lähdekoodin projekteille"
+msgstr "Katso SafeChatin ohjeet avoimen lähdekoodin projekteille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:17
 #: templates/zerver/emails/onboarding_zulip_guide.txt:8
 msgid "View Zulip guide for education"
-msgstr "Katso Zulipin ohjeet kouluille"
+msgstr "Katso SafeChatin ohjeet kouluille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:19
 #: templates/zerver/emails/onboarding_zulip_guide.txt:10
 msgid "View Zulip guide for research"
-msgstr "Katos Zulipin ohjeet tutkijoille"
+msgstr "Katos SafeChatin ohjeet tutkijoille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:21
 #: templates/zerver/emails/onboarding_zulip_guide.txt:12
 msgid "View Zulip guide for events and conferences"
-msgstr "Katso Zulipin ohjeet tapahtumille ja konferensseille"
+msgstr "Katso SafeChatin ohjeet tapahtumille ja konferensseille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:23
 #: templates/zerver/emails/onboarding_zulip_guide.txt:14
 msgid "View Zulip guide for non-profits"
-msgstr "Katso Zulipin ohjeet voittoa tavoittelemattomille yrityksille"
+msgstr "Katso SafeChatin ohjeet voittoa tavoittelemattomille yrityksille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.html:25
 #: templates/zerver/emails/onboarding_zulip_guide.txt:16
 msgid "View Zulip guide for communities"
-msgstr "Katso Zulipin ohjeet yhteisöille"
+msgstr "Katso SafeChatin ohjeet yhteisöille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:2
 msgid "Zulip guide for businesses"
-msgstr "Zulipin ohje yrityksille"
+msgstr "SafeChatin ohje yrityksille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:4
 msgid "Zulip guide for open-source projects"
-msgstr "Zulipin ohje avoimen lähdekoodin projekteille"
+msgstr "SafeChatin ohje avoimen lähdekoodin projekteille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:6
 msgid "Zulip guide for education"
-msgstr "Zulipin ohje kouluille"
+msgstr "SafeChatin ohje kouluille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:8
 msgid "Zulip guide for research"
-msgstr "Zulipin ohje tutkijoille"
+msgstr "SafeChatin ohje tutkijoille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:10
 msgid "Zulip guide for events and conferences"
-msgstr "Zulipin ohje tapahtumille ja konferensseille"
+msgstr "SafeChatin ohje tapahtumille ja konferensseille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:12
 msgid "Zulip guide for non-profits"
-msgstr "Zulipin ohje voittoa tavoittelmattomille yrityksille"
+msgstr "SafeChatin ohje voittoa tavoittelmattomille yrityksille"
 
 #: templates/zerver/emails/onboarding_zulip_guide.subject.txt:14
 msgid "Zulip guide for communities"
-msgstr "Zulipin ohje yhteisöille"
+msgstr "SafeChatin ohje yhteisöille"
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:9
 #: templates/zerver/emails/onboarding_zulip_topics.txt:1
@@ -3288,7 +3288,7 @@ msgid ""
 "Here are some tips for keeping your Zulip conversations organized with "
 "topics."
 msgstr ""
-"Tässä on jotain vihjeitä Zulipin keskutelujen järjestyksesssä pitämiseksi "
+"Tässä on jotain vihjeitä SafeChatin keskutelujen järjestyksesssä pitämiseksi "
 "aiheilla."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:13
@@ -3296,7 +3296,7 @@ msgid ""
 "In Zulip, <b>channels</b> determine who gets a message. <b>Topics</b> tell "
 "you what the message is about."
 msgstr ""
-"Zulipissa <b>kanavat</b> määrittelevät kuka saa viestin. <b>Aiheet</b> "
+"SafeChatissa <b>kanavat</b> määrittelevät kuka saa viestin. <b>Aiheet</b> "
 "määrittelevät mitä viesti koskee."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:13
@@ -3305,12 +3305,12 @@ msgid ""
 "Using topics, you can read Zulip one conversation at a time. You'll see each "
 "message in context, no matter how many different discussions are going on."
 msgstr ""
-"Aiheilla voit lukea Zulipin viestejä keskustelu kerrallaan. Näet joka "
+"Aiheilla voit lukea SafeChatin viestejä keskustelu kerrallaan. Näet joka "
 "viestin aiheyhteydessään, riippumatta siitä montako keskustelua on menossa."
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:16
 msgid "Channels and topics in the Zulip app"
-msgstr "Kanavat ja eiheet Zulipin sovelluksessa"
+msgstr "Kanavat ja eiheet SafeChatin sovelluksessa"
 
 #: templates/zerver/emails/onboarding_zulip_topics.html:19
 #: templates/zerver/emails/onboarding_zulip_topics.txt:5
@@ -3346,7 +3346,7 @@ msgstr ""
 #: templates/zerver/emails/onboarding_zulip_topics.txt:10
 #: templates/zerver/portico-header-dropdown.html:3
 msgid "Go to Zulip"
-msgstr "Siirry Zulipiin"
+msgstr "Siirry SafeChatiin"
 
 #: templates/zerver/emails/onboarding_zulip_topics.subject.txt:1
 msgid "Keep your conversations organized with topics"
@@ -3357,7 +3357,7 @@ msgid ""
 "In Zulip, channels determine who gets a message. Topics tell you what the "
 "message is about."
 msgstr ""
-"Zulipissa, kanavilla määritellään kuka saa viesti. Aiheet määrittelevät mitä "
+"SafeChatissa, kanavilla määritellään kuka saa viesti. Aiheet määrittelevät mitä "
 "viesti koskee."
 
 #: templates/zerver/emails/onboarding_zulip_topics.txt:7
@@ -3380,7 +3380,7 @@ msgid ""
 "Somebody (possibly you) requested a new password for the Zulip account "
 "%(email)s on %(realm_url)s."
 msgstr ""
-"Joku (ehkä sinä) pyysi uutta salasanaa Zulip-tilille %(email)s osoitteessa "
+"Joku (ehkä sinä) pyysi uutta salasanaa SafeChat-tilille %(email)s osoitteessa "
 "%(realm_url)s."
 
 #: templates/zerver/emails/password_reset.html:13
@@ -3405,7 +3405,7 @@ msgstr ""
 #: templates/zerver/emails/password_reset.html:21
 #: templates/zerver/emails/password_reset.txt:11
 msgid "You do not have an account in that Zulip organization."
-msgstr "Sinulla ei ole Zulip-tiliä tässä organisaatiossa."
+msgstr "Sinulla ei ole SafeChat-tiliä tässä organisaatiossa."
 
 #: templates/zerver/emails/password_reset.html:26
 #: templates/zerver/emails/password_reset.txt:16
@@ -3453,7 +3453,7 @@ msgid ""
 "the Zulip Cloud Free plan because of unpaid invoices. The unpaid invoices "
 "have been voided."
 msgstr ""
-"Organisaatiosi %(organization_name_with_link)son alennettu Zulip Cloudiin "
+"Organisaatiosi %(organization_name_with_link)son alennettu SafeChat Cloudiin "
 "Ilmainen tilaus maksamattomien laskujen vuoksi. Maksamattomat laskut on "
 "mitätöity."
 
@@ -3463,7 +3463,7 @@ msgid ""
 "To continue on the Zulip Cloud Standard plan, please upgrade again by going "
 "to %(upgrade_url)s."
 msgstr ""
-"Jos haluat jatkaa Zulip Cloud Standard -tilausta, päivitä uudelleen "
+"Jos haluat jatkaa SafeChat Cloud Standard -tilausta, päivitä uudelleen "
 "siirtymällä osoitteeseen %(upgrade_url)s."
 
 #: templates/zerver/emails/realm_auto_downgraded.html:22
@@ -3485,7 +3485,7 @@ msgid ""
 "You have deactivated your Zulip demo organization, %(realm_name)s, on "
 "%(localized_date)s."
 msgstr ""
-"Olet deaktivoinut Zulip-organisaation. %(realm_name)s kohteessa "
+"Olet deaktivoinut SafeChat-organisaation. %(realm_name)s kohteessa "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:17
@@ -3498,7 +3498,7 @@ msgid ""
 "Your Zulip demo organization, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 msgstr ""
-"Zulip-organisaatios %(realm_name)s on deaktivoitu käyttäjän "
+"SafeChat-organisaatios %(realm_name)s on deaktivoitu käyttäjän "
 "%(deactivating_owner)s toimesta ajalla %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:19
@@ -3510,7 +3510,7 @@ msgstr ""
 msgid ""
 "Your Zulip demo organization, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
-msgstr "Zulip-organisaatiosoi %(realm_name)s deaktivoitiin %(localized_date)s."
+msgstr "SafeChat-organisaatiosoi %(realm_name)s deaktivoitiin %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:23
 #: templates/zerver/emails/realm_deactivated.txt:15
@@ -3519,7 +3519,7 @@ msgid ""
 "You have deactivated your Zulip organization, %(realm_name)s, on "
 "%(localized_date)s."
 msgstr ""
-"Olet deaktivoinut Zulip-organisaation. %(realm_name)s kohteessa "
+"Olet deaktivoinut SafeChat-organisaation. %(realm_name)s kohteessa "
 "%(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:25
@@ -3529,7 +3529,7 @@ msgid ""
 "Your Zulip organization, %(realm_name)s, was deactivated by "
 "%(deactivating_owner)s on %(localized_date)s."
 msgstr ""
-"Zulip-organisaatios %(realm_name)s on deaktivoitu käyttäjän "
+"SafeChat-organisaatios %(realm_name)s on deaktivoitu käyttäjän "
 "%(deactivating_owner)s toimesta ajalla %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:27
@@ -3538,7 +3538,7 @@ msgstr ""
 msgid ""
 "Your Zulip organization, %(realm_name)s, was deactivated on "
 "%(localized_date)s."
-msgstr "Zulip-organisaatiosoi %(realm_name)s deaktivoitiin %(localized_date)s."
+msgstr "SafeChat-organisaatiosoi %(realm_name)s deaktivoitiin %(localized_date)s."
 
 #: templates/zerver/emails/realm_deactivated.html:31
 #: templates/zerver/emails/realm_deactivated.txt:23
@@ -3570,7 +3570,7 @@ msgstr ""
 #: templates/zerver/emails/realm_deactivated.subject.txt:1
 #, python-format
 msgid "Your Zulip organization %(realm_name)s has been deactivated"
-msgstr "Zulip-organisaatiosi %(realm_name)s on deaktivoitu"
+msgstr "SafeChat-organisaatiosi %(realm_name)s on deaktivoitu"
 
 #: templates/zerver/emails/realm_reactivation.html:8
 #: templates/zerver/emails/realm_reactivation.txt:1
@@ -3622,11 +3622,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Reactivate your Zulip organization"
 msgid "Reactivate your Zulip demo organization"
-msgstr "Uudelleenaktivoi Zulip-organisaatio"
+msgstr "Uudelleenaktivoi SafeChat-organisaatio"
 
 #: templates/zerver/emails/realm_reactivation.subject.txt:4
 msgid "Reactivate your Zulip organization"
-msgstr "Uudelleenaktivoi Zulip-organisaatio"
+msgstr "Uudelleenaktivoi SafeChat-organisaatio"
 
 #: templates/zerver/emails/realm_reactivation.txt:11
 msgid "Click the link below to reactivate your organization."
@@ -3638,7 +3638,7 @@ msgid ""
 "Either you, or someone on your behalf, has requested a log in link to manage "
 "the Zulip plan for <b>%(remote_server_hostname)s</b>."
 msgstr ""
-"Joko sinä, tai joku muu, on pyytänyt lähetettäväksi linkin Zulipin tilausten "
+"Joko sinä, tai joku muu, on pyytänyt lähetettäväksi linkin SafeChatin tilausten "
 "määrittelyyn palvelimelle <b>%(remote_server_hostname)s</b>."
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.html:12
@@ -3663,7 +3663,7 @@ msgstr ""
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.subject.txt:1
 msgid "Log in to Zulip plan management"
-msgstr "Kirjaudu Zulipin tilauksenhallintaan"
+msgstr "Kirjaudu SafeChatin tilauksenhallintaan"
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.txt:1
 #, python-format
@@ -3671,7 +3671,7 @@ msgid ""
 "Either you, or someone on your behalf, has requested a log in link to manage "
 "the Zulip plan for %(remote_server_hostname)s."
 msgstr ""
-"Joko sinä, tai joku muu, on pyytänyt lähetettäväksi linkin Zulipin tilausten "
+"Joko sinä, tai joku muu, on pyytänyt lähetettäväksi linkin SafeChatin tilausten "
 "määrittelyyn palvelimelle %(remote_server_hostname)s."
 
 #: templates/zerver/emails/remote_billing_legacy_server_confirm_login.txt:4
@@ -3695,7 +3695,7 @@ msgid ""
 "management for <b>%(remote_realm_host)s</b>."
 msgstr ""
 "Paina alla olevaa nappia sähköpostin vahvistamiseksi ja kirjaudu sisään "
-"Zulipin tilauksenhallintaan palvelimelle <b>%(remote_realm_host)s</b>."
+"SafeChatin tilauksenhallintaan palvelimelle <b>%(remote_realm_host)s</b>."
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.html:14
 #: templates/zerver/emails/remote_realm_billing_confirm_login.txt:4
@@ -3704,7 +3704,7 @@ msgstr "Vahvista ja kirjaudu sisään"
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.subject.txt:1
 msgid "Confirm email for Zulip plan management"
-msgstr "Vahvista sähköposti Zulipin tilauksenhallintaan"
+msgstr "Vahvista sähköposti SafeChatin tilauksenhallintaan"
 
 #: templates/zerver/emails/remote_realm_billing_confirm_login.txt:1
 #, python-format
@@ -3713,7 +3713,7 @@ msgid ""
 "management for %(remote_realm_host)s."
 msgstr ""
 "Paina alla olevaa linkkiä sähköpostin vahvistamiseksi ja kirjaudu sisään "
-"Zulipin tilauksenhallintaan palvelimelle %(remote_realm_host)s."
+"SafeChatin tilauksenhallintaan palvelimelle %(remote_realm_host)s."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.html:9
 #, python-format
@@ -3721,8 +3721,8 @@ msgid ""
 "Your request for Zulip sponsorship has been approved! Your organization has "
 "been upgraded to the <a href=\"%(plans_link)s\">Zulip Community plan</a>."
 msgstr ""
-"Hakemuksesi Zulipin sponsoroinnille on hyväksytty. Organisaatiosi on "
-"nostettu tasolle <a href=\"%(plans_link)s\">Zulip Community plan</a>."
+"Hakemuksesi SafeChatin sponsoroinnille on hyväksytty. Organisaatiosi on "
+"nostettu tasolle <a href=\"%(plans_link)s\">SafeChat Community plan</a>."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.html:12
 #, python-format
@@ -3730,7 +3730,7 @@ msgid ""
 "If you could <a href=\"%(link_to_zulip)s\">list Zulip as a sponsor on your "
 "website</a>, we would really appreciate it!"
 msgstr ""
-"Jos voit <a href=\"%(link_to_zulip)s\">mainita Zulipin sponsorina "
+"Jos voit <a href=\"%(link_to_zulip)s\">mainita SafeChatin sponsorina "
 "sivuillasi</a> niin se olisi oikein arvostettavaa."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.subject.txt:1
@@ -3743,15 +3743,15 @@ msgid ""
 "Your request for Zulip sponsorship has been approved! Your organization has "
 "been upgraded to the Zulip Community plan."
 msgstr ""
-"Hakemus Zulipin sponsoroinnille on hyväksytty. Organisaatiosi on päivitetty "
-"Zulipin yhteisösuunnitelmaan."
+"Hakemus SafeChatin sponsoroinnille on hyväksytty. Organisaatiosi on päivitetty "
+"SafeChatin yhteisösuunnitelmaan."
 
 #: templates/zerver/emails/sponsorship_approved_community_plan.txt:4
 msgid ""
 "If you could list Zulip as a sponsor on your website, we would really "
 "appreciate it!"
 msgstr ""
-"Jos voisit mainita Zulipin sponsorina sivuillasi niin se olisi oikein "
+"Jos voisit mainita SafeChatin sponsorina sivuillasi niin se olisi oikein "
 "arvostettavaa."
 
 #: templates/zerver/find_account.html:4
@@ -3760,7 +3760,7 @@ msgstr "Etsi tilejäsi"
 
 #: templates/zerver/find_account.html:12
 msgid "Find your Zulip accounts"
-msgstr "Löydä Zulip-tilisi"
+msgstr "Löydä SafeChat-tilisi"
 
 #: templates/zerver/find_account.html:19
 msgid ""
@@ -3781,7 +3781,7 @@ msgid ""
 "Enter your email address to receive an email with the URLs for all the Zulip "
 "Cloud organizations in which you have active accounts."
 msgstr ""
-"Anna sähköpostiosoite saadaksesi viesti jossa on URL kaikille Zulip-pilven "
+"Anna sähköpostiosoite saadaksesi viesti jossa on URL kaikille SafeChat-pilven "
 "organisaatioille joissa olet mukana."
 
 #: templates/zerver/find_account.html:44
@@ -3789,7 +3789,7 @@ msgid ""
 "Enter your email address to receive an email with the URLs for all the Zulip "
 "organizations on this server in which you have active accounts."
 msgstr ""
-"Anna sähköpostiosoite saadaksesis viesti jossa on URL kaikille Zulip-"
+"Anna sähköpostiosoite saadaksesis viesti jossa on URL kaikille SafeChat-"
 "organisaatioille tällä palvelimella joissa olet mukana."
 
 #: templates/zerver/find_account.html:46
@@ -3814,7 +3814,7 @@ msgstr "Tuote"
 
 #: templates/zerver/footer.html:9
 msgid "Why Zulip"
-msgstr "Miksi Zulip"
+msgstr "Miksi SafeChat"
 
 #: templates/zerver/footer.html:10
 msgid "Features"
@@ -3828,7 +3828,7 @@ msgstr "Suunnitelmat ja hinnat"
 #, fuzzy
 #| msgid "Zulip Cloud status"
 msgid "Zulip Cloud"
-msgstr "Zulipin pilven tila"
+msgstr "SafeChatin pilven tila"
 
 #: templates/zerver/footer.html:13
 msgid "Self-hosting"
@@ -3912,19 +3912,19 @@ msgstr "Partnerit"
 
 #: templates/zerver/footer.html:49
 msgid "Zulip Cloud status"
-msgstr "Zulipin pilven tila"
+msgstr "SafeChatin pilven tila"
 
 #: templates/zerver/footer.html:52
 msgid "Moving to Zulip"
-msgstr "Siirry Zulipiin"
+msgstr "Siirry SafeChatiin"
 
 #: templates/zerver/footer.html:57
 msgid "Installing a Zulip server"
-msgstr "Zulip palvelimen asennus"
+msgstr "SafeChat palvelimen asennus"
 
 #: templates/zerver/footer.html:62
 msgid "Upgrading a Zulip server"
-msgstr "Zulip palvelimen päivitys"
+msgstr "SafeChat palvelimen päivitys"
 
 #: templates/zerver/footer.html:69
 msgid "Contributing"
@@ -3972,7 +3972,7 @@ msgstr "Blogi"
 
 #: templates/zerver/footer.html:100
 msgid "Support Zulip"
-msgstr "Tue Zulipia"
+msgstr "Tue SafeChatia"
 
 #: templates/zerver/footer.html:103
 msgid "X (Twitter)"
@@ -3988,7 +3988,7 @@ msgstr "LinkedIn"
 
 #: templates/zerver/footer.html:115
 msgid "Powered by <a href=\"https://zulip.com\">Zulip</a>"
-msgstr "<a href=\"https://zulip.com\">Zulip</a> käytössä"
+msgstr "<a href=\"https://zulip.com\">SafeChat</a> käytössä"
 
 #: templates/zerver/footer.html:121
 msgid "Terms of Service"
@@ -4101,7 +4101,7 @@ msgstr "Ei organisaatioita löytynyt"
 #: templates/zerver/invalid_realm.html:17
 #, python-format
 msgid "There is no Zulip organization at <b>%(current_url)s</b>."
-msgstr "Ei Zulip-organsiaatioita osoitteissa <b>%(current_url)s</b>."
+msgstr "Ei SafeChat-organsiaatioita osoitteissa <b>%(current_url)s</b>."
 
 #: templates/zerver/invalid_realm.html:21
 #, python-format
@@ -4111,8 +4111,8 @@ msgid ""
 "%(support_email)s\">contact Zulip support</a>."
 msgstr ""
 "Kokeile toista URLia. <a href=\"%(root_domain_url)s/accounts/find/\">hae "
-"lista Zulip-pilvitileistä</a> tai <a href=\"mailto:%(support_email)s\">ota "
-"yhteys Zulipin tukeen</a>."
+"lista SafeChat-pilvitileistä</a> tai <a href=\"mailto:%(support_email)s\">ota "
+"yhteys SafeChatin tukeen</a>."
 
 #: templates/zerver/invalid_realm.html:23
 #, python-format
@@ -4123,7 +4123,7 @@ msgid ""
 msgstr ""
 "Kokeile toista URLia <a href=\"%(root_domain_url)s/accounts/find/\">hae "
 "lista tileistäsi</a> tällä palvelimella tai <a href=\"mailto:"
-"%(support_email)s\">*ota yhteys Zulip-palvelimen administraattoreihin</a>."
+"%(support_email)s\">*ota yhteys SafeChat-palvelimen administraattoreihin</a>."
 
 #: templates/zerver/invalid_realm.html:28
 #, python-format
@@ -4132,7 +4132,7 @@ msgid ""
 "management for your Zulip server."
 msgstr ""
 "<a href=\"%(current_url)s/serverlogin/\">Paina tästä</a> niiin pääset "
-"suunnitelmanhallintaan Zulip-palvelimellasi."
+"suunnitelmanhallintaan SafeChat-palvelimellasi."
 
 #: templates/zerver/log_into_subdomain_token_invalid.html:4
 msgid "Invalid or expired login session"
@@ -4144,7 +4144,7 @@ msgstr "Virheellinen tai vanhentunut istunto."
 
 #: templates/zerver/login.html:18
 msgid "Log in to Zulip"
-msgstr "Kirjaudu Zulipiin"
+msgstr "Kirjaudu SafeChatiin"
 
 #: templates/zerver/login.html:54
 msgid "You've already registered with this email address. Please log in below."
@@ -4194,7 +4194,7 @@ msgid ""
 "a> because all Zulip Cloud licenses are in use."
 msgstr ""
 "Uusia jäseniä ei voi liittyä palvelimelle <a "
-"href=\"%(realm_url)s\">%(realm_name)s</a> koska kaikkia Zulip-pilvilisenssit "
+"href=\"%(realm_url)s\">%(realm_name)s</a> koska kaikkia SafeChat-pilvilisenssit "
 "on käytetty."
 
 #: templates/zerver/no_spare_licenses.html:19
@@ -4244,14 +4244,14 @@ msgstr "Päivitys vaaditaan"
 msgid ""
 "You are using old version of the Zulip desktop app that is no longer "
 "supported."
-msgstr "Käytössä vanha versio Zulip Desktopista jota ei tueta."
+msgstr "Käytössä vanha versio SafeChat Desktopista jota ei tueta."
 
 #: templates/zerver/portico_error_pages/insecure_desktop_app.html:21
 msgid ""
 "The auto-update feature in this old version of Zulip desktop app no longer "
 "works."
 msgstr ""
-"Automaattiset päivitykset tässä versiossa Zulip Desktoppia eivät enää toimi."
+"Automaattiset päivitykset tässä versiossa SafeChat Desktoppia eivät enää toimi."
 
 #: templates/zerver/portico_error_pages/insecure_desktop_app.html:30
 msgid "Download the latest release."
@@ -4294,7 +4294,7 @@ msgstr ""
 
 #: templates/zerver/portico_error_pages/remote_realm_server_mismatch_error.html:11
 msgid "Unexpected Zulip server registration"
-msgstr "Odottamaton Zulip-palvelimen rekisteröinti"
+msgstr "Odottamaton SafeChat-palvelimen rekisteröinti"
 
 #: templates/zerver/portico_error_pages/remote_realm_server_mismatch_error.html:13
 #, python-format
@@ -4303,8 +4303,8 @@ msgid ""
 "server installation. Please <a href=\"mailto:%(support_email)s\">contact "
 "Zulip support</a> for assistance in resolving this issue."
 msgstr ""
-"Zulip-organisaatios on rekisteröity toiselle Zulip-palvelimelle. <a "
-"href=\"mailto:%(support_email)s\">Ota yhteys Zulipin tukeen</a> tässä "
+"SafeChat-organisaatios on rekisteröity toiselle SafeChat-palvelimelle. <a "
+"href=\"mailto:%(support_email)s\">Ota yhteys SafeChatin tukeen</a> tässä "
 "asiassa."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:4
@@ -4315,7 +4315,7 @@ msgstr "Tukematon selain"
 #: templates/zerver/portico_error_pages/unsupported_browser.html:13
 #, python-format
 msgid "%(browser_name)s is not supported by Zulip."
-msgstr "Zulip ei tue selainta %(browser_name)s."
+msgstr "SafeChat ei tue selainta %(browser_name)s."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:18
 #, python-format
@@ -4323,7 +4323,7 @@ msgid ""
 "Zulip supports <a href=\"%(supported_browsers_page_link)s\">modern browsers</"
 "a> like Firefox, Chrome, and Edge."
 msgstr ""
-"Zulip tukee <a href=\"%(supported_browsers_page_link)s\">moderneja selaimia</"
+"SafeChat tukee <a href=\"%(supported_browsers_page_link)s\">moderneja selaimia</"
 "a> kuten Firefoxia, Chromea tai Edgeä."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:24
@@ -4331,7 +4331,7 @@ msgstr ""
 msgid ""
 "You can also use the <a href=\"%(apps_page_link)s\">Zulip desktop app</a>."
 msgstr ""
-"Voit myös kokeilla <a href=\"%(apps_page_link)s\">Zulipin "
+"Voit myös kokeilla <a href=\"%(apps_page_link)s\">SafeChatin "
 "työpöytäsovellusta</a>."
 
 #: templates/zerver/portico_error_pages/user_deactivated.html:4
@@ -4355,7 +4355,7 @@ msgid ""
 "with Zulip (<strong>%(verified_email)s</strong>). Select an account to "
 "associate your email address with."
 msgstr ""
-"Minkään tilin sähköpostiosoite tuodussa datassa ei täsmää Zulipissa "
+"Minkään tilin sähköpostiosoite tuodussa datassa ei täsmää SafeChatissa "
 "vahvistettuun sähköpostiosoitteeseesi (<strong>%(verified_email)s</strong>). "
 "Valitse tili jonka kanssa sähköpostiosoite yhdistetään."
 
@@ -4419,7 +4419,7 @@ msgstr ""
 
 #: templates/zerver/realm_redirect.html:52
 msgid "Self-hosting Zulip?"
-msgstr "Itse hostattu Zulip?"
+msgstr "Itse hostattu SafeChat?"
 
 #: templates/zerver/realm_redirect.html:53
 #, python-format
@@ -4553,7 +4553,7 @@ msgstr "Lähetä vientitiedosto"
 #| "Nobody in this Zulip organization will be able to see this email address."
 msgid "Who will be allowed to see other users' email addresses?"
 msgstr ""
-"Kukaan täss Zulip-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
+"Kukaan täss SafeChat-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
 
 #: templates/zerver/slack_import.html:104
 msgid ""
@@ -4615,7 +4615,7 @@ msgid ""
 "To use one of these to log in to Zulip, you must first <a href=\"https://"
 "github.com/settings/emails\">verify it with GitHub.</a>"
 msgstr ""
-"Kirjautuaksesi jollakin näistä Zulipiin, sinun tulee ensin <a href=\"https://"
+"Kirjautuaksesi jollakin näistä SafeChatiin, sinun tulee ensin <a href=\"https://"
 "github.com/settings/emails\">vahvistaa se GitHubissa.</a>"
 
 #: templates/zerver/unsubscribe_link_error.html:4
@@ -4654,7 +4654,7 @@ msgid ""
 "You've successfully unsubscribed from Zulip %(subscription_type)s emails for "
 "<a href=\"%(realm_url)s\">%(realm_name)s</a>."
 msgstr ""
-"Peruit tilauksen Zulipin %(subscription_type)s -sähkoposteille palvelimella "
+"Peruit tilauksen SafeChatin %(subscription_type)s -sähkoposteille palvelimella "
 "<a href=\"%(realm_url)s\">%(realm_name)s</a>."
 
 #: templates/zerver/unsubscribe_success.html:27
@@ -4673,11 +4673,11 @@ msgstr "Virheellinen order mapping."
 
 #: zerver/actions/create_realm.py:346
 msgid "Questions and discussion about using Zulip."
-msgstr "Kysymyksiä ja keskusteluja Zulipin käytöstä."
+msgstr "Kysymyksiä ja keskusteluja SafeChatin käytöstä."
 
 #: zerver/actions/create_realm.py:352
 msgid "Experiment with Zulip here. :test_tube:"
-msgstr "Testaa Zulipia tässä :test_tube:"
+msgstr "Testaa SafeChatia tässä :test_tube:"
 
 #: zerver/actions/create_realm.py:358
 msgid "For team-wide conversations"
@@ -4695,7 +4695,7 @@ msgstr "{user} liittyi tähän organisaatioon."
 #: zerver/actions/create_user.py:310
 #, python-brace-format
 msgid "{user} accepted your invitation to join Zulip!"
-msgstr "{user} hyväksyi kutsusi liittyä Zulipiin!"
+msgstr "{user} hyväksyi kutsusi liittyä SafeChatiin!"
 
 #: zerver/actions/create_user.py:713
 msgid ""
@@ -4780,7 +4780,7 @@ msgid ""
 "To protect users, Zulip limits the number of invitations you can send in one "
 "day. Because you have reached the limit, no invitations were sent."
 msgstr ""
-"Käyttäjien suojaamiseksi Zulip rajoittaa yhdessä päivässä lähetettävien "
+"Käyttäjien suojaamiseksi SafeChat rajoittaa yhdessä päivässä lähetettävien "
 "kutsujen määrää. Koska olet saavuttanut rajan, kutsuja ei lähetetty."
 
 #: zerver/actions/invites.py:226
@@ -5362,7 +5362,7 @@ msgid ""
 "use. Please contact the person who invited you and ask them to increase the "
 "number of licenses, then try again."
 msgstr ""
-"Uudet jäsenet eivät voi liittyä tähän organisaatioon, koska kaikki Zulip-"
+"Uudet jäsenet eivät voi liittyä tähän organisaatioon, koska kaikki SafeChat-"
 "lisenssit ovat käytössä. Ota yhteyttä kutsujaan ja pyydä häntä lisäämään "
 "lisenssien määrää ja yritä sitten uudelleen."
 
@@ -5429,7 +5429,7 @@ msgstr "Lisää korkeintaan 10 sähköpostia."
 
 #: zerver/forms.py:738
 msgid "We couldn't find that Zulip organization."
-msgstr "Zulip-organisaatiota ei löytynyt."
+msgstr "SafeChat-organisaatiota ei löytynyt."
 
 #: zerver/lib/addressee.py:25
 #, python-brace-format
@@ -5597,7 +5597,7 @@ msgstr "Sähköpostiviesti ilman aihetta"
 
 #: zerver/lib/email_notifications.py:162 zerver/lib/email_notifications.py:184
 msgid "Open Zulip to see the spoiler content"
-msgstr "Avaa Zulip nähdäksesi spoilerin sisällön"
+msgstr "Avaa SafeChat nähdäksesi spoilerin sisällön"
 
 #: zerver/lib/email_notifications.py:630
 #, python-brace-format
@@ -5868,8 +5868,8 @@ msgid ""
 "Your organization is registered to a different Zulip server. Please contact "
 "Zulip support for assistance in resolving this issue."
 msgstr ""
-"Organisaatiosi on rekisteröity toiselle Zulip-palvelimelle. Ota yhteys "
-"Zulipin tukeen tämän ratkaisemiseksi."
+"Organisaatiosi on rekisteröity toiselle SafeChat-palvelimelle. Ota yhteys "
+"SafeChatin tukeen tämän ratkaisemiseksi."
 
 #: zerver/lib/exceptions.py:720
 msgid "Organization not registered"
@@ -6239,7 +6239,7 @@ msgid ""
 "({getting_started_url})!\n"
 msgstr ""
 "\n"
-"Lisätietoja [Zulipin käyttöohjeissa luokalle]({getting_started_url})!\n"
+"Lisätietoja [SafeChatin käyttöohjeissa luokalle]({getting_started_url})!\n"
 
 #: zerver/lib/onboarding.py:97
 #, python-brace-format
@@ -6259,7 +6259,7 @@ msgid ""
 "({organization_setup_url}).\n"
 msgstr ""
 "\n"
-"Meillä on myös ohje [Zulipin käytöstäa luokassa]({organization_setup_url}).\n"
+"Meillä on myös ohje [SafeChatin käytöstäa luokassa]({organization_setup_url}).\n"
 
 #: zerver/lib/onboarding.py:109
 #, python-brace-format
@@ -6269,7 +6269,7 @@ msgid ""
 "({organization_setup_url}).\n"
 msgstr ""
 "\n"
-"Meillä on myös ohjeita [organisaation siirtämiseen Zulipiin]"
+"Meillä on myös ohjeita [organisaation siirtämiseen SafeChatiin]"
 "({organization_setup_url})\n"
 
 #: zerver/lib/onboarding.py:120
@@ -6312,7 +6312,7 @@ msgid ""
 "({navigation_tour_video_url}) for a quick app overview.\n"
 msgstr ""
 "\n"
-"Voit aina palata [Tervetuloa Zulipiin -videoon]({navigation_tour_video_url}) "
+"Voit aina palata [Tervetuloa SafeChatiin -videoon]({navigation_tour_video_url}) "
 "appin yleiskatsaukseksi.\n"
 
 #: zerver/lib/onboarding.py:148
@@ -6330,7 +6330,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Hei ja tervetulao Zulipiin. 👋 "
+"Hei ja tervetulao SafeChatiin. 👋 "
 "{inform_about_tracked_onboarding_messages_text}\n"
 "\n"
 "{getting_started_text} {organization_setup_text}\n"
@@ -6348,7 +6348,7 @@ msgid ""
 msgstr ""
 "\n"
 "Voit [ladata](/apps) [mobiili- ja työpöytäsovellukset](/apps).\n"
-"Zulip toimii hyvin myös selaimessa.\n"
+"SafeChat toimii hyvin myös selaimessa.\n"
 
 #: zerver/lib/onboarding.py:223
 msgid ""
@@ -6375,7 +6375,7 @@ msgstr ""
 "\n"
 "Voit vaihtaa [kirkkaan ja pimeän teeman](help/dark-theme) välillä, [valita\n"
 "suosikkiemojisi](/help/emoji-and-emoticons#change-your-emoji-set), [vaihtaa\n"
-"kieltä](/help/change-your-language), tai muutoin mukauttaa Zulippiasi\n"
+"kieltä](/help/change-your-language), tai muutoin mukauttaa SafeChatpiasi\n"
 "[Asetuksistasi](#settings/preferences).\n"
 
 #: zerver/lib/onboarding.py:235
@@ -6432,7 +6432,7 @@ msgid ""
 "Press `?` any time to see a [cheat sheet](#keyboard-shortcuts).\n"
 msgstr ""
 "\n"
-"Zulipin [näppäimistöoikopolut](#keyboard-shortcuts) helpottavat navigointia\n"
+"SafeChatin [näppäimistöoikopolut](#keyboard-shortcuts) helpottavat navigointia\n"
 "sovelluksessa.\n"
 "\n"
 "Painamalla näppäintä `?` saat [ohjesivun](#keyboard-shortcuts).\n"
@@ -6523,7 +6523,7 @@ msgid ""
 "and above.\n"
 msgstr ""
 "\n"
-"Zulip on järjestelty tehostamaan kommunikaatiota. Keskustelut\n"
+"SafeChat on järjestelty tehostamaan kommunikaatiota. Keskustelut\n"
 "on järjestelty aiheisiin, jotka kertovat mistä on kyse.\n"
 "\n"
 "Esimerkiksi aihe \"{topic_name}\"\n"
@@ -6533,7 +6533,7 @@ msgstr ""
 #: zerver/lib/onboarding.py:388 zerver/lib/onboarding.py:440
 #: zerver/lib/onboarding.py:531
 msgid "welcome to Zulip!"
-msgstr "Tervetuloa Zulipiin."
+msgstr "Tervetuloa SafeChatiin."
 
 #: zerver/lib/onboarding.py:391
 msgid ""
@@ -6543,7 +6543,7 @@ msgid ""
 "no matter how many other conversations are going on.\n"
 msgstr ""
 "\n"
-"Voit lukea Zulipin keskusteluja yksi kerrallaan. Näet joka keskustelun "
+"Voit lukea SafeChatin keskusteluja yksi kerrallaan. Näet joka keskustelun "
 "aiheyhteydessään, \n"
 "riippumatta siitä montako keskustelua on menossa.\n"
 
@@ -6596,7 +6596,7 @@ msgid ""
 "({format_message_help_url}).\n"
 msgstr ""
 "\n"
-":point_right:  Käytä tätä aihetta kokeillaksesi [Zulipin viesti-ominaisuutta]"
+":point_right:  Käytä tätä aihetta kokeillaksesi [SafeChatin viesti-ominaisuutta]"
 "({format_message_help_url}).\n"
 
 #: zerver/lib/onboarding.py:422
@@ -6741,12 +6741,12 @@ msgstr "Ei aktiivisia rekisteröityjä push-laitteita"
 
 #: zerver/lib/push_notifications.py:2064
 msgid "Network error while connecting to Zulip push notification service."
-msgstr "Verkkovirhe yhdistettäessä Zulipin push-ilmoituspalveluun."
+msgstr "Verkkovirhe yhdistettäessä SafeChatin push-ilmoituspalveluun."
 
 #: zerver/lib/push_notifications.py:2077
 msgid "Internal server error on Zulip push notification service, retry later."
 msgstr ""
-"Palvelinvirhe Zulipin push-ilmoituspalvelusssa, yritä uudestaan myöhemmin."
+"Palvelinvirhe SafeChatin push-ilmoituspalvelusssa, yritä uudestaan myöhemmin."
 
 #: zerver/lib/push_notifications.py:2091
 msgid ""
@@ -6783,7 +6783,7 @@ msgstr "Käyttäjällä ei ole valtuutusta tähän kyselyyn"
 #: zerver/lib/recipient_users.py:75
 #, python-brace-format
 msgid "'{email}' is no longer using Zulip."
-msgstr "'{email}' ei enää käytä Zulipia."
+msgstr "'{email}' ei enää käytä SafeChatia."
 
 #: zerver/lib/recipient_users.py:82
 msgid "You can't send direct messages outside of your organization."
@@ -7582,7 +7582,7 @@ msgstr "Mukautetut emojit"
 
 #: zerver/models/messages.py:382
 msgid "Zulip extra emoji"
-msgstr "Zulipin ekstraemoji"
+msgstr "SafeChatin ekstraemoji"
 
 #: zerver/models/realm_emoji.py:40
 msgid "Invalid characters in emoji name"
@@ -7634,15 +7634,15 @@ msgstr "muu syy"
 
 #: zerver/models/realms.py:496
 msgid "Zulip updates"
-msgstr "Zulipin päivitykset"
+msgstr "SafeChatin päivitykset"
 
 #: zerver/models/realms.py:622
 msgid "Available on Zulip Cloud Standard. Upgrade to access."
-msgstr "Saatavilla Zulip Standardilla. Päivitä käyttääksesi."
+msgstr "Saatavilla SafeChat Standardilla. Päivitä käyttääksesi."
 
 #: zerver/models/realms.py:623
 msgid "Available on Zulip Cloud Plus. Upgrade to access."
-msgstr "Saatavilla Zulip Cloud Plussassa. Päivitä käyttääksesi."
+msgstr "Saatavilla SafeChat Cloud Plussassa. Päivitä käyttääksesi."
 
 #: zerver/models/realms.py:695
 msgid "Disabled"
@@ -7903,7 +7903,7 @@ msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
 msgstr ""
-"Jotkut osoitteista käyttää jo Zulipia, joten heille ei lähetetty kutsua. "
+"Jotkut osoitteista käyttää jo SafeChatia, joten heille ei lähetetty kutsua. "
 "Muille kutsut lähetettiin!"
 
 #: zerver/views/message_edit.py:126
@@ -8007,7 +8007,7 @@ msgid ""
 "later. Is this a good time?\n"
 msgstr ""
 "\n"
-"Aioit katsoa [Welcome to Zulip videon]({navigation_tour_video_url}) "
+"Aioit katsoa [Welcome to SafeChat videon]({navigation_tour_video_url}) "
 "myögemmin. Onko nyt hyvin aikaa?\n"
 
 #: zerver/views/presence.py:52
@@ -8535,7 +8535,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "Zulip-salasanaasi hallitaan LDAP:ssa"
+msgstr "SafeChat-salasanaasi hallitaan LDAP:ssa"
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"
@@ -8569,7 +8569,7 @@ msgstr "Organisaation ainoaa omistajaa ei voi poistaa käytöstä"
 #| "Nobody in this Zulip organization will be able to see this email address."
 msgid "User is not allowed to delete other user's messages."
 msgstr ""
-"Kukaan täss Zulip-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
+"Kukaan täss SafeChat-organisaatiossa ei pusty näkemään tätä sähköpostiosoitetta."
 
 #: zerver/views/users.py:297
 msgid "User not authorized to change user emails"
@@ -8792,7 +8792,7 @@ msgstr "Virheellinen aliverkkotunnus push-ilmoituksen ohjaajalle"
 
 #: zilencer/auth.py:147
 msgid "Must validate with valid Zulip server API key"
-msgstr "Täytyy vahvistaa oikealla Zulip-palvelimen API-avaimella"
+msgstr "Täytyy vahvistaa oikealla SafeChat-palvelimen API-avaimella"
 
 #. error
 #: zilencer/views.py:128 zilencer/views.py:130

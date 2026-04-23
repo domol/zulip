@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zulip\n"
+"Project-Id-Version: SafeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 16:35+0000\n"
 "PO-Revision-Date: 2026-03-31 18:58+0000\n"
@@ -7668,7 +7668,7 @@ msgstr ""
 
 #: zerver/views/user_settings.py:475
 msgid "Your Zulip password is managed in LDAP"
-msgstr "Sonu Zulipi salasõna hallatakse LDAP-teenuses"
+msgstr "Sonu SafeChati salasõna hallatakse LDAP-teenuses"
 
 #: zerver/views/user_settings.py:485
 msgid "Wrong password!"

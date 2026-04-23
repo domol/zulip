@@ -5,7 +5,7 @@
         {% endif %}
         <div class="float-left">
             {% if custom_logo_url %}
-            <a class="brand logo" href="{{ root_domain_url }}/"><img draggable="false" src="{{ custom_logo_url }}" class="portico-logo" alt="{{ _('SafeChat') }}" content="Zulip" /></a>
+            <a class="brand logo" href="{{ root_domain_url }}/"><img draggable="false" src="{{ custom_logo_url }}" class="portico-logo" alt="{{ _('SafeChat') }}" content="SafeChat" /></a>
             {% else %}
             <div class="brand logo">
                 <a href="{% if is_self_hosting_management_page %}https://zulip.com/{% else %}{{ root_domain_url }}/{% endif %}">

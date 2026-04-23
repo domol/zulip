@@ -346,7 +346,7 @@ class HomeTest(ZulipTestCase):
 
         # Verify succeeds once logged-in
         with queries_captured(), patch("zerver.lib.cache.cache_set"):
-            result = self._get_home_page(subdomain=realm.subdomain, stream="Zulip")
+            result = self._get_home_page(subdomain=realm.subdomain, stream="SafeChat")
             self.check_rendered_logged_in_app(result)
 
         page_params = self._get_page_params(result)

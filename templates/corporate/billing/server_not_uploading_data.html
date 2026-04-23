@@ -1,7 +1,7 @@
 {% extends "zerver/portico.html" %}
 
 {% block title %}
-<title>Required metadata missing | Zulip</title>
+<title>Required metadata missing | SafeChat</title>
 {% endblock %}
 
 {% block portico_content %}
@@ -12,7 +12,7 @@
         </div>
         <div class="white-box">
             <p>
-                Managing your Zulip plan requires your server to upload
+                Managing your SafeChat plan requires your server to upload
                 up-to-date
                 <a
                   href="https://zulip.readthedocs.io/en/latest/production/mobile-push-notifications.html#uploading-basic-metadata">basic
@@ -20,19 +20,19 @@
             </p>
             {% if remote_realm_session %}
             <p>
-                If your Zulip server's administrator is not able to fix this, <a
-                href="mailto:support@zulip.com">contact Zulip support</a>.
+                If your SafeChat server's administrator is not able to fix this, <a
+                href="mailto:support@zulip.com">contact SafeChat support</a>.
             </p>
             {% elif supports_remote_realms %}
             <p>
-                If your Zulip server's administrator is not able to fix this, <a
-                href="mailto:support@zulip.com">contact Zulip support</a>.
+                If your SafeChat server's administrator is not able to fix this, <a
+                href="mailto:support@zulip.com">contact SafeChat support</a>.
             </p>
             {% else %}
             <p>
-                Your Zulip server's administrator can fix this issue by <a
+                Your SafeChat server's administrator can fix this issue by <a
                 href="https://zulip.readthedocs.io/en/stable/production/upgrade.html">upgrading</a>
-                the server to Zulip 8.0+, or <a href="https://zulip.readthedocs.io/en/stable/production/mobile-push-notifications.html#uploading-usage-statistics">enabling the
+                the server to SafeChat 8.0+, or <a href="https://zulip.readthedocs.io/en/stable/production/mobile-push-notifications.html#uploading-usage-statistics">enabling the
                 <code>SUBMIT_USAGE_STATISTICS</code> setting</a>.
             </p>
             {% endif %}
