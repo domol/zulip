@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Guard for the sync branch: reject commits that introduce bare "Zulip" string
+# literals in user-visible positions. Branding belongs in rebrand.sh.
+
+BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
+[[ "$BRANCH" == "sync" ]] || exit 0
+
+ADDED=$(git diff --cached --name-only | \
+  grep -E '\.(py|html|ts|js|yaml|yml|txt)$' | \
+  xargs -I{} git diff --cached -- {} 2>/dev/null | \
+  grep '^+' | grep -v '^+++')
+
+# Flag quoted "Zulip" string literals; ignore comments and internal identifiers
+HITS=$(echo "$ADDED" | \
+  grep -E '"Zulip"|'\''Zulip'\''' | \
+  grep -v '^\+\s*#\|^\+\s*//' || true)
+
+if [[ -n "$HITS" ]]; then
+  echo ""
+  echo "pre-commit: 'Zulip' string literal detected in sync branch."
+  echo "Branding changes must live in rebrand.sh, not in source files."
+  echo ""
+  echo "$HITS" | head -10
+  echo ""
+  echo "If intentional (e.g. a migration or comment), use --no-verify."
+  exit 1
+fi
