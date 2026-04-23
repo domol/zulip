@@ -1071,7 +1071,7 @@ export function initialize(): void {
         onShow(instance) {
             const content = $t(
                 {defaultMessage: "Contact {sales_email} to enable"},
-                {sales_email: "sales@zulip.com"},
+                {sales_email: "hello@safechat.school"},
             );
             instance.setContent(content);
         },

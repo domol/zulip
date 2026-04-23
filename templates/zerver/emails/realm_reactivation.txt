@@ -4,7 +4,7 @@
 {% if is_demo_organization %}
 {% trans %}One of your administrators requested reactivation of the previously deactivated Zulip demo organization hosted at {{ realm_url }}.{% endtrans %}
 {% else %}
-{% trans %}One of your administrators requested reactivation of the previously deactivated Zulip organization hosted at {{ realm_url }}.{% endtrans %}
+{% trans %}One of your administrators requested reactivation of the previously deactivated SafeChat organization hosted at {{ realm_url }}.{% endtrans %}
 {% endif %}
 
 

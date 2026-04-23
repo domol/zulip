@@ -527,7 +527,7 @@ def do_send_missedmessage_events_reply_in_zulip(
     if reply_to_address == FromAddress.NOREPLY:
         reply_to_name = ""
     else:
-        reply_to_name = "Zulip"
+        reply_to_name = "SafeChat"
 
     senders = list({m["message"].sender for m in missed_messages})
     message = missed_messages[0]["message"]
@@ -990,7 +990,7 @@ def enqueue_welcome_emails(
             get_organization_started=realm_url + "/help/moving-to-zulip",
             invite_users=realm_url + "/help/invite-users-to-join",
             trying_out_zulip=realm_url + "/help/trying-out-zulip",
-            why_zulip="https://zulip.com/why-zulip/",
+            why_zulip="https://safechat.school/why/",
         )
 
         send_future_email(

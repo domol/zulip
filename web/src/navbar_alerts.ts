@@ -619,7 +619,7 @@ export function initialize(): void {
     // NOTE: The `window.open()` click handlers are required over here since the
     // the buttons component framework doesn't support link buttons as of now.
     $("#navbar_alerts_wrapper").on("click", ".demo-organizations-help", () => {
-        window.open("https://zulip.com/help/demo-organizations", "_blank", "noopener,noreferrer");
+        window.open("https://help.safechat.school/demo-organizations", "_blank", "noopener,noreferrer");
     });
 
     $("#navbar_alerts_wrapper").on("click", ".configure-outgoing-mail-instructions", () => {

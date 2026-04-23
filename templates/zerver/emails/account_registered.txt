@@ -1,9 +1,9 @@
 {{ _('Welcome to Zulip!') }}
 
 {% if realm_creation %}
-    {% trans %}Congratulations, you have created a new Zulip organization: {{ realm_name }}.{% endtrans %}
+    {% trans %}Congratulations, you have created a new SafeChat organization: {{ realm_name }}.{% endtrans %}
 {% else %}
-{% trans %}You've joined the Zulip organization {{ realm_name }}.{% endtrans %}
+{% trans %}You've joined the SafeChat organization {{ realm_name }}.{% endtrans %}
 {% endif %}
 
 

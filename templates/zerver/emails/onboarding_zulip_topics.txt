@@ -1,4 +1,4 @@
-{{ _("Here are some tips for keeping your Zulip conversations organized with topics.") }}
+{{ _("Here are some tips for keeping your SafeChat conversations organized with topics.") }}
 
 {{ _("In Zulip, channels determine who gets a message. Topics tell you what the message is about.") }} {{ _("Using topics, you can read Zulip one conversation at a time. You'll see each message in context, no matter how many different discussions are going on.") }}
 

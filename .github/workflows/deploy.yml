@@ -1,0 +1,68 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Only one deploy runs at a time. A new push cancels a queued (not running) build.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # The provision step installs all build-time dependencies (Python, Node,
+      # system packages) and sets up the venv. It takes ~15 min cold; the uv
+      # cache brings this down to ~3 min on repeat runs.
+      - name: Cache uv packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/uv
+          key: uv-${{ runner.os }}-${{ hashFiles('requirements/*.txt') }}
+          restore-keys: uv-${{ runner.os }}-
+
+      - name: Build release tarball
+        env:
+          DEBIAN_FRONTEND: noninteractive
+          SKIP_VENV_SHELL_WARNING: "1"
+          OUTPUT_DIR: /tmp/safechat-build
+        run: |
+          mkdir -p "$OUTPUT_DIR"
+          ./tools/provision --build-release-tarball-only
+          ./tools/build-release-tarball safechat
+          # Output: /tmp/safechat-build/zulip-server-safechat.tar.gz
+
+      - name: Copy tarball to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          source: /tmp/safechat-build/zulip-server-safechat.tar.gz
+          target: /tmp/
+          strip_components: 3   # drops /tmp/safechat-build/ prefix → /tmp/zulip-server-safechat.tar.gz
+
+      - name: Upgrade server
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          # upgrade-zulip:
+          #   • extracts tarball to /home/zulip/deployments/<timestamp>/
+          #   • runs database migrations
+          #   • restarts nginx + all supervisor workers
+          #   • updates /home/zulip/deployments/current symlink
+          # Previous deployments are kept at /home/zulip/deployments/ for rollback.
+          script: |
+            sudo /home/zulip/deployments/current/scripts/upgrade-zulip \
+              /tmp/zulip-server-safechat.tar.gz
+            rm -f /tmp/zulip-server-safechat.tar.gz

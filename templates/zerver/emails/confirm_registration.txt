@@ -1,5 +1,5 @@
 {% if create_realm %}
-{{ _("You have requested a new Zulip organization:") }}
+{{ _("You have requested a new SafeChat organization:") }}
 * {% trans %}Organization URL: {{ organization_url }}{% endtrans %}
 
 * {% trans %}Organization type: {{ organization_type }}{% endtrans %}

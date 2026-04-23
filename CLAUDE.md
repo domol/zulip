@@ -110,6 +110,27 @@ git config core.hooksPath .githooks
 
 ---
 
+## Deployment pipeline
+
+Production runs on a standard Ubuntu Zulip installation (not Docker).
+
+Push to `main` → GitHub Actions (`.github/workflows/deploy.yml`):
+1. `tools/provision --build-release-tarball-only` — installs build deps (~15 min cold, ~3 min cached)
+2. `tools/build-release-tarball safechat` — compiles assets, creates tarball at `$OUTPUT_DIR/zulip-server-safechat.tar.gz`
+3. SCP tarball to `/tmp/` on server
+4. SSH → `sudo upgrade-zulip /tmp/zulip-server-safechat.tar.gz`
+
+Zulip's `upgrade-zulip` script handles everything: unpacks to `/home/zulip/deployments/<timestamp>/`, runs migrations, restarts supervisor workers and nginx, updates the `current` symlink.
+
+**Secrets required in the GitHub repo:**
+- `DEPLOY_HOST` — server hostname or IP
+- `DEPLOY_USER` — SSH user with passwordless sudo for upgrade-zulip
+- `DEPLOY_SSH_KEY` — ed25519 private key (public key in server's authorized_keys)
+
+**Rollback:** previous deployments stay at `/home/zulip/deployments/`; run `upgrade-zulip` with the old directory path.
+
+---
+
 ## School-specific configuration
 
 Zulip has extensive per-realm configuration. For SafeChat deployments:
