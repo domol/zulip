@@ -50,7 +50,7 @@ s templates/zerver/portico-header.html \
 
 # Replace inline Zulip SVG wordmark with brand logo from branding/logo-full.svg
 echo "  templates/zerver/portico-header.html (inline SVG → brand logo)"
-BRAND_LOGO_SVG="$BRANDING_DIR/logo-full.svg"
+BRAND_LOGO_SVG="$SCRIPT_DIR/../branding/logo-full.svg"
 if [ -f "$BRAND_LOGO_SVG" ]; then
   if $DRY_RUN; then
     echo "  [dry-run] would replace inline Zulip SVG with $BRAND_LOGO_SVG"
