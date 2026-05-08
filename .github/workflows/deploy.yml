@@ -67,3 +67,12 @@ jobs:
             sudo /home/zulip/deployments/current/scripts/upgrade-zulip \
               /tmp/zulip-server-safechat.tar.gz
             rm -f /tmp/zulip-server-safechat.tar.gz
+            # Puppet sets /home/zulip to 750 (owner: zulip, group: zulip).
+            # nginx runs as www-data (not in the zulip group) and needs the
+            # traverse bit to reach /home/zulip/prod-static for static files.
+            sudo chmod o+x /home/zulip
+            # Puppet regenerates zulip-enterprise without a server_name on every
+            # run. zulip-realms owns the *.safechat.edu.pl server_name and is not
+            # puppet-managed, but ensure the sites-enabled symlink is present.
+            sudo ln -sf /etc/nginx/sites-available/zulip-realms /etc/nginx/sites-enabled/zulip-realms
+            sudo nginx -t && sudo systemctl reload nginx
