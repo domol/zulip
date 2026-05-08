@@ -48,6 +48,62 @@ s templates/zerver/portico-header.html \
   "aria-label=\"{{ _('Zulip') }}\"" \
   "aria-label=\"{{ _('$BRAND_NAME') }}\""
 
+# Replace inline Zulip SVG wordmark with brand logo from branding/logo-full.svg
+echo "  templates/zerver/portico-header.html (inline SVG → brand logo)"
+BRAND_LOGO_SVG="$BRANDING_DIR/logo-full.svg"
+if [ -f "$BRAND_LOGO_SVG" ]; then
+  if $DRY_RUN; then
+    echo "  [dry-run] would replace inline Zulip SVG with $BRAND_LOGO_SVG"
+  else
+    python3 - templates/zerver/portico-header.html "$BRAND_LOGO_SVG" "$BRAND_NAME" <<'PYEOF'
+import sys, re
+
+template_path, brand_svg_path, brand_name = sys.argv[1], sys.argv[2], sys.argv[3]
+
+with open(template_path) as f:
+    content = f.read()
+
+with open(brand_svg_path) as f:
+    brand_svg = f.read()
+
+inner = re.sub(r'^<svg[^>]*>', '', brand_svg.strip(), count=1)
+inner = inner[:inner.rfind('</svg>')].strip()
+
+vb_match = re.search(r'viewBox="([^"]*)"', brand_svg)
+viewbox = vb_match.group(1) if vb_match else '0 0 1450.33 441.34'
+
+aria_match = re.search(r'aria-label="([^"]*)"', content)
+aria_label = aria_match.group(1) if aria_match else "{{ _('" + brand_name + "') }}"
+
+new_svg = (
+    '<svg class="brand-logo" role="img" aria-label="' + aria_label + '" '
+    'xmlns="http://www.w3.org/2000/svg" viewBox="' + viewbox + '" height="25">\n'
+    '                        ' + inner + '\n'
+    '                    </svg>'
+)
+
+new_content = re.sub(
+    r'<svg class="brand-logo".*?</svg>',
+    lambda m: new_svg,
+    content,
+    flags=re.DOTALL,
+)
+
+with open(template_path, 'w') as f:
+    f.write(new_content)
+PYEOF
+  fi
+else
+  echo "  [skip] branding/logo-full.svg not found"
+fi
+
+# ── OG thumbnail ──────────────────────────────────────────────────────────────
+
+echo "  templates/zerver/meta_tags.html (og:image)"
+s templates/zerver/meta_tags.html \
+  "static('images/logo/zulip-icon-128x128.png')" \
+  "static('images/favicon.png')"
+
 # ── Email sender names ────────────────────────────────────────────────────────
 
 echo "  zerver/lib/send_email.py"
