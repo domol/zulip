@@ -69,8 +69,9 @@ with open(brand_svg_path) as f:
 inner = re.sub(r'^<svg[^>]*>', '', brand_svg.strip(), count=1)
 inner = inner[:inner.rfind('</svg>')].strip()
 
-vb_match = re.search(r'viewBox="([^"]*)"', brand_svg)
-viewbox = vb_match.group(1) if vb_match else '0 0 1450.33 441.34'
+# Use a tight viewBox that crops the whitespace in logo-full.svg (content
+# spans roughly x=125-1365, y=15-355 in the original 0 0 1450.33 441.34 space)
+viewbox = '125 15 1240 340'
 
 aria_match = re.search(r'aria-label="([^"]*)"', content)
 aria_label = aria_match.group(1) if aria_match else "{{ _('" + brand_name + "') }}"
