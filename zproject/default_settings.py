@@ -443,7 +443,18 @@ SYSTEM_BOT_REALM = "zulipinternal"
 # Structurally, we will probably eventually merge
 # analytics into part of the main server, rather
 # than a separate app.
-EXTRA_INSTALLED_APPS = ["analytics"]
+EXTRA_INSTALLED_APPS = ["analytics", "safechat_moderation"]
+
+MODERATION_ENABLED = False
+MODERATION_CLASSIFIERS: list[dict[str, object]] = [
+    {
+        "name": "hate_speech_xlm",
+        "class": "safechat_moderation.classifiers.hate_speech.HateSpeechClassifier",
+        "threshold": 0.7,
+        "flag_labels": ["hate"],
+        "enabled": True,
+    }
+]
 
 # Used to construct URLs to point to the Zulip server.  Since we
 # only support HTTPS in production, this is just for development.

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moderation Panel — SafeChat</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<style>
+  body { background: #f8fafc; }
+  .navbar-brand { font-weight: 700; letter-spacing: -0.02em; }
+  .preview-cell { max-width: 340px; white-space: pre-wrap; word-break: break-word; font-size: 0.875rem; }
+  .status-pending   { color: #b45309; }
+  .status-dismissed { color: #6b7280; }
+  .status-actioned  { color: #16a34a; }
+  table { font-size: 0.875rem; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark px-3 mb-4">
+  <span class="navbar-brand">SafeChat Moderation</span>
+  <span class="text-secondary small">Server admin view</span>
+</nav>
+
+<div class="container-fluid px-4">
+
+  {# Status tabs + realm filter #}
+  <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+    <div class="d-flex gap-2">
+      {% for s, label in [("pending","Pending"), ("dismissed","Dismissed"), ("actioned","Actioned")] %}
+      <a href="?status={{ s }}{% if realm_filter %}&realm_id={{ realm_filter }}{% endif %}"
+         class="btn btn-sm {{ 'btn-dark' if status_filter == s else 'btn-outline-secondary' }}">
+        {{ label }}
+        <span class="badge bg-secondary ms-1">{{ counts[s] }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <form method="get" class="d-flex gap-2 ms-auto">
+      <input type="hidden" name="status" value="{{ status_filter }}">
+      <select name="realm_id" class="form-select form-select-sm" style="width:220px" onchange="this.form.submit()">
+        <option value="">All schools</option>
+        {% for r in realms %}
+        <option value="{{ r.id }}" {{ 'selected' if realm_filter == r.id else '' }}>
+          {{ r.name }} ({{ r.string_id }})
+        </option>
+        {% endfor %}
+      </select>
+    </form>
+  </div>
+
+  {# Table #}
+  {% if flags %}
+  <div class="table-responsive">
+  <table class="table table-hover table-bordered bg-white">
+    <thead class="table-dark">
+      <tr>
+        <th style="width:130px">Time</th>
+        <th style="width:150px">School</th>
+        <th style="width:140px">Sender</th>
+        <th>Message</th>
+        <th style="width:75px">Score</th>
+        <th style="width:90px">Classifier</th>
+        <th style="width:80px">Status</th>
+        <th style="width:170px">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for flag in flags %}
+      <tr>
+        <td class="text-nowrap text-muted">{{ flag.created_at.strftime("%Y-%m-%d %H:%M") }}</td>
+        <td>
+          <span class="fw-semibold">{{ flag.realm.name }}</span><br>
+          <small class="text-muted">{{ flag.realm.string_id }}</small>
+        </td>
+        <td>
+          {% if flag.sender %}
+            {{ flag.sender.full_name }}<br>
+            <small class="text-muted">{{ flag.sender.email }}</small>
+          {% else %}
+            <span class="text-muted">(deleted)</span>
+          {% endif %}
+        </td>
+        <td class="preview-cell">
+          {{ flag.content_preview }}
+          {% if not flag.is_dm and flag.topic_name %}
+          <br><small class="text-muted">{{ flag.stream_name }} &rsaquo; {{ flag.topic_name }}</small>
+          {% elif flag.is_dm %}
+          <br><small class="text-muted">Direct message</small>
+          {% endif %}
+        </td>
+        <td class="text-center">
+          <span class="badge {{ 'bg-danger' if flag.score >= 0.9 else ('bg-warning text-dark' if flag.score >= 0.7 else 'bg-secondary') }}" style="font-size:.75rem">
+            {{ (flag.score * 100)|round|int }}%
+          </span>
+        </td>
+        <td class="text-muted small">{{ flag.classifier }}</td>
+        <td class="status-{{ flag.status }} fw-semibold">{{ flag.status|title }}</td>
+        <td>
+          <div class="d-flex gap-1 flex-wrap">
+            <a href="{{ flag.conversation_url }}" target="_blank" rel="noopener"
+               class="btn btn-sm btn-outline-primary">View</a>
+            {% if flag.status != STATUS_ACTIONED %}
+            <form method="post" action="/moderation/review/{{ flag.id }}/">
+              {{ csrf_input }}
+              <input type="hidden" name="status" value="{{ STATUS_ACTIONED }}">
+              <input type="hidden" name="next" value="/moderation/?status={{ status_filter }}{% if realm_filter %}&realm_id={{ realm_filter }}{% endif %}">
+              <button type="submit" class="btn btn-sm btn-danger">Action</button>
+            </form>
+            {% endif %}
+            {% if flag.status != STATUS_DISMISSED %}
+            <form method="post" action="/moderation/review/{{ flag.id }}/">
+              {{ csrf_input }}
+              <input type="hidden" name="status" value="{{ STATUS_DISMISSED }}">
+              <input type="hidden" name="next" value="/moderation/?status={{ status_filter }}{% if realm_filter %}&realm_id={{ realm_filter }}{% endif %}">
+              <button type="submit" class="btn btn-sm btn-outline-secondary">Dismiss</button>
+            </form>
+            {% endif %}
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <div class="alert alert-info mt-2">
+    No {{ status_filter }} flags{% if realm_filter %} for this school{% endif %}.
+  </div>
+  {% endif %}
+
+</div>
+</body>
+</html>

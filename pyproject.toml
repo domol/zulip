@@ -28,6 +28,10 @@ prod = [
   # Needed for image processing and thumbnailing
   "pyvips",
 
+  # Needed for AI content moderation (safechat_moderation)
+  "transformers>=4.40",
+  "torch>=2.3",
+
   # Needed for building complex DB queries
   "sqlalchemy==1.4.*",
   "greenlet",
