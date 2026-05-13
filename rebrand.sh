@@ -71,7 +71,7 @@ inner = inner[:inner.rfind('</svg>')].strip()
 
 # Use a tight viewBox that crops the whitespace in logo-full.svg (content
 # spans roughly x=125-1365, y=15-355 in the original 0 0 1450.33 441.34 space)
-viewbox = '125 15 1240 340'
+viewbox = '30 65 1340 290'
 
 aria_match = re.search(r'aria-label="([^"]*)"', content)
 aria_label = aria_match.group(1) if aria_match else "{{ _('" + brand_name + "') }}"
