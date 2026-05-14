@@ -23,6 +23,7 @@ import "../../third/bootstrap/css/bootstrap.app.css";
 import "../../third/bootstrap/css/bootstrap-btn.css";
 import "../../styles/typeahead.css";
 import "../../styles/app_variables.css";
+import "../../styles/safechat-theme.css";
 import "../../styles/tooltips.css";
 import "../../styles/buttons.css";
 import "../../styles/inputs.css";
