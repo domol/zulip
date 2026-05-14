@@ -183,6 +183,20 @@ s templates/500.html \
   'https://status.zulip.com/' \
   "$BRAND_STATUS_URL"
 
+# ── About dialog (web/templates/about_zulip.hbs) ─────────────────────────────
+# .hbs files are not covered by the broad template sweep, so patch explicitly.
+
+echo "  web/templates/about_zulip.hbs"
+s web/templates/about_zulip.hbs \
+  'href="https://zulip.com"' \
+  "href=\"https://$BRAND_DOMAIN\""
+s web/templates/about_zulip.hbs \
+  "alt=\"{{t 'Zulip' }}\"" \
+  "alt=\"{{t '$BRAND_NAME' }}\""
+s web/templates/about_zulip.hbs \
+  'Zulip Server' \
+  "$BRAND_NAME"
+
 # ── Web app: hardcoded contact/help links ─────────────────────────────────────
 
 echo "  web/src/tippyjs.ts"
