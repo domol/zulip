@@ -164,6 +164,7 @@ class zulip::app_frontend_base {
     'thumbnail',
     'user_activity',
     'user_activity_interval',
+    'message_moderation',
   ]
 
   if $zulip::common::total_memory_mb > 24000 {

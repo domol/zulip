@@ -44,6 +44,11 @@
     border-color: rgba(255, 255, 255, 0.4);
 }
 
+/* Realm logo in navbar */
+.column-left .nav-logo {
+    height: 2.5rem;
+}
+
 /* Realm name / org header text in navbar */
 #header-container .realm-name,
 #header-container .brand,

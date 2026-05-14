@@ -3,9 +3,9 @@ from typing import Any
 from .base import BaseMessageClassifier, ClassificationResult
 
 
-class HateSpeechClassifier(BaseMessageClassifier):
-    name = "Polski Hatespeech"
-    model_name = "ptaszynski/bert-base-polish-cyberbullying"
+class ToxicityClassifier(BaseMessageClassifier):
+    name = "English Hatespeech"
+    model_name = "citizenlab/distilbert-base-multilingual-cased-toxicity"
 
     def __init__(self) -> None:
         self._pipeline: Any = None

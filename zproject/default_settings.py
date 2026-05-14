@@ -448,12 +448,19 @@ EXTRA_INSTALLED_APPS = ["analytics", "safechat_moderation"]
 MODERATION_ENABLED = False
 MODERATION_CLASSIFIERS: list[dict[str, object]] = [
     {
-        "name": "hate_speech_xlm",
+        "name": "Polski Hatespeech",
         "class": "safechat_moderation.classifiers.hate_speech.HateSpeechClassifier",
         "threshold": 0.7,
-        "flag_labels": ["hate"],
+        "flag_labels": ["LABEL_1"],
         "enabled": True,
-    }
+    },
+    {
+        "name": "English Hatespeech",
+        "class": "safechat_moderation.classifiers.toxicity.ToxicityClassifier",
+        "threshold": 0.85,
+        "flag_labels": ["toxic"],
+        "enabled": True,
+    },
 ]
 
 # Used to construct URLs to point to the Zulip server.  Since we

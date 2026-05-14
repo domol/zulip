@@ -94,7 +94,11 @@
             {{ (flag.score * 100)|round|int }}%
           </span>
         </td>
-        <td class="text-muted small">{{ flag.classifier }}</td>
+        <td>
+          <span class="badge {{ 'text-bg-danger' if 'Polski' in flag.classifier else 'text-bg-primary' }}" style="font-size:.7rem;white-space:normal">
+            {{ flag.classifier }}
+          </span>
+        </td>
         <td class="status-{{ flag.status }} fw-semibold">{{ flag.status|title }}</td>
         <td>
           <div class="d-flex gap-1 flex-wrap">
