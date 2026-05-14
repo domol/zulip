@@ -207,7 +207,7 @@ class UserBaseSettings(models.Model):
 
     # Followed Topics notifications.
     enable_followed_topic_desktop_notifications = models.BooleanField(default=True)
-    enable_followed_topic_email_notifications = models.BooleanField(default=True)
+    enable_followed_topic_email_notifications = models.BooleanField(default=False)
     enable_followed_topic_push_notifications = models.BooleanField(default=True)
     enable_followed_topic_audible_notifications = models.BooleanField(default=True)
     enable_followed_topic_wildcard_mentions_notify = models.BooleanField(default=True)
@@ -216,7 +216,7 @@ class UserBaseSettings(models.Model):
     enable_desktop_notifications = models.BooleanField(default=True)
     pm_content_in_desktop_notifications = models.BooleanField(default=True)
     enable_sounds = models.BooleanField(default=True)
-    enable_offline_email_notifications = models.BooleanField(default=True)
+    enable_offline_email_notifications = models.BooleanField(default=False)
     message_content_in_email_notifications = models.BooleanField(default=True)
     enable_offline_push_notifications = models.BooleanField(default=True)
     enable_online_push_notifications = models.BooleanField(default=True)

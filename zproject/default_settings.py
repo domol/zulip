@@ -446,6 +446,7 @@ SYSTEM_BOT_REALM = "zulipinternal"
 EXTRA_INSTALLED_APPS = ["analytics", "safechat_moderation"]
 
 MODERATION_ENABLED = False
+SEND_WELCOME_BOT_MESSAGE = False
 MODERATION_CLASSIFIERS: list[dict[str, object]] = [
     {
         "name": "Polski Hatespeech",

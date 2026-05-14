@@ -2,17 +2,13 @@
     <input type="hidden" name="email_address_visibility" value="{{ default_email_address_visibility }}" id="email_address_visibility"/>
     <span class="current-selected-option">
         {% if default_email_address_visibility == email_address_visibility_admins_only %}
-            {% trans %}Administrators of this SafeChat organization will be able to see this email address.
-            {% endtrans %}
+            Administratorzy SafeChat będą mogli zobaczyć ten adres e-mail.
         {% elif default_email_address_visibility == email_address_visibility_moderators %}
-            {% trans %}Administrators and moderators of this SafeChat organization will be able to see this email address.
-            {% endtrans %}
+            Administratorzy i moderatorzy SafeChat będą mogli zobaczyć ten adres e-mail.
         {% elif default_email_address_visibility == email_address_visibility_nobody %}
-            {% trans %}Nobody in this SafeChat organization will be able to see this email address.
-            {% endtrans %}
+            Nikt w SafeChat nie będzie mógł zobaczyć tego adresu e-mail.
         {% else %}
-            {% trans %}Other users in this SafeChat organization will be able to see this email address.
-            {% endtrans %}
+            Inni użytkownicy SafeChat będą mogli zobaczyć ten adres e-mail.
         {% endif %}
     </span>
     <a target="_blank" class="change_email_address_visibility" rel="noopener noreferrer">{{ _('Change') }}</a>

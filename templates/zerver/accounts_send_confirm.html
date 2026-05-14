@@ -2,7 +2,7 @@
 {# Displayed after a user attempts to sign up. #}
 
 {% block title %}
-<title>{{ _("Confirm your email address") }} | SafeChat</title>
+<title>{{ _("Potwierdź adres e-mail") }} | SafeChat</title>
 {% endblock %}
 
 {% block portico_content %}
@@ -14,16 +14,13 @@ page can be easily identified in it's respective JavaScript file -->
         <div class="inline-block">
 
             <div class="get-started">
-                <h1>{{ _("Confirm your email address") }}</h1>
+                <h1>{{ _("Potwierdź adres e-mail") }}</h1>
             </div>
 
             <div class="white-box">
-                <p>{% trans %}To complete your registration, check your email account (<span class="user_email semi-bold">{{ email }}</span>) for a confirmation email from SafeChat.{% endtrans %}</p>
+                <p>Aby dokończyć rejestrację, sprawdź swoje konto e-mail (<span class="user_email semi-bold">{{ email }}</span>). Jeśli wiadomość nie dotarła do skrzynki odbiorczej ani folderu spam, możesz ją <a href="#" id="resend_email_link">wysłać ponownie</a>.</p>
 
                 {% include 'zerver/dev_env_email_access_details.html' %}
-
-                <p>{% trans %}If you don't see a confirmation email in your Inbox or Spam folder, we can <a href="#" id="resend_email_link">resend it</a>.{% endtrans %}
-                </p>
                 {% if realm_creation %}
                 <form class="resend_confirm" action="/new/" method="post" style="position: absolute;">
                     {{ csrf_input }}

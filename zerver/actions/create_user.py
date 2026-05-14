@@ -346,25 +346,26 @@ def process_new_human_user(
     # new account details and log-in information.
     send_account_registered_email(user_profile, realm_creation)
 
-    # We have an import loop here; it's intentional, because we want
-    # to keep all the onboarding code in zerver/lib/onboarding.py.
-    from zerver.lib.onboarding import send_initial_direct_messages_to_user
+    if getattr(settings, "SEND_WELCOME_BOT_MESSAGE", True):
+        # We have an import loop here; it's intentional, because we want
+        # to keep all the onboarding code in zerver/lib/onboarding.py.
+        from zerver.lib.onboarding import send_initial_direct_messages_to_user
 
-    welcome_message_custom_text = realm.welcome_message_custom_text
-    if prereg_user is not None and prereg_user.welcome_message_custom_text is not None:
-        welcome_message_custom_text = prereg_user.welcome_message_custom_text
-    initial_direct_message_ids = send_initial_direct_messages_to_user(
-        user_profile,
-        realm_creation=realm_creation,
-        welcome_message_custom_text=welcome_message_custom_text,
-    )
-    message_id_list = [initial_direct_message_ids.welcome_bot_intro_message_id]
-    if initial_direct_message_ids.welcome_bot_custom_message_id is not None:
-        message_id_list.append(initial_direct_message_ids.welcome_bot_custom_message_id)
+        welcome_message_custom_text = realm.welcome_message_custom_text
+        if prereg_user is not None and prereg_user.welcome_message_custom_text is not None:
+            welcome_message_custom_text = prereg_user.welcome_message_custom_text
+        initial_direct_message_ids = send_initial_direct_messages_to_user(
+            user_profile,
+            realm_creation=realm_creation,
+            welcome_message_custom_text=welcome_message_custom_text,
+        )
+        message_id_list = [initial_direct_message_ids.welcome_bot_intro_message_id]
+        if initial_direct_message_ids.welcome_bot_custom_message_id is not None:
+            message_id_list.append(initial_direct_message_ids.welcome_bot_custom_message_id)
 
-    UserMessage.objects.filter(user_profile=user_profile, message_id__in=message_id_list).update(
-        flags=F("flags").bitor(UserMessage.flags.starred)
-    )
+        UserMessage.objects.filter(user_profile=user_profile, message_id__in=message_id_list).update(
+            flags=F("flags").bitor(UserMessage.flags.starred)
+        )
 
     # The 'visibility_policy_banner' is only displayed to existing users.
     # Mark it as read for a new user.

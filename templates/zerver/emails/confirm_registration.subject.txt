@@ -1,5 +1,5 @@
 {% if create_realm %}
-{{ _("Create your SafeChat organization") }}
+{{ _("Utwórz swoją organizację SafeChat") }}
 {% else %}
-{{ _("Activate your SafeChat account") }}
+{{ _("Aktywuj swoje konto SafeChat") }}
 {% endif %}

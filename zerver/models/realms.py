@@ -457,9 +457,9 @@ class Realm(models.Model):
     MESSAGE_EDIT_HISTORY_VISIBILITY_POLICY_TYPES = list(MessageEditHistoryVisibilityPolicyEnum)
 
     # Defaults for new users
-    default_language = models.CharField(default="en", max_length=MAX_LANGUAGE_ID_LENGTH)
+    default_language = models.CharField(default="pl", max_length=MAX_LANGUAGE_ID_LENGTH)
 
-    ZULIP_DISCUSSION_CHANNEL_NAME = gettext_lazy("SafeChat")
+    ZULIP_DISCUSSION_CHANNEL_NAME = gettext_lazy("Ogłoszenia")
     ZULIP_SANDBOX_CHANNEL_NAME = gettext_lazy("sandbox")
     DEFAULT_NOTIFICATION_STREAM_NAME = gettext_lazy("general")
     STREAM_EVENTS_NOTIFICATION_TOPIC_NAME = gettext_lazy("channel events")
@@ -822,7 +822,7 @@ class Realm(models.Model):
         can_create_bots_group=GroupPermissionSetting(
             allow_nobody_group=True,
             allow_everyone_group=False,
-            default_group_name=SystemGroups.MEMBERS,
+            default_group_name=SystemGroups.NOBODY,
         ),
         can_create_groups=GroupPermissionSetting(
             allow_nobody_group=True,
@@ -854,7 +854,7 @@ class Realm(models.Model):
         can_create_write_only_bots_group=GroupPermissionSetting(
             allow_nobody_group=True,
             allow_everyone_group=False,
-            default_group_name=SystemGroups.MEMBERS,
+            default_group_name=SystemGroups.NOBODY,
         ),
         can_delete_any_message_group=GroupPermissionSetting(
             allow_nobody_group=True,

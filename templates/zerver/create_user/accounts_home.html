@@ -2,7 +2,7 @@
 {# Home page for not logged-in users. #}
 
 {% block title %}
-<title>{{ _("Sign up") }} | SafeChat</title>
+<title>{{ _("Rejestracja") }} | SafeChat</title>
 {% endblock %}
 
 {# This is where we pitch the app and solicit signups. #}
@@ -15,7 +15,7 @@ page can be easily identified in it's respective JavaScript file -->
 <div class="app register-page split-view flex full-page new-style">
     <div class="inline-block">
         <div class="lead">
-            <h1 class="get-started">{{ _("Sign up for SafeChat") }}</h1>
+            <h1 class="get-started">{{ _("Zarejestruj się w SafeChat") }}</h1>
         </div>
         <div class="app-main register-page-container white-box {% if realm_invite_required and not from_multiuse_invite %}closed-realm{% endif %}">
             <div class="register-form new-style">
@@ -69,7 +69,7 @@ page can be easily identified in it's respective JavaScript file -->
                                     {% endif %}
                                 </div>
 
-                                <button class="full-width" type="submit">{{ _('Sign up') }}</button>
+                                <button class="full-width" type="submit">{{ _('Zarejestruj się') }}</button>
                             </form>
 
                             {% if external_authentication_methods|length > 0 %}
