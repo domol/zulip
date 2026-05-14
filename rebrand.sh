@@ -51,6 +51,7 @@ s templates/zerver/portico-header.html \
 # Replace inline Zulip SVG wordmark with brand logo from branding/logo-full.svg
 echo "  templates/zerver/portico-header.html (inline SVG → brand logo)"
 BRAND_LOGO_SVG="$SCRIPT_DIR/../branding/logo-full.svg"
+BRAND_LOGO_ICON_SVG="$SCRIPT_DIR/../branding/logo-icon.svg"
 if [ -f "$BRAND_LOGO_SVG" ]; then
   if $DRY_RUN; then
     echo "  [dry-run] would replace inline Zulip SVG with $BRAND_LOGO_SVG"
@@ -96,6 +97,47 @@ PYEOF
   fi
 else
   echo "  [skip] branding/logo-full.svg not found"
+fi
+
+# ── App loading screen logo ───────────────────────────────────────────────────
+
+echo "  templates/zerver/app/index.html (app-loading-logo)"
+if [ -f "$BRAND_LOGO_ICON_SVG" ]; then
+  if $DRY_RUN; then
+    echo "  [dry-run] would replace inline app loader SVG with $BRAND_LOGO_ICON_SVG"
+  else
+    python3 - templates/zerver/app/index.html "$BRAND_LOGO_ICON_SVG" <<'PYEOF'
+import sys, re
+
+template_path, icon_svg_path = sys.argv[1], sys.argv[2]
+
+with open(template_path) as f:
+    content = f.read()
+
+with open(icon_svg_path) as f:
+    icon_svg = f.read().strip()
+
+# Extract just the inner content of the SVG (paths, etc.) and the viewBox.
+viewbox_match = re.search(r'viewBox="([^"]*)"', icon_svg)
+viewbox = viewbox_match.group(1) if viewbox_match else '0 0 440 440'
+inner = re.sub(r'^<svg[^>]*>', '', icon_svg, count=1)
+inner = inner[:inner.rfind('</svg>')].strip()
+
+new_svg = '<svg class="app-loading-logo" xmlns="http://www.w3.org/2000/svg" viewBox="' + viewbox + '">' + inner + '</svg>'
+
+new_content = re.sub(
+    r'<svg class="app-loading-logo".*?</svg>',
+    new_svg,
+    content,
+    flags=re.DOTALL,
+)
+
+with open(template_path, 'w') as f:
+    f.write(new_content)
+PYEOF
+  fi
+else
+  echo "  [skip] branding/logo-icon.svg not found"
 fi
 
 # ── OG thumbnail ──────────────────────────────────────────────────────────────
