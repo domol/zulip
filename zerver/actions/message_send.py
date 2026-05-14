@@ -1303,6 +1303,20 @@ def do_send_messages(
             }
             queue_event_on_commit("embed_links", event_data)
 
+        if getattr(settings, "MODERATION_ENABLED", False) and send_request.message.content.strip():
+            moderation_event: dict[str, Any] = {
+                "message_id": send_request.message.id,
+                "realm_id": send_request.realm.id,
+                "content": send_request.message.content,
+                "sender_id": send_request.message.sender_id,
+                "is_dm": not send_request.message.is_channel_message,
+            }
+            if send_request.stream is not None:
+                moderation_event["stream_id"] = send_request.stream.id
+                moderation_event["stream_name"] = send_request.stream.name
+                moderation_event["topic_name"] = send_request.message.topic_name()
+            queue_event_on_commit("message_moderation", moderation_event)
+
         # Check if this is a 1:1 DM between a user and the Welcome Bot,
         # in which case we may want to send an automated response.
         if not send_request.message.is_channel_message and len(send_request.active_user_ids) == 2:
