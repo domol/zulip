@@ -1,0 +1,52 @@
+/*
+ * SafeChat — Forest Green theme
+ * Overrides Zulip's default blue/purple palette.
+ * Imported in web/src/bundles/app.ts after app_variables.css.
+ *
+ * To switch schemes, change the variables below and redeploy.
+ * Other palettes are documented in safechat/branding/color-schemes.md.
+ */
+
+:root {
+    /* ── Navbar ─────────────────────────────────────────────── */
+    --color-background-navbar: #14532d;
+    --color-navbar-bottom-border: #14532d;
+    /* Icons and search placeholder on the now-dark navbar */
+    --color-navbar-icon: hsl(0deg 0% 100%);
+
+    /* ── Accent (replaces Zulip purple) ─────────────────────── */
+    --color-icon-purple: #16a34a;
+
+    /* ── Sidebar hover / active states ──────────────────────── */
+    --color-background-sidebar-action-hover: hsl(142deg 72% 92%);
+    --color-background-navigation-item-hover: hsl(142deg 72% 92%);
+    --color-background-sidebar-action-heading-hover: hsl(142deg 72% 92%);
+
+    /* ── Sidebar navigation icons ───────────────────────────── */
+    --color-left-sidebar-navigation-icon: #16a34a;
+    --color-left-sidebar-dm-partners-icon: #16a34a;
+    --color-left-sidebar-follow-icon-hover: #14532d;
+}
+
+/* Search bar input on dark navbar */
+#search_query {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+#search_query::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#search_query:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Realm name / org header text in navbar */
+#header-container .realm-name,
+#header-container .brand,
+.header-main .column-left .brand {
+    color: #ffffff;
+}
